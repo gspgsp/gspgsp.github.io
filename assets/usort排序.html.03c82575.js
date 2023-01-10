@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-de39fe48","path":"/content/php/base/usort%E6%8E%92%E5%BA%8F.html","title":"usort\u6392\u5E8F","lang":"en-US","frontmatter":{"sidebar":false,"title":"usort\u6392\u5E8F","description":"usort\u6392\u5E8F"},"excerpt":"","headers":[],"git":{},"filePathRelative":"content/php/base/usort\u6392\u5E8F.md"}');export{t as data};

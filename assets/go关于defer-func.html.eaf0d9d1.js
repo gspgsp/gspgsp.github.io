@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-88e8d2da","path":"/content/go/base/go%E5%85%B3%E4%BA%8Edefer-func.html","title":"go\u5173\u4E8Edefer-func","lang":"en-US","frontmatter":{"sidebar":false,"title":"go\u5173\u4E8Edefer-func","description":"go\u5173\u4E8Edefer-func"},"excerpt":"","headers":[],"git":{},"filePathRelative":"content/go/base/go\u5173\u4E8Edefer-func.md"}');export{e as data};

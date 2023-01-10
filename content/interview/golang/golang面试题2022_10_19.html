@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.49">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/favicon.ico"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4714629838964279" crossorigin="anonymous"></script><title>golang面试题2022_10_19 | 指尖上的记忆</title><meta name="description" content="golang面试题2022_10_19">
+    <link rel="modulepreload" href="/assets/app.264f0052.js"><link rel="modulepreload" href="/assets/golang面试题2022_10_19.html.9f22d267.js"><link rel="modulepreload" href="/assets/golang面试题2022_10_19.html.c4bfd58f.js"><link rel="prefetch" href="/assets/index.html.e9bfe5bd.js"><link rel="prefetch" href="/assets/index.html.26d098cc.js"><link rel="prefetch" href="/assets/p1.html.e93697f8.js"><link rel="prefetch" href="/assets/p2.html.586b35a7.js"><link rel="prefetch" href="/assets/part1.html.0a408849.js"><link rel="prefetch" href="/assets/part2.html.2fd9a63e.js"><link rel="prefetch" href="/assets/part3.html.b911e2e5.js"><link rel="prefetch" href="/assets/mysql中tinytext等各个类型详解.html.adcbdce2.js"><link rel="prefetch" href="/assets/mysql之explain查看sql执行信息.html.ccc73eac.js"><link rel="prefetch" href="/assets/mysql之like查询优化.html.42700c8b.js"><link rel="prefetch" href="/assets/mysql之optimize表.html.09d59323.js"><link rel="prefetch" href="/assets/mysql之同一个字段做交集查询优化.html.d7cc5f55.js"><link rel="prefetch" href="/assets/mysql之更新第二行字段的值到第一行.html.871df331.js"><link rel="prefetch" href="/assets/mysql解决分组报only_full_group_by的问题.html.28c53346.js"><link rel="prefetch" href="/assets/postgressql的基本使用.html.d1ae3bcb.js"><link rel="prefetch" href="/assets/redis版本信息查看.html.6b448b87.js"><link rel="prefetch" href="/assets/npm或yarn安装的报错解决办法.html.3e29aba0.js"><link rel="prefetch" href="/assets/SpringBoot项目结构分析.html.c72a6183.js"><link rel="prefetch" href="/assets/gin框架下ShouldBindJSON返回错误EOF.html.40672504.js"><link rel="prefetch" href="/assets/gin框架下分页查询同时返回总数.html.0d30b611.js"><link rel="prefetch" href="/assets/gin框架下多表关联操作之Preload.html.65bc01f2.js"><link rel="prefetch" href="/assets/gin框架下实现whereHas功能.html.5ec96145.js"><link rel="prefetch" href="/assets/gin框架下对分页查询进行封装.html.1ca27ae3.js"><link rel="prefetch" href="/assets/gin框架下将微信预支付链接转base64图片流.html.2cfffe72.js"><link rel="prefetch" href="/assets/gin框架下设置mysql数据日志打印级别.html.b42fe9b6.js"><link rel="prefetch" href="/assets/gin框架下通过Scopes实现闭包查询功能.html.7fa101c2.js"><link rel="prefetch" href="/assets/go-module初始化项目到远程.html.31b44024.js"><link rel="prefetch" href="/assets/goalng之init顺序.html.173c01b1.js"><link rel="prefetch" href="/assets/golang中的泛型概念以及使用.html.fa4fa282.js"><link rel="prefetch" href="/assets/golang之atomic使用.html.f643f044.js"><link rel="prefetch" href="/assets/golang之bcript加密和验证.html.7049f02a.js"><link rel="prefetch" href="/assets/golang之close()生效时间点.html.0d44e92d.js"><link rel="prefetch" href="/assets/golang之goroutine的退出场景.html.235e6a1b.js"><link rel="prefetch" href="/assets/golang之switch用法.html.c3084811.js"><link rel="prefetch" href="/assets/golang之单元测试通过viper读取配置报错的问题.html.2e6c7196.js"><link rel="prefetch" href="/assets/golang之数据类型.html.bd1ca6f8.js"><link rel="prefetch" href="/assets/golang之数据类型对应的零值.html.1d4d55a6.js"><link rel="prefetch" href="/assets/golang之设计模式.html.78c92158.js"><link rel="prefetch" href="/assets/golang之运行环境的环境变量配置.html.333f03a5.js"><link rel="prefetch" href="/assets/golang删除字符串最左或最右的字符.html.4894a947.js"><link rel="prefetch" href="/assets/golang声明一个空的字符串切片.html.dffec5e8.js"><link rel="prefetch" href="/assets/golang字符串切片去重.html.132ff931.js"><link rel="prefetch" href="/assets/golang格式化输出time.html.27638296.js"><link rel="prefetch" href="/assets/golang类型别名与类型定义的区别.html.04de69a1.js"><link rel="prefetch" href="/assets/golang通过反射获取数据类型并且实例化对象.html.4efea53b.js"><link rel="prefetch" href="/assets/gorm之sql调试模式.html.fb46dd2c.js"><link rel="prefetch" href="/assets/gorm可以设置的关联关系tag如下.html.7d8408b1.js"><link rel="prefetch" href="/assets/gorm对多个or条件查询封装.html.91fdf691.js"><link rel="prefetch" href="/assets/gorm对多个字段排序.html.a35bf4a5.js"><link rel="prefetch" href="/assets/gorm数据库操作上.html.6d1b513a.js"><link rel="prefetch" href="/assets/gorm数据库迁移上.html.5f2180b2.js"><link rel="prefetch" href="/assets/gorm数据库迁移下.html.0142eb5a.js"><link rel="prefetch" href="/assets/gorm数据库迁移中.html.795b7e74.js"><link rel="prefetch" href="/assets/go之chan的send与receive.html.38888620.js"><link rel="prefetch" href="/assets/go之rune关键字.html.bfc4cd78.js"><link rel="prefetch" href="/assets/go之sync_Map的使用.html.44a74765.js"><link rel="prefetch" href="/assets/go之空map和nilmap的区别.html.d6ed132b.js"><link rel="prefetch" href="/assets/go关于defer-func.html.eaf0d9d1.js"><link rel="prefetch" href="/assets/go常用锁.html.d326ca29.js"><link rel="prefetch" href="/assets/go更新项目依赖版本.html.0883ba6b.js"><link rel="prefetch" href="/assets/grpc环境搭建.html.b4e93747.js"><link rel="prefetch" href="/assets/git之取消追踪关系.html.31f99561.js"><link rel="prefetch" href="/assets/git分支操作场景.html.bbc780be.js"><link rel="prefetch" href="/assets/git报错之pull_refused.html.5f615909.js"><link rel="prefetch" href="/assets/git报错之push_refused.html.e8dbceed.js"><link rel="prefetch" href="/assets/2022年倒计时.html.ba92f584.js"><link rel="prefetch" href="/assets/ab压力测试.html.59b8585e.js"><link rel="prefetch" href="/assets/CIDR的含义.html.7c50ffa2.js"><link rel="prefetch" href="/assets/http和tcp网络的区别.html.c089a870.js"><link rel="prefetch" href="/assets/Mnesia数据库管理系统.html.8f409824.js"><link rel="prefetch" href="/assets/N-A的含义.html.a9b6c940.js"><link rel="prefetch" href="/assets/微信企业付款到零钱.html.b5e24330.js"><link rel="prefetch" href="/assets/微信开发之获取用户信息.html.fd33d14d.js"><link rel="prefetch" href="/assets/数据库DDL和DML.html.15250d7a.js"><link rel="prefetch" href="/assets/时间单位.html.b144fe06.js"><link rel="prefetch" href="/assets/nginx上传报错问题问题.html.bef80b86.js"><link rel="prefetch" href="/assets/ubuntu下apt-get与dpkg的区别.html.0ebf67cb.js"><link rel="prefetch" href="/assets/ubuntu下GnuTLS问题.html.f3622d59.js"><link rel="prefetch" href="/assets/ubuntu下netstat命令找不到的问题.html.e2beafed.js"><link rel="prefetch" href="/assets/ubuntu下unzip命令解压中文乱码问题.html.4affd93c.js"><link rel="prefetch" href="/assets/ubuntu下vim方向键变ABCD问题.html.44502fd8.js"><link rel="prefetch" href="/assets/ubuntu下查看系统版本.html.43e38138.js"><link rel="prefetch" href="/assets/ubuntu安装软件.html.2f5b5b4f.js"><link rel="prefetch" href="/assets/php-fpm配置不当引发的问题.html.369eac29.js"><link rel="prefetch" href="/assets/php实现斐波拉切.html.9563abf9.js"><link rel="prefetch" href="/assets/sprintf和vsprintf的区别.html.7825b5e5.js"><link rel="prefetch" href="/assets/usort排序.html.03c82575.js"><link rel="prefetch" href="/assets/如何解决代中的删除操作.html.2dca4cd2.js"><link rel="prefetch" href="/assets/如何解决代中的新增操作.html.83838a9d.js"><link rel="prefetch" href="/assets/laravel之excel批量导入导出.html.7c09d832.js"><link rel="prefetch" href="/assets/laravel之forPageAfterId的使用.html.cf8df5c4.js"><link rel="prefetch" href="/assets/laravel之getConnectionName错误.html.93499d3d.js"><link rel="prefetch" href="/assets/laravel之homestead下elasticsearch安装.html.36b11f1a.js"><link rel="prefetch" href="/assets/laravel之homestead配置文件.html.85182b28.js"><link rel="prefetch" href="/assets/laravel之middleware.html.c8428b4c.js"><link rel="prefetch" href="/assets/laravel之postgresSql连接.html.29feca4e.js"><link rel="prefetch" href="/assets/laravel之多条件的or或and的like查询.html.d699216f.js"><link rel="prefetch" href="/assets/laravel之打印sql.html.b077e1bc.js"><link rel="prefetch" href="/assets/laravel之更新指定的包.html.96b4dd0c.js"><link rel="prefetch" href="/assets/laravel模型中的几个小技巧.html.4f75b647.js"><link rel="prefetch" href="/assets/symfony之form表单.html.50a2950f.js"><link rel="prefetch" href="/assets/docker之配置推送自动登录.html.30919cec.js"><link rel="prefetch" href="/assets/k8s各对象之间的关系.html.4c840946.js"><link rel="prefetch" href="/assets/k8s多集群环境配置以及切换.html.1c617874.js"><link rel="prefetch" href="/assets/k8s日志查看.html.b3818cbb.js"><link rel="prefetch" href="/assets/k8s部署golang项目之获取项目依赖问题.html.a9a0f462.js"><link rel="prefetch" href="/assets/k8s集群配置HTTPS访问.html.c04f8f8c.js"><link rel="prefetch" href="/assets/nginx-ingress的使用.html.f41aec08.js"><link rel="prefetch" href="/assets/pod之yaml文件解析.html.f80c7659.js"><link rel="prefetch" href="/assets/base1.html.efb9d77f.js"><link rel="prefetch" href="/assets/base1.html.b9236085.js"><link rel="prefetch" href="/assets/base1.html.9283285a.js"><link rel="prefetch" href="/assets/base1.html.b8509b70.js"><link rel="prefetch" href="/assets/base1.html.b7f4367f.js"><link rel="prefetch" href="/assets/base2.html.6815ad55.js"><link rel="prefetch" href="/assets/base3.html.789f20cc.js"><link rel="prefetch" href="/assets/base4.html.9b930cbb.js"><link rel="prefetch" href="/assets/base1.html.a1c6deac.js"><link rel="prefetch" href="/assets/base1.html.e64442c3.js"><link rel="prefetch" href="/assets/base1.html.1da6c3ef.js"><link rel="prefetch" href="/assets/base1.html.ff71300b.js"><link rel="prefetch" href="/assets/base1.html.22e08a2b.js"><link rel="prefetch" href="/assets/base1.html.70be5b1c.js"><link rel="prefetch" href="/assets/base1.html.662902f3.js"><link rel="prefetch" href="/assets/base1.html.f09fdcd6.js"><link rel="prefetch" href="/assets/base1.html.f1d4e13c.js"><link rel="prefetch" href="/assets/base2.html.60e90ce5.js"><link rel="prefetch" href="/assets/base1.html.a0d7ae8a.js"><link rel="prefetch" href="/assets/base2.html.d568f57d.js"><link rel="prefetch" href="/assets/base1.html.31e8444a.js"><link rel="prefetch" href="/assets/base1.html.4ef18a79.js"><link rel="prefetch" href="/assets/base1.html.7ace8054.js"><link rel="prefetch" href="/assets/404.html.7d858b3d.js"><link rel="prefetch" href="/assets/index.html.3687f434.js"><link rel="prefetch" href="/assets/index.html.550ba101.js"><link rel="prefetch" href="/assets/p1.html.6c5289f3.js"><link rel="prefetch" href="/assets/p2.html.12c0093b.js"><link rel="prefetch" href="/assets/part1.html.a8f3bb46.js"><link rel="prefetch" href="/assets/part2.html.ecc0116b.js"><link rel="prefetch" href="/assets/part3.html.fb68eed9.js"><link rel="prefetch" href="/assets/mysql中tinytext等各个类型详解.html.310d866f.js"><link rel="prefetch" href="/assets/mysql之explain查看sql执行信息.html.fc2969ee.js"><link rel="prefetch" href="/assets/mysql之like查询优化.html.c3a00462.js"><link rel="prefetch" href="/assets/mysql之optimize表.html.4834e4b4.js"><link rel="prefetch" href="/assets/mysql之同一个字段做交集查询优化.html.dd76c932.js"><link rel="prefetch" href="/assets/mysql之更新第二行字段的值到第一行.html.2b402600.js"><link rel="prefetch" href="/assets/mysql解决分组报only_full_group_by的问题.html.cb3b146e.js"><link rel="prefetch" href="/assets/postgressql的基本使用.html.83796a5a.js"><link rel="prefetch" href="/assets/redis版本信息查看.html.39704024.js"><link rel="prefetch" href="/assets/npm或yarn安装的报错解决办法.html.2c932616.js"><link rel="prefetch" href="/assets/SpringBoot项目结构分析.html.64978c8a.js"><link rel="prefetch" href="/assets/gin框架下ShouldBindJSON返回错误EOF.html.df045ef0.js"><link rel="prefetch" href="/assets/gin框架下分页查询同时返回总数.html.e2a9651d.js"><link rel="prefetch" href="/assets/gin框架下多表关联操作之Preload.html.30f64a54.js"><link rel="prefetch" href="/assets/gin框架下实现whereHas功能.html.a611f10c.js"><link rel="prefetch" href="/assets/gin框架下对分页查询进行封装.html.74199fa2.js"><link rel="prefetch" href="/assets/gin框架下将微信预支付链接转base64图片流.html.4bcbb8c7.js"><link rel="prefetch" href="/assets/gin框架下设置mysql数据日志打印级别.html.c0ad44a7.js"><link rel="prefetch" href="/assets/gin框架下通过Scopes实现闭包查询功能.html.542a8644.js"><link rel="prefetch" href="/assets/go-module初始化项目到远程.html.c47627aa.js"><link rel="prefetch" href="/assets/goalng之init顺序.html.2edf1f90.js"><link rel="prefetch" href="/assets/golang中的泛型概念以及使用.html.cd4f963f.js"><link rel="prefetch" href="/assets/golang之atomic使用.html.f48139df.js"><link rel="prefetch" href="/assets/golang之bcript加密和验证.html.e6213a33.js"><link rel="prefetch" href="/assets/golang之close()生效时间点.html.d0b5f9db.js"><link rel="prefetch" href="/assets/golang之goroutine的退出场景.html.9e560800.js"><link rel="prefetch" href="/assets/golang之switch用法.html.606cdf1b.js"><link rel="prefetch" href="/assets/golang之单元测试通过viper读取配置报错的问题.html.6c5c6a2b.js"><link rel="prefetch" href="/assets/golang之数据类型.html.baabb32b.js"><link rel="prefetch" href="/assets/golang之数据类型对应的零值.html.4c840f70.js"><link rel="prefetch" href="/assets/golang之设计模式.html.ed0ac511.js"><link rel="prefetch" href="/assets/golang之运行环境的环境变量配置.html.68aa1775.js"><link rel="prefetch" href="/assets/golang删除字符串最左或最右的字符.html.e31b2382.js"><link rel="prefetch" href="/assets/golang声明一个空的字符串切片.html.7ca20c36.js"><link rel="prefetch" href="/assets/golang字符串切片去重.html.a797bbe9.js"><link rel="prefetch" href="/assets/golang格式化输出time.html.0058d43d.js"><link rel="prefetch" href="/assets/golang类型别名与类型定义的区别.html.e6faea6e.js"><link rel="prefetch" href="/assets/golang通过反射获取数据类型并且实例化对象.html.61e5fdb7.js"><link rel="prefetch" href="/assets/gorm之sql调试模式.html.923a25eb.js"><link rel="prefetch" href="/assets/gorm可以设置的关联关系tag如下.html.24555091.js"><link rel="prefetch" href="/assets/gorm对多个or条件查询封装.html.2a6d6e41.js"><link rel="prefetch" href="/assets/gorm对多个字段排序.html.422f9db9.js"><link rel="prefetch" href="/assets/gorm数据库操作上.html.3fb22086.js"><link rel="prefetch" href="/assets/gorm数据库迁移上.html.af36bf5d.js"><link rel="prefetch" href="/assets/gorm数据库迁移下.html.1f73e438.js"><link rel="prefetch" href="/assets/gorm数据库迁移中.html.71d14dcc.js"><link rel="prefetch" href="/assets/go之chan的send与receive.html.3d09e20e.js"><link rel="prefetch" href="/assets/go之rune关键字.html.33f2bf0d.js"><link rel="prefetch" href="/assets/go之sync_Map的使用.html.15e151b5.js"><link rel="prefetch" href="/assets/go之空map和nilmap的区别.html.39af209f.js"><link rel="prefetch" href="/assets/go关于defer-func.html.57890c48.js"><link rel="prefetch" href="/assets/go常用锁.html.60444ea5.js"><link rel="prefetch" href="/assets/go更新项目依赖版本.html.2f52e341.js"><link rel="prefetch" href="/assets/grpc环境搭建.html.ec54b1aa.js"><link rel="prefetch" href="/assets/git之取消追踪关系.html.1ff2ebec.js"><link rel="prefetch" href="/assets/git分支操作场景.html.68676ee1.js"><link rel="prefetch" href="/assets/git报错之pull_refused.html.0ef82b45.js"><link rel="prefetch" href="/assets/git报错之push_refused.html.2aabe2c8.js"><link rel="prefetch" href="/assets/2022年倒计时.html.9247315f.js"><link rel="prefetch" href="/assets/ab压力测试.html.1a455a82.js"><link rel="prefetch" href="/assets/CIDR的含义.html.cefca742.js"><link rel="prefetch" href="/assets/http和tcp网络的区别.html.9d99af44.js"><link rel="prefetch" href="/assets/Mnesia数据库管理系统.html.1a9654ee.js"><link rel="prefetch" href="/assets/N-A的含义.html.21423fc0.js"><link rel="prefetch" href="/assets/微信企业付款到零钱.html.54989cb8.js"><link rel="prefetch" href="/assets/微信开发之获取用户信息.html.ff4c8efa.js"><link rel="prefetch" href="/assets/数据库DDL和DML.html.a4782c6d.js"><link rel="prefetch" href="/assets/时间单位.html.d0f50257.js"><link rel="prefetch" href="/assets/nginx上传报错问题问题.html.39c1d153.js"><link rel="prefetch" href="/assets/ubuntu下apt-get与dpkg的区别.html.5102087a.js"><link rel="prefetch" href="/assets/ubuntu下GnuTLS问题.html.94a57a7b.js"><link rel="prefetch" href="/assets/ubuntu下netstat命令找不到的问题.html.6db75c2a.js"><link rel="prefetch" href="/assets/ubuntu下unzip命令解压中文乱码问题.html.837d86a7.js"><link rel="prefetch" href="/assets/ubuntu下vim方向键变ABCD问题.html.11281f1a.js"><link rel="prefetch" href="/assets/ubuntu下查看系统版本.html.ccdf40c0.js"><link rel="prefetch" href="/assets/ubuntu安装软件.html.5f4745b6.js"><link rel="prefetch" href="/assets/php-fpm配置不当引发的问题.html.512b05f9.js"><link rel="prefetch" href="/assets/php实现斐波拉切.html.c917c380.js"><link rel="prefetch" href="/assets/sprintf和vsprintf的区别.html.64cbda78.js"><link rel="prefetch" href="/assets/usort排序.html.cf9af069.js"><link rel="prefetch" href="/assets/如何解决代中的删除操作.html.b39b9df1.js"><link rel="prefetch" href="/assets/如何解决代中的新增操作.html.4aa4e016.js"><link rel="prefetch" href="/assets/laravel之excel批量导入导出.html.ff6dccaf.js"><link rel="prefetch" href="/assets/laravel之forPageAfterId的使用.html.363824f6.js"><link rel="prefetch" href="/assets/laravel之getConnectionName错误.html.e2fc798f.js"><link rel="prefetch" href="/assets/laravel之homestead下elasticsearch安装.html.7df01b07.js"><link rel="prefetch" href="/assets/laravel之homestead配置文件.html.f15a3d91.js"><link rel="prefetch" href="/assets/laravel之middleware.html.2cd05f2a.js"><link rel="prefetch" href="/assets/laravel之postgresSql连接.html.f5f4f2ce.js"><link rel="prefetch" href="/assets/laravel之多条件的or或and的like查询.html.a986e3da.js"><link rel="prefetch" href="/assets/laravel之打印sql.html.e0351f24.js"><link rel="prefetch" href="/assets/laravel之更新指定的包.html.d3cdf605.js"><link rel="prefetch" href="/assets/laravel模型中的几个小技巧.html.f3b20590.js"><link rel="prefetch" href="/assets/symfony之form表单.html.0a5ff0ed.js"><link rel="prefetch" href="/assets/docker之配置推送自动登录.html.d8716e66.js"><link rel="prefetch" href="/assets/k8s各对象之间的关系.html.3485026e.js"><link rel="prefetch" href="/assets/k8s多集群环境配置以及切换.html.38beb972.js"><link rel="prefetch" href="/assets/k8s日志查看.html.f2d2dade.js"><link rel="prefetch" href="/assets/k8s部署golang项目之获取项目依赖问题.html.e60680db.js"><link rel="prefetch" href="/assets/k8s集群配置HTTPS访问.html.003456fe.js"><link rel="prefetch" href="/assets/nginx-ingress的使用.html.41c77f95.js"><link rel="prefetch" href="/assets/pod之yaml文件解析.html.687bb3d2.js"><link rel="prefetch" href="/assets/base1.html.c7fa5f95.js"><link rel="prefetch" href="/assets/base1.html.d6b21e4e.js"><link rel="prefetch" href="/assets/base1.html.7e489bb3.js"><link rel="prefetch" href="/assets/base1.html.45d504bf.js"><link rel="prefetch" href="/assets/base1.html.e2084a9f.js"><link rel="prefetch" href="/assets/base2.html.93d25db0.js"><link rel="prefetch" href="/assets/base3.html.9b448659.js"><link rel="prefetch" href="/assets/base4.html.87e3802e.js"><link rel="prefetch" href="/assets/base1.html.fed48a2b.js"><link rel="prefetch" href="/assets/base1.html.006768ba.js"><link rel="prefetch" href="/assets/base1.html.fb45e30c.js"><link rel="prefetch" href="/assets/base1.html.c5308d07.js"><link rel="prefetch" href="/assets/base1.html.cdfcc5e3.js"><link rel="prefetch" href="/assets/base1.html.8bd38100.js"><link rel="prefetch" href="/assets/base1.html.90d9ecdd.js"><link rel="prefetch" href="/assets/base1.html.f1da1826.js"><link rel="prefetch" href="/assets/base1.html.953829b4.js"><link rel="prefetch" href="/assets/base2.html.ae3fc0fd.js"><link rel="prefetch" href="/assets/base1.html.871b58ae.js"><link rel="prefetch" href="/assets/base2.html.d4b3375f.js"><link rel="prefetch" href="/assets/base1.html.85b3e28e.js"><link rel="prefetch" href="/assets/base1.html.e060c6eb.js"><link rel="prefetch" href="/assets/base1.html.7cc31869.js"><link rel="prefetch" href="/assets/404.html.b606aa32.js"><link rel="prefetch" href="/assets/404.daeff376.js"><link rel="prefetch" href="/assets/Layout.2fa637c7.js"><link rel="prefetch" href="/assets/ContentTemplate.884f885b.js"><link rel="prefetch" href="/assets/BackBtn.319261aa.js"><link rel="prefetch" href="/assets/TitleTop.b1ce8360.js"><link rel="prefetch" href="/assets/TitleContent.c4f783a8.js"><link rel="prefetch" href="/assets/CustomerComponent.f53be825.js"><link rel="prefetch" href="/assets/HomePage.ca28c1b9.js"><link rel="prefetch" href="/assets/giscus.8903ce48.js"><link rel="prefetch" href="/assets/SearchBox.a9186e04.js">
+    <link rel="stylesheet" href="/assets/style.11e341c3.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container no-sidebar"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/" class=""><img class="logo" src="/images/logo.png" alt="指尖上的记忆"><span class="site-name can-hide">指尖上的记忆</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="PHP"><span class="title">PHP</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="PHP"><span class="title">PHP</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/php/base/base1.md" class="" aria-label="基础"><!--[--><!--]--> 基础 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/php/laravel/base1.md" class="" aria-label="Laravel框架"><!--[--><!--]--> Laravel框架 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/php/symfony/base1.md" class="" aria-label="Symfony框架"><!--[--><!--]--> Symfony框架 <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="GO"><span class="title">GO</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="GO"><span class="title">GO</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/go/base/base1.md" class="" aria-label="基础"><!--[--><!--]--> 基础 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/go/gin/base1.md" class="" aria-label="Gin框架"><!--[--><!--]--> Gin框架 <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="JAVA"><span class="title">JAVA</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="JAVA"><span class="title">JAVA</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/java/base/base1.md" class="" aria-label="基础"><!--[--><!--]--> 基础 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/java/spring/base1.md" class="" aria-label="Spring框架"><!--[--><!--]--> Spring框架 <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="LINUX"><span class="title">LINUX</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="LINUX"><span class="title">LINUX</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/linux/command/base1.md" class="" aria-label="命令"><!--[--><!--]--> 命令 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/linux/nginx/base1.md" class="" aria-label="Nginx"><!--[--><!--]--> Nginx <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="微服务"><span class="title">微服务</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="微服务"><span class="title">微服务</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/php/base/base1.md" class="" aria-label="Docker"><!--[--><!--]--> Docker <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/service/k8s/base1.md" class="" aria-label="K8s"><!--[--><!--]--> K8s <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="消息队列"><span class="title">消息队列</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="消息队列"><span class="title">消息队列</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/php/base/base1.md" class="" aria-label="RabbitMQ"><!--[--><!--]--> RabbitMQ <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="数据库"><span class="title">数据库</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="数据库"><span class="title">数据库</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/database/mysql/base1.md" class="" aria-label="Mysql"><!--[--><!--]--> Mysql <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/database/postgressql/base1.md" class="" aria-label="PostgreSsql"><!--[--><!--]--> PostgreSsql <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/database/redis/base1.md" class="" aria-label="Redis"><!--[--><!--]--> Redis <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="前端"><span class="title">前端</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="前端"><span class="title">前端</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/php/base/base1.md" class="" aria-label="Html"><!--[--><!--]--> Html <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/php/base/base1.md" class="" aria-label="Css"><!--[--><!--]--> Css <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/front/js/base1.md" class="" aria-label="Js"><!--[--><!--]--> Js <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="其它"><span class="title">其它</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="其它"><span class="title">其它</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/other/git/base1.md" class="" aria-label="Git"><!--[--><!--]--> Git <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/other/spread/base1.md" class="" aria-label="知识扫盲"><!--[--><!--]--> 知识扫盲 <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="面试"><span class="title">面试</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="面试"><span class="title">面试</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/interview/golang/base1.md" class="" aria-label="Golang"><!--[--><!--]--> Golang <!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><div class="search-box" role="search" data-v-5cdeda06><input value="" aria-label="Search" class="" placeholder="搜索" autocomplete="off" spellcheck="false" data-v-5cdeda06><!----></div></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="PHP"><span class="title">PHP</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="PHP"><span class="title">PHP</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/php/base/base1.md" class="" aria-label="基础"><!--[--><!--]--> 基础 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/php/laravel/base1.md" class="" aria-label="Laravel框架"><!--[--><!--]--> Laravel框架 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/php/symfony/base1.md" class="" aria-label="Symfony框架"><!--[--><!--]--> Symfony框架 <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="GO"><span class="title">GO</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="GO"><span class="title">GO</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/go/base/base1.md" class="" aria-label="基础"><!--[--><!--]--> 基础 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/go/gin/base1.md" class="" aria-label="Gin框架"><!--[--><!--]--> Gin框架 <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="JAVA"><span class="title">JAVA</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="JAVA"><span class="title">JAVA</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/java/base/base1.md" class="" aria-label="基础"><!--[--><!--]--> 基础 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/java/spring/base1.md" class="" aria-label="Spring框架"><!--[--><!--]--> Spring框架 <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="LINUX"><span class="title">LINUX</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="LINUX"><span class="title">LINUX</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/linux/command/base1.md" class="" aria-label="命令"><!--[--><!--]--> 命令 <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/linux/nginx/base1.md" class="" aria-label="Nginx"><!--[--><!--]--> Nginx <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="微服务"><span class="title">微服务</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="微服务"><span class="title">微服务</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/php/base/base1.md" class="" aria-label="Docker"><!--[--><!--]--> Docker <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/service/k8s/base1.md" class="" aria-label="K8s"><!--[--><!--]--> K8s <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="消息队列"><span class="title">消息队列</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="消息队列"><span class="title">消息队列</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/php/base/base1.md" class="" aria-label="RabbitMQ"><!--[--><!--]--> RabbitMQ <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="数据库"><span class="title">数据库</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="数据库"><span class="title">数据库</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/database/mysql/base1.md" class="" aria-label="Mysql"><!--[--><!--]--> Mysql <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/database/postgressql/base1.md" class="" aria-label="PostgreSsql"><!--[--><!--]--> PostgreSsql <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/database/redis/base1.md" class="" aria-label="Redis"><!--[--><!--]--> Redis <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="前端"><span class="title">前端</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="前端"><span class="title">前端</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/php/base/base1.md" class="" aria-label="Html"><!--[--><!--]--> Html <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/php/base/base1.md" class="" aria-label="Css"><!--[--><!--]--> Css <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/front/js/base1.md" class="" aria-label="Js"><!--[--><!--]--> Js <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="其它"><span class="title">其它</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="其它"><span class="title">其它</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/other/git/base1.md" class="" aria-label="Git"><!--[--><!--]--> Git <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/title/other/spread/base1.md" class="" aria-label="知识扫盲"><!--[--><!--]--> 知识扫盲 <!--[--><!--]--></a></li><!--]--></ul></div></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="面试"><span class="title">面试</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="面试"><span class="title">面试</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/title/interview/golang/base1.md" class="" aria-label="Golang"><!--[--><!--]--> Golang <!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><!----><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>1.什么是协程泄露(goroutine leak)?
+协程泄露是指，在程序运行过程中，有一些协程由于某些原因，无法正常退出。
+
+2.协程泄露的危害?
+协程的运行是需要占用内存和 CPU 时间的，一旦这种协程越来越多，会导致内存无端被浪费，CPU 时间片被占用，程序会越来越卡。
+
+3.协程泄露的原因?
+goroutine由于channel的读/写端退出而一直阻塞，导致goroutine一直占用资源，而无法退出。
+goroutine由于nil channel而阻塞。
+goroutine进入死循环中，导致资源一直无法释放。
+goroutine同步锁(mutex)操作不当导致
+goroutine waitgroup Add的数量和Done的数量不一致，导致一直Wait
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>以下是几种场景：</p><div class="language-go ext-go line-numbers-mode"><pre class="language-go"><code><span class="token keyword">package</span> test
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;fmt&quot;</span>
+	<span class="token string">&quot;math/rand&quot;</span>
+	<span class="token string">&quot;os&quot;</span>
+	<span class="token string">&quot;runtime&quot;</span>
+	<span class="token string">&quot;testing&quot;</span>
+	<span class="token string">&quot;time&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment">/**
+泄露场景1-以及解决办法
+ */</span>
+<span class="token keyword">func</span> <span class="token function">TestChanLeak</span><span class="token punctuation">(</span>t <span class="token operator">*</span>testing<span class="token punctuation">.</span>T<span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+
+	randomStream <span class="token operator">:=</span> <span class="token keyword">func</span><span class="token punctuation">(</span>done <span class="token keyword">chan</span> <span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">&lt;-</span><span class="token keyword">chan</span> <span class="token builtin">int</span><span class="token punctuation">{</span>
+		rsc <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">chan</span> <span class="token builtin">int</span> <span class="token punctuation">)</span>
+
+		<span class="token keyword">go</span> <span class="token keyword">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">defer</span> fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;当前协程结束...&quot;</span><span class="token punctuation">)</span>
+			<span class="token keyword">defer</span> <span class="token function">close</span><span class="token punctuation">(</span>rsc<span class="token punctuation">)</span>
+
+			<span class="token keyword">for</span>  <span class="token punctuation">{</span>
+				<span class="token keyword">select</span> <span class="token punctuation">{</span>
+				<span class="token keyword">case</span> x<span class="token punctuation">,</span> ok <span class="token operator">:=</span> <span class="token operator">&lt;-</span>done<span class="token punctuation">:</span>
+					<span class="token keyword">if</span> <span class="token operator">!</span>ok <span class="token punctuation">{</span>
+						fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;x is:&quot;</span><span class="token punctuation">,</span> x<span class="token punctuation">)</span> <span class="token comment">// x is: &lt;nil&gt;</span>
+					<span class="token punctuation">}</span>
+
+					<span class="token keyword">return</span>
+				<span class="token keyword">case</span> rsc <span class="token operator">&lt;-</span> rand<span class="token punctuation">.</span><span class="token function">Int</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>send 阻塞
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+		<span class="token keyword">return</span> rsc
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">//channel关闭，也可以通过 contextWithCancel 来结束 goroutine</span>
+	done <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">chan</span> <span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+	<span class="token comment">//调用</span>
+	rst <span class="token operator">:=</span> <span class="token function">randomStream</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;start...&quot;</span><span class="token punctuation">)</span>
+	<span class="token keyword">for</span> i <span class="token operator">:=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span><span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">++</span> <span class="token punctuation">{</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;rand is:&quot;</span><span class="token punctuation">,</span><span class="token operator">&lt;-</span>rst<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+	fmt<span class="token punctuation">.</span><span class="token function">Fprintf</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>Stderr<span class="token punctuation">,</span> <span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span> runtime<span class="token punctuation">.</span><span class="token function">NumGoroutine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+	<span class="token comment">// close的特性</span>
+	<span class="token comment">// After the last value has been received</span>
+	<span class="token comment">// from a closed channel c, any receive from c will succeed without</span>
+	<span class="token comment">// blocking, returning the zero value for the channel element. The form</span>
+	<span class="token comment">//	x, ok := &lt;-c</span>
+	<span class="token comment">// will also set ok to false for a closed channel.</span>
+	<span class="token function">close</span><span class="token punctuation">(</span>done<span class="token punctuation">)</span>
+	<span class="token comment">//模拟一个耗时操作，10秒的延迟，在这期间  rst 还在阻塞</span>
+	time<span class="token punctuation">.</span><span class="token function">Sleep</span><span class="token punctuation">(</span><span class="token number">10</span> <span class="token operator">*</span> time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span>
+
+
+	fmt<span class="token punctuation">.</span><span class="token function">Fprintf</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>Stderr<span class="token punctuation">,</span> <span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span> runtime<span class="token punctuation">.</span><span class="token function">NumGoroutine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">/**
+泄露场景2-以及解决办法(这个解决办法就是主协程退出)
+*/</span>
+<span class="token keyword">func</span> <span class="token function">routineTest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token comment">//进入入死循环</span>
+	<span class="token keyword">for</span> <span class="token punctuation">{</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;开启goroutine&quot;</span><span class="token punctuation">)</span>
+		time<span class="token punctuation">.</span><span class="token function">Sleep</span><span class="token punctuation">(</span><span class="token number">10</span> <span class="token operator">*</span> time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">TestChan</span><span class="token punctuation">(</span>t <span class="token operator">*</span>testing<span class="token punctuation">.</span>T<span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;开始...&quot;</span><span class="token punctuation">)</span>
+
+    <span class="token comment">//通过 runtime.NumGoroutine() 获取当前运行的goroutine的数量</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Fprintf</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>Stderr<span class="token punctuation">,</span> <span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span> runtime<span class="token punctuation">.</span><span class="token function">NumGoroutine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+	<span class="token keyword">go</span> <span class="token function">routineTest</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+	fmt<span class="token punctuation">.</span><span class="token function">Fprintf</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>Stderr<span class="token punctuation">,</span> <span class="token string">&quot;%d\n&quot;</span><span class="token punctuation">,</span> runtime<span class="token punctuation">.</span><span class="token function">NumGoroutine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;结束...&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+泄露场景3-nil channel
+*/</span>
+<span class="token keyword">func</span> <span class="token function">TestNilChan</span><span class="token punctuation">(</span>t <span class="token operator">*</span>testing<span class="token punctuation">.</span>T<span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+	<span class="token keyword">defer</span> <span class="token keyword">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		time<span class="token punctuation">.</span><span class="token function">Sleep</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;the number of goroutines: &quot;</span><span class="token punctuation">,</span> runtime<span class="token punctuation">.</span><span class="token function">NumGoroutine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment">//ch 就是一个 nil channel, 因为只是声明，但是没有初始化这个ch就直接使用了</span>
+	<span class="token keyword">var</span> ch <span class="token keyword">chan</span> <span class="token builtin">int</span>
+	<span class="token keyword">go</span> <span class="token keyword">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token operator">&lt;-</span>ch <span class="token comment">// receive nil channel</span>
+		<span class="token comment">// ch&lt;- // send nil channel</span>
+	<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+
+
+	<span class="token comment">//defer func() {</span>
+	<span class="token comment">//	time.Sleep(time.Second)</span>
+	<span class="token comment">//	fmt.Println(&quot;the number1 of goroutines: &quot;, runtime.NumGoroutine())</span>
+	<span class="token comment">//}()</span>
+	<span class="token comment">//</span>
+	<span class="token comment">//done := make(chan struct{})</span>
+	<span class="token comment">//</span>
+	<span class="token comment">//var ch chan int</span>
+	<span class="token comment">//go func() {</span>
+	<span class="token comment">//	fmt.Println(&quot;the number2 of goroutines: &quot;, runtime.NumGoroutine())</span>
+	<span class="token comment">//	defer close(done)</span>
+	<span class="token comment">//}()</span>
+	<span class="token comment">//</span>
+	<span class="token comment">////fatal error: all goroutines are asleep - deadlock!</span>
+	<span class="token comment">//select {</span>
+	<span class="token comment">//case &lt;-ch:// The receive operation might block a goroutine because of the &#39;nil&#39; channel</span>
+	<span class="token comment">//case &lt;-done:</span>
+	<span class="token comment">//	return</span>
+	<span class="token comment">//}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+泄露场景4-waitGroup
+*/</span>
+<span class="token keyword">func</span> <span class="token function">TestWaitGroup</span><span class="token punctuation">(</span>t <span class="token operator">*</span>testing<span class="token punctuation">.</span>T<span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+	<span class="token keyword">defer</span> <span class="token keyword">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		time<span class="token punctuation">.</span><span class="token function">Sleep</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;the number1 of goroutines: &quot;</span><span class="token punctuation">,</span> runtime<span class="token punctuation">.</span><span class="token function">NumGoroutine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+	<span class="token comment">// 无法退出</span>
+	<span class="token keyword">go</span> <span class="token function">handle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+	time<span class="token punctuation">.</span><span class="token function">Sleep</span><span class="token punctuation">(</span><span class="token number">5</span> <span class="token operator">*</span> time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>4.无缓冲的channel和有缓冲的channel的区别?
+
+之前以为有缓冲与无缓冲的区别是 无缓冲的缓冲为 1 的缓冲式 ，其实不是的，无缓冲 就是缓冲为0，
+
+func TestCacheChannel(t *testing.T)  {
+	c := make(chan int, 0) // 或者 make(chan int)
+	//不带缓冲的channel可以通过Goroutine给当前channel的发送数据，不会阻塞线程，这个是什么原因还在研究，唯一的解释就是 不带缓冲的channel，的send 和 receive 不能是同一个 goroutine，必须要重新起一个goroutine
+    //go func() {
+    //	c &lt;- 1
+    //}()
+
+
+	//c := make(chan int, 1)
+	//c &lt;- 1 //不带缓冲的channel 这里会阻塞，但是带缓冲就不会阻塞
+
+	fmt.Println(&lt;-c)
+}
+
+二者区别就是一个会阻塞另一个不会阻塞(或者  同步与非同步的区别)
+
+
+5.channel 底层数据原理?
+通过var声明或者make函数创建的channel变量是一个存储在栈上的指针，占用8个字节，指向堆上的hchan结构体，该结构体在src/runtime/chan.go中
+
+type hchan struct {
+	qcount   uint           // total data in the queue
+	dataqsiz uint           // size of the circular queue
+	buf      unsafe.Pointer // points to an array of dataqsiz elements
+	elemsize uint16
+	closed   uint32
+	elemtype *_type // element type
+	sendx    uint   // send index
+	recvx    uint   // receive index
+	recvq    waitq  // list of recv waiters
+	sendq    waitq  // list of send waiters
+
+	// lock protects all fields in hchan, as well as several
+	// fields in sudogs blocked on this channel.
+	//
+	// Do not change another G&#39;s status while holding this lock
+	// (in particular, do not ready a G), as this can deadlock
+	// with stack shrinking.
+	lock mutex
+}
+
+//G1
+
+func main(){
+
+    ...
+
+
+
+    for _, task :=  range hellaTasks {
+
+        ch &lt;- task     //sender
+
+    }
+
+
+
+    ...
+
+}
+
+
+
+//G2
+
+func worker(ch  chan Task){
+
+    for {
+
+       //接受任务
+
+       task := &lt;- ch   //recevier
+
+       //假设设立会护理很长时间，那么 G1可能会阻塞
+       process(task)
+
+    }
+
+}
+
+其中G1是发送者，G2是接收，因为ch是长度为3的带缓冲channel，初始的时候hchan结构体的buf为空，sendx和recvx都为0，当G1向ch里发送数据的时候，会首先对buf加锁，然后将要发送的数据copy到buf里，并增加sendx的值，
+最后释放buf的锁。然后G2消费的时候首先对buf加锁，然后将buf里的数据copy到task变量对应的内存里，增加recvx，最后释放锁。整个过程，G1和G2没有共享的内存，底层通过hchan结构体的buf，使用copy内存的方式进行通信，
+最后达到了共享内存的目的，这完全符合CSP的设计理念。
+
+
+CSP 是 Communicating Sequential Process 的简称，中文可以叫做通信顺序进程，是一种并发编程模型。
+Golang，其实只用到了 CSP 的很小一部分，即理论中的 Process/Channel（对应到语言中的 goroutine/channel）
+
+G1和G2的调用涉及到golang的GPM模型
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>6.GPM模型原理?
+了解GPM模型之前，先分析一下线程的三种模型: 用户级线程模型、内核级线程模型和两级线程模型（也称混合型线程模型）
+它们之间最大的差异就在于用户线程与内核调度实体（KSE，Kernel Scheduling Entity）之间的对应关系上。而所谓的内核调度实体 KSE 就是指可以被操作系统内核调度器调度的对象实体。简单来说 KSE 就是内核级线程，
+是操作系统内核的最小调度单元，也就是我们写代码的时候通俗理解上的线程了。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>用户级线程模型:
+用户线程与内核线程 KSE 是一对一（1 : 1）的映射模型，也就是每一个用户线程绑定一个实际的内核线程，而线程的调度则完全交付给操作系统内核去做，应用程序对线程的创建、终止以及同步都基于内核提供的系统调用来完
+成，大部分编程语言的线程库(比如 Java 的 java.lang.Thread、C++11 的 std::thread 等等)都是对操作系统的线程（内核级线程）的一层封装，创建出来的每个线程与一个独立的 KSE 静态绑定，因此其调度完全由操作
+系统内核调度器去做，也就是说，一个进程里创建出来的多个线程每一个都绑定一个 KSE。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><img src="/images/interview/user_thread.png" style="width:100%;"><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>内核级线程模型:
+用户线程与内核线程 KSE 是多对一（N : 1）的映射模型，多个用户线程的一般从属于单个进程并且多线程的调度是由用户自己的线程库来完成，线程的创建、销毁以及多线程之间的协调等操作都是由用户自己的线程库来负责而
+无须借助系统调用来实现。一个进程中所有创建的线程都只和同一个 KSE 在运行时动态绑定，也就是说，操作系统只知道用户进程而对其中的线程是无感知的，内核的所有调度都是基于用户进程。这种实现方式相比内核级线程可
+以做的很轻量级，对系统资源的消耗会小很多，因此可以创建的线程数量与上下文切换所花费的代价也会小得多。但该模型有个原罪：并不能做到真正意义上的并发，假设在某个用户进程上的某个用户线程因为一个阻塞调用（比如
+I/O 阻塞）而被 CPU 给中断（抢占式调度）了，那么该进程内的所有线程都被阻塞（因为单个用户进程内的线程自调度是没有 CPU 时钟中断的，从而没有轮转调度），整个进程被挂起。即便是多 CPU 的机器，也无济于事，因
+为在用户级线程模型下，一个 CPU 关联运行的是整个用户进程，进程内的子线程绑定到 CPU 执行是由用户进程调度的，内部线程对 CPU 是不可见的，此时可以理解为 CPU 的调度单位是用户进程。所以很多的协程库会把自己一
+些阻塞的操作重新封装为完全的非阻塞形式，然后在以前要阻塞的点上，主动让出自己，并通过某种方式通知或唤醒其他待执行的用户线程在该 KSE 上运行，从而避免了内核调度器由于 KSE 阻塞而做上下文切换，这样整个进程
+也不会被阻塞了。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><img src="/images/interview/inner_thread.png" style="width:100%;"><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>两级线程模型:
+用户线程与内核 KSE 是多对多（N : M）的映射模型：首先，区别于用户级线程模型，两级线程模型中的一个进程可以与多个内核线程 KSE 关联，也就是说一个进程内的多个线程可以分别绑定一个自己的 KSE，这点和内核级线
+程模型相似；其次，又区别于内核级线程模型，它的进程里的线程并不与 KSE 唯一绑定，而是可以多个用户线程映射到同一个 KSE，当某个 KSE 因为其绑定的线程的阻塞操作被内核调度出 CPU 时，其关联的进程中其余用户线
+程可以重新与其他 KSE 绑定运行。即用户调度器实现用户线程到 KSE 的『调度』，内核调度器实现 KSE 到 CPU 上的『调度』。Go语言中的并发就是使用的这种实现方式，Go为了实现该模型自己实现了一个运行时调度器来负
+责Go中的&quot;线程&quot;与KSE的动态关联。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><img src="/images/interview/mix_thread.png" style="width:100%;"><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>GPM模型:
+在 Go 语言中，每一个 goroutine 是一个独立的执行单元，相较于每个 OS 线程固定分配 2M 内存的模式，goroutine 的栈采取了动态扩容方式， 初始时仅为2KB，随着任务执行按需增长，最大可达 1GB（64 位机器最大是 1G，
+32 位机器最大是 256M），且完全由 golang 自己的调度器 Go Scheduler 来调度。此外，GC 还会周期性地将不再使用的内存回收，收缩栈空间。 因此，Go 程序可以同时并发成千上万个 goroutine 是得益于它强劲的调度器和
+高效的内存模型。
+
+G: 表示 Goroutine，每个 Goroutine 对应一个 G 结构体，G 存储 Goroutine 的运行堆栈、状态以及任务函数，可重用。G 并非执行体，每个 G 需要绑定到 P 才能被调度执行。
+
+P: Processor，表示逻辑处理器， 对 G 来说，P 相当于 CPU 核，G 只有绑定到 P(在 P 的 local runq 中)才能被调度。对 M 来说，P 提供了相关的执行环境(Context)，如内
+存分配状态(mcache)，任务队列(G)等，P 的数量决定了系统内最大可并行的 G 的数量（前提：物理 CPU 核数 &gt;= P 的数量），P 的数量由用户设置的 GOMAXPROCS 决定，但是不论
+ GOMAXPROCS 设置为多大，P 的数量最大为 256。
+
+M: Machine，OS 线程抽象，代表着真正执行计算的资源，在绑定有效的 P 后，进入 schedule 循环；而 schedule 循环的机制大致是从 Global 队列、P 的 Local 队列以及 wait
+队列中获取 G，切换到 G 的执行栈上并执行 G 的函数，调用 goexit 做清理工作并回到 M，如此反复。M 并不保留 G 状态，这是 G 可以跨 M 调度的基础，M 的数量是不定的，由
+Go Runtime 调整，为了防止创建过多 OS 线程导致系统调度不过来，目前默认最大限制为 10000 个。
+
+每个 P 维护一个 G 的本地队列；
+当一个 G 被创建出来，或者变为可执行状态时，就把他放到 P 的本地可执行队列中，如果满了则放入Global；
+当一个 G 在 M 里执行结束后，P 会从队列中把该 G 取出；如果此时 P 的队列为空，即没有其他 G 可以执行， M 就随机选择另外一个 P，从其可执行的 G 队列中取走一半。
+
+调度算法如下:
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><img src="/images/interview/gpm_schedule.png" style="width:100%;"><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>调度过程:
+当通过 go 关键字创建一个新的 goroutine 的时候，它会优先被放入 P 的本地队列。为了运行 goroutine，M 需要持有（绑定）一个 P，接着 M 会启动一个 OS 线程，循环从 P 的本地
+队列里取出一个 goroutine 并执行。执行调度算法：当 M 执行完了当前 P 的 Local 队列里的所有 G 后，P 也不会就这么在那划水啥都不干，它会先尝试从 Global 队列寻找 G 来执行，
+如果 Global 队列为空，它会随机挑选另外一个 P，从它的队列里中拿走一半的 G 到自己的队列中执行。
+
+参考：
+https://www.minazuki.cn/post/blog_os/blog_os-1btagnqm2aabq/blog_os-1bti5cvfu5of1/ //理论
+https://blog.csdn.net/guoafite/article/details/114833136 //理论
+
+https://www.kuangstudy.com/bbs/1359135859894509570 //理论
+
+https://blog.csdn.net/u010853261/article/details/85887948 //gopark()[用于协程的切换], goready()[主要功能就是唤醒某一个goroutine，该协程转换到runnable的状态，并将其放入P的local queue，等待调度]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>7.什么是rune类型?
+rune 是 int32的别名，主要用具计算不同字符下字符串的真实长度。(参考另一篇文章：go之rune关键字)
+
+8.struct能不能比较?
+回答这个问题之前先看一下golang中哪些数据类型可以比较哪些不可以比较
+可比较：Integer，Floating，String，Boolean，Complex(复数型)，Pointer，Channel，Interface，Array
+不可比较：Slice，Map，Function
+
+func TestCompare(t *testing.T) {
+	//都是可比较成员
+	type S struct {
+		Name    string
+		Age     int
+		Address *int
+	}
+
+	//没有初始化的时候 都是nil
+	//var a S
+	//var b S
+
+	//=== RUN   TestCompare
+	//true
+	//--- PASS: TestCompare (0.00s)
+	//PASS
+	//fmt.Println(a == b)
+
+	// 分别初始化
+	var n = 1
+	var m = 2
+	a := S{
+		Name:    &quot;aa&quot;,
+		Age:     1,
+		Address: &amp;n,
+	}
+	b := S{
+		Name:    &quot;aa&quot;,
+		Age:     1,
+		Address: &amp;m, // 若是&amp;n,就返回true, 如是&amp;m,就返回false,因为 指针指向的地址不一样
+	}
+
+	//=== RUN   TestCompare
+	//true
+	//--- PASS: TestCompare (0.00s)
+	//PASS
+	fmt.Println(a == b)
+
+	//结论：golang中 Slice，Map，Function 这三种数据类型是不可以直接比较的。我们再看看S结构体，该结构体并没有包含不可比较的成员变量，所以该结构体是可以直接比较的。
+
+
+
+	//包含不可比较成员
+	type S2 struct {
+		Name    string
+		Age     int
+		Address *int
+		Data    []int
+	}
+
+	a2 := S2{
+		Name:    &quot;aa&quot;,
+		Age:     1,
+		Address: new(int),
+		Data:    []int{1, 2, 3},
+	}
+	b2 := S2{
+		Name:    &quot;aa&quot;,
+		Age:     1,
+		Address: new(int),
+		Data:    []int{1, 2, 3},
+	}
+
+	//这样 直接编辑器报错，因为 S2包含不可比较类型
+	//fmt.Println(a2 == b2)
+
+	//通过 reflect.DeepEqual  反射中的函数进行比较是可以的
+	//=== RUN   TestCompare
+	//true
+	//--- PASS: TestCompare (0.00s)
+	//PASS
+	fmt.Println(reflect.DeepEqual(a2, b2))
+
+	//拓展：
+	//DeepEqual函数用来判断两个值是否深度一致。具体比较规则如下：
+	//
+	//不同类型的值永远不会深度相等当两个数组的元素对应深度相等时，两个数组深度相等当两个相同结构体的所有字段对应深度相等的时候，两个结构体深度相等当两个函数都为nil时，两个函数深度相等，其他情况不相等（相同函数也不相等）当两个interface的真实值深度相等时，两个interface深度相等map的比较需要同时满足以下几个
+	//
+	//两个map都为nil或者都不为nil，并且长度要相等相同的map对象或者所有key要对应相同map对应的value也要深度相等
+	//指针，满足以下其一即是深度相等
+	//
+	//两个指针满足go的==操作符两个指针指向的值是深度相等的
+	//切片，需要同时满足以下几点才是深度相等
+	//
+	//两个切片都为nil或者都不为nil，并且长度要相等两个切片底层数据指向的第一个位置要相同或者底层的元素要深度相等注意：空的切片跟nil切片是不深度相等的
+	//其他类型的值（numbers, bools, strings, channels）如果满足go的==操作符，则是深度相等的。要注意不是所有的值都深度相等于自己，例如函数，以及嵌套包含这些值的结构体，数组等
+
+
+
+	//两个不同的结构体实例,如果S3 S4成员不同，一定也是不能比较的
+	type S3 struct {
+		Name string
+		Age  int
+		Arr  [2]bool
+		ptr  *int
+	}
+	type S4 struct {
+		Name string
+		Age  int
+		Arr  [2]bool
+		ptr  *int
+	}
+
+	var k = 1
+	var j = 2
+	var a3 = S3{
+		Name: &quot;aa&quot;,
+		Age:  1,
+		Arr:  [2]bool{true, false},
+		ptr:  &amp;k,
+	}
+	var b3 = S4{
+		Name: &quot;aa&quot;,
+		Age:  1,
+		Arr:  [2]bool{true, false},
+		ptr:  &amp;j,//若是&amp;k,就返回true, 如是&amp;j,就返回false,因为 指针指向的地址不一样
+	}
+
+	//由于结构体类型不一样，编辑器报错，不能比较
+	//fmt.Println(a3 == b3)
+
+	//类型强转以后，就可以比较了
+	//=== RUN   TestCompare
+	//false
+	//--- PASS: TestCompare (0.00s)
+	//PASS
+	fmt.Println(a3 == S3(b3))
+}
+
+根据上面的论证可以知道：结构体能不能比较是要分情况的
+
+9.struct可以作为map的key吗?
+func TestMapKey(t *testing.T)  {
+	type S1 struct {
+		Name  string
+		Age   int
+		Arr   [2]bool
+		ptr   *int
+		slice []int
+		map1  map[string]string
+	}
+
+	type S2 struct {
+		Name string
+		Age  int
+		Arr  [2]bool
+		ptr  *int
+	}
+
+	n := make(map[S2]string, 0) // 无报错
+	//=== RUN   TestMapKey
+	//map[]--- PASS: TestMapKey (0.00s)
+	//PASS
+	fmt.Print(n)
+
+	//m := make(map[S1]string, 0)//Invalid map key type: comparison operators == and != must be fully defined for the key type
+	//fmt.Println(m)
+}
+
+根据上面的论证可以知道：struct必须是可比较的，才能作为key，否则编译时报错
+
+10.如何判断map中是否包含某个key?
+
+func TestMapKeyExist(t *testing.T){
+	demo := map[string]string{
+		&quot;age&quot;: &quot;12345&quot;,
+	}
+
+	//判断方法
+	if v, ok := demo[&quot;age&quot;]; ok {
+		fmt.Println(v)
+	}
+}
+
+11.map如何顺序读取?
+解决方案：通过sort中的排序包进行对map中的key进行排序。然后遍历key
+func TestMapOrder(t *testing.T){
+	var m = map[string]int{
+		&quot;9&quot;: 0,
+		&quot;2&quot;: 1,
+		&quot;5&quot;: 2,
+		&quot;1&quot;: 3,
+	}
+	var keys []string
+	for k := range m {
+		keys = append(keys, k)
+	}
+
+	sort.Strings(keys)      //升序
+	for _, k := range keys {
+		fmt.Println(&quot;Key:&quot;, k, &quot;Value:&quot;, m[k])
+	}
+}
+
+=== RUN   TestMapOrder
+Key: 1 Value: 3
+Key: 2 Value: 1
+Key: 5 Value: 2
+Key: 9 Value: 0
+--- PASS: TestMapOrder (0.00s)
+PASS
+
+12.关于switch语句，下面说法正确的是？
+   A. 单个case中，可以出现多个结果的选项；
+   B. 需要使用break来明确退出一个case；
+   C. 只有在case中明确添加fallthrought关键字，才会继续执行紧跟的下一个case；
+   D. 条件表达式必须为常量或者整数。
+
+   AC
+
+   分析：
+   支持多条件匹配，使用逗号分隔，例如：case val1,val2,val3
+   不同的case之间不使用break分隔，默认自带break，只会执行一个case;
+   如果想要执行多个case，需要使用fallthrought关键字，且不会判断下一个case的表达式是否 为true;也可以使用break终止。
+   switch语句还可以被用于type-switch来判断某个interface变量中实际存储的变量类型。如：switch i := x.(type){}
+
+13.下面的代码会打印什么?
+func TestSwitch(t *testing.T) {
+	switch alwaysFalse()
+	{
+	case true:
+		fmt.Println(true)
+	case false:
+		fmt.Println(false)
+	}
+
+	// 代码中，switch后面没有跟{，而是另起了一行，在这种情况下，alwaysFalse后自动添加了分号&quot;；&quot;，上述代码等价于：
+	//switch alwaysFalse(); true {
+	//case true: fmt.Println(&quot;true&quot;)
+	//case false: fmt.Println(&quot;false&quot;)
+	//}
+	// 所以会返回 true，如果 { 没有换行 就返回 false
+}
+
+14.下面的代码会打印什么?
+func print()  {
+	//这里相当于吧 GPM 中的P 设置为1,所以
+	// for 循环的时候 会先执行main 里的 for，在执行 go func，就是先主协程再子协程，最后全部输出10
+	//这实际是一个 协程引用循环变量的问题
+	// 解决办法是，再声明一个变量 i2 := i，将 i2传给 func；或者 给func 传递参数，将 i 传递
+	runtime.GOMAXPROCS(1)
+
+	wg := sync.WaitGroup{}
+	wg.Add(20)
+
+	for i := 0; i &lt; 10; i++ {
+		go func() {
+			fmt.Println(i)
+			wg.Done()
+		}()
+	}
+
+	for j := 0; j &lt; 10; j++ {
+		go func() {
+			fmt.Println(j)
+			wg.Done()
+		}()
+	}
+
+	wg.Wait()
+}
+func TestWt(t *testing.T)  {
+	print()
+}
+
+=== RUN   TestWt
+2
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+--- PASS: TestWt (0.00s)
+PASS
+
+
+15.下面的代码会打印什么?
+func TestDefer(t *testing.T){
+
+	//这个简单，defer 肯定最后执行,所以是31
+	if true {
+		defer fmt.Println(&quot;1&quot;)
+	}else {
+		defer fmt.Println(&quot;2&quot;)
+	}
+
+	fmt.Println(&quot;3&quot;)
+}
+
+=== RUN   TestDefer
+3
+1
+--- PASS: TestDefer (0.00s)
+PASS
+
+16.golang中大多数数据类型都可以转化为有效的JSON文本，下面几种类型除外（）
+
+A 指针
+
+B channel
+
+C complex
+
+D 函数
+
+BCD
+
+分析：
+golang 中的类型比如：channel（通道）、complex（复数类型）、func（函数）均不能进行 JSON 格式化。
+有疑问的地方可能是在A选项指针。
+其实 Pointer（指针）也是能被 JSON 格式化的，因为指针会被系统隐式转换为指针所指向的具体对象值，具体的对象值是可以被JSON格式化的。
+
+
+17.下面的代码会打印什么?
+func printEx(x int) (func(), func()) {
+	return func() {
+		println(x)
+		x += 10
+		},
+		func() {
+			println(x)
+		}
+}
+
+func TestCodeExec(t *testing.T)  {
+	a, b := printEx(1)
+	a()
+	b()
+}
+
+//结果如下
+//=== RUN   TestCodeExec
+//1
+//11
+//--- PASS: TestCodeExec (0.00s)
+//PASS
+
+
+18.下面的代码会打印什么?
+func TestCodeExec(t *testing.T)  {
+	defer func() {
+		if err := recover(); err != nil {
+			fmt.Println(&quot;++++&quot;)
+			f := err.(func() string) // err 是一个func类型，打印出一个 0x894040 说明 func是引用类型
+			fmt.Println(err,&quot;--&quot;, f(),&quot;--&quot;, reflect.TypeOf(err).Kind().String())
+		}else {
+			fmt.Println(&quot;fatal&quot;)
+		}
+	}()
+
+	//这个defer 会比上面的先执行
+	defer func() {
+		panic(func() string {
+			return &quot;defer panic&quot;
+		})
+	}()
+
+	//这个defer 会比上面的先执行
+	defer func() {
+		panic(func() string {
+			return &quot;defer panic2&quot;
+		})
+	}()
+
+	//最先执行
+	panic(&quot;panic&quot;)
+
+
+	//=== RUN   TestCodeExec
+	//++++
+	//0x894040 -- defer panic -- func
+	//--- PASS: TestCodeExec (0.00s)
+	//PASS
+
+	结论：
+	如果过有多个panic,那么最终 recover 会拦截最后的那个panic的错误
+}
+
+19.golang中的引用类型包括（）
+A.数组
+
+B.map
+
+C.channel
+
+D.interface
+
+BCD
+
+解析：go中引用类型有:指针、slice切片、管道channel、接口interface、map、函数等
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--[--><!--]--></div><footer class="page-meta"><!----><!----><!----></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/assets/app.264f0052.js" defer></script>
+  </body>
+</html>
