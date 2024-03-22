@@ -1,0 +1,2 @@
+import{_ as t,o as s,c as n,d as e}from"./app.b04686bd.js";const _={},a=e("p",null,"vue3\u5728\u7EBF\u8FD0\u884C\u5E73\u53F0:",-1),l=e("div",{class:"language-text ext-text line-numbers-mode"},[e("pre",{class:"language-text"},[e("code",null,`https://play.vuejs.org/
+`)]),e("div",{class:"line-numbers","aria-hidden":"true"},[e("div",{class:"line-number"})])],-1),c=[a,l];function o(r,u){return s(),n("div",null,c)}var i=t(_,[["render",o],["__file","vue3\u5728\u7EBF\u8FD0\u884C\u5E73\u53F0.html.vue"]]);export{i as default};

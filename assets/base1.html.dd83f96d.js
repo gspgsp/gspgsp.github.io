@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-004a4f54","path":"/title/php/symfony/base1.html","title":"","lang":"en-US","frontmatter":{"sidebar":false,"prev":false,"next":{"text":"\u4E0B\u4E00\u9875","link":"./base2.md"},"lastUpdated":true},"excerpt":"","headers":[],"git":{},"filePathRelative":"title/php/symfony/base1.md"}');export{e as data};

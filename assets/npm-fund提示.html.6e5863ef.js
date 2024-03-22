@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2a086880","path":"/content/other/spread/npm-fund%E6%8F%90%E7%A4%BA.html","title":"npm fund \u63D0\u793A","lang":"en-US","frontmatter":{"sidebar":false,"title":"npm fund \u63D0\u793A","description":"npm fund \u63D0\u793A"},"excerpt":"","headers":[],"git":{},"filePathRelative":"content/other/spread/npm-fund\u63D0\u793A.md"}');export{e as data};

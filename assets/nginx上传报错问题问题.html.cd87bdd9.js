@@ -1,0 +1,6 @@
+import{_ as n,o as e,c as i,g as s}from"./app.b04686bd.js";const t={},c=s(`<p>nginx\u4E0A\u4F20\u62A5\u9519\u95EE\u9898\u95EE\u9898\uFF1A</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>nginx \u4E0A\u4F20\u56FE\u7247\u62A5\uFF1A
+open() &quot;/var/lib/nginx/tmp/client_body/0000001950&quot; failed (13: Permission denied), client:......
+
+\u8FD9\u80AF\u5B9A\u662F\u76EE\u5F55\u6743\u9650\u7684\u95EE\u9898\uFF0C\u6392\u67E5\u53D1\u73B0 .../tmp \u7684\u76EE\u5F55\u6743\u9650\u548Cnginx.conf\u91CCuser\u914D\u7F6E\u7684\u76F8\u540C\uFF0C\u4F46\u662F .../nginx \u7684\u76EE\u5F55\u6743\u9650\u548Cnginx.conf\u91CCuser\u914D\u7F6E\u4E0D\u540C,
+\u6240\u4EE5\u901A\u8FC7\u547D\u4EE4: cd /var/lib/nginx &amp;&amp; chown -R jenkins ./ \u4FEE\u6539 .../nginx\u7684user\u4E3Ajenkins\u5373\u53EF
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2),a=[c];function d(l,r){return e(),i("div",null,a)}var _=n(t,[["render",d],["__file","nginx\u4E0A\u4F20\u62A5\u9519\u95EE\u9898\u95EE\u9898.html.vue"]]);export{_ as default};

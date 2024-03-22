@@ -1,0 +1,1 @@
+import{_ as e,o as _,c,d as t}from"./app.b04686bd.js";const o={},s=t("p",null,"wait ....",-1),a=[s];function n(r,l){return _(),c("div",null,a)}var i=e(o,[["render",n],["__file","vue3\u5173\u4E8Echeckbox\u7684\u4F7F\u7528.html.vue"]]);export{i as default};

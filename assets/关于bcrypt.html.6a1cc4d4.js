@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-59ece146","path":"/content/other/spread/%E5%85%B3%E4%BA%8Ebcrypt.html","title":"\u5173\u4E8Ebcrypt","lang":"en-US","frontmatter":{"sidebar":false,"title":"\u5173\u4E8Ebcrypt","description":"\u5173\u4E8Ebcrypt"},"excerpt":"","headers":[],"git":{},"filePathRelative":"content/other/spread/\u5173\u4E8Ebcrypt.md"}');export{t as data};

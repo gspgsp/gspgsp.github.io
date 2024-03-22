@@ -1,0 +1,62 @@
+import{_ as e,o as n,c as i,g as s}from"./app.b04686bd.js";const d={},l=s(`<p>HttP\u4E4BPATCH\u8BF7\u6C42\uFF0C\u8FD9\u4E2A\u5E73\u65F6\u7528\u7684\u4E0D\u662F\u5F88\u591A\uFF0C\u6240\u4EE5\u8FD9\u91CC\u8BB0\u5F55\u4E00\u4E0B</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>1.PUT \u548C PATCH  
+\u6839\u636E\u7EA6\u5B9A( Convention )\uFF0CPUT \u65B9\u6CD5\u7528\u4E8E\u66F4\u65B0\u6570\u636E\uFF0CPATCH \u65B9\u6CD5\u4E5F\u7528\u4E8E\u66F4\u65B0\u6570\u636E\uFF0C\u4E3A\u4EC0\u4E48 PUT \u65B9\u6CD5\u662F\u5E42\u7B49\u7684\u800C PATCH \u65B9\u6CD5\u4E0D\u662F\u5E42\u7B49\u7684\u5462\uFF1F\u6211\u4EEC\u7EE7\u7EED\u7814\u7A76\u6587\u6863\uFF08\u7B2C54\u9875\uFF09
+
+The PUT method requests that the enclosed entity be stored under the supplied Request-URI. If the Request-URI refers to an already existing resource,
+ the enclosed entity SHOULD be considered as a modified version of the one residing on the origin server. If the Request-URI does not point to an existing resource, 
+ and that URI is capable of being defined as a new resource by the requesting user agent, the origin server can create the resource with that URI.
+
+PUT \u65B9\u6CD5\u5C06\u8BF7\u6C42\u6240\u5305\u542B\u7684\u5B9E\u4F53\u5B58\u50A8\u5728\u6240\u63D0\u4F9B\u7684 Request-URI \u4E0B\u3002\u5982\u679C\u8BE5 URI \u6307\u4EE3\u4E00\u4E2A\u5DF2\u7ECF\u5B58\u5728\u7684\u8D44\u6E90\uFF0C\u90A3\u4E48\u8BF7\u6C42\u4E2D\u7684\u5B9E\u4F53\u5E94\u8BE5\u88AB\u89C6\u4E3A\u4FDD\u5B58\u5728\u539F\u670D\u52A1\u5668\u4E0A\u7684\u5B9E\u4F53\u7684\u4FEE\u6539\u7248\u672C\u3002\u5982\u679C Request-URI \u6CA1\u6709\u6307\u5411\u4E00\u4E2A\u73B0\u6709\u8D44\u6E90\uFF0C
+\u5E76\u4E14\u8BE5 URI \u53EF\u4EE5\u88AB\u53D1\u9001\u8BF7\u6C42\u7684\u7528\u6237\u4EE3\u7406\u5B9A\u4E49\u4E3A\u65B0\u8D44\u6E90\uFF0C\u5219\u539F\u670D\u52A1\u5668\u53EF\u4EE5\u4F7F\u7528\u8BE5 URI \u6765\u521B\u5EFA\u8D44\u6E90\u3002
+
+
+The PATCH method requests that a set of changes described in the request entity be applied to the resource identified by the Request-URI. The set of changes is represented 
+in a format called a \u201Cpatch document\u201D identified by a media type. If the Request-URI does not point to an existing resource, the server MAY create a new resource, depending
+ on the patch document type (whether it can logically modify a null resource) and permissions, etc.
+
+PATCH \u65B9\u6CD5\u8BF7\u6C42\u5C06\u4E00\u7EC4\u63CF\u8FF0\u5728\u8BF7\u6C42\u5B9E\u4F53\u91CC\u7684\u66F4\u6539\u5E94\u7528\u5230 Request-URI \u6807\u5FD7\u7684\u8D44\u6E90\u3002\u8FD9\u7EC4\u66F4\u6539\u4EE5\u79F0\u4E3A \u201C\u8865\u4E01\u6587\u6863\u201D \u7684\u683C\u5F0F\uFF08\u8BE5\u683C\u5F0F\u7531\u5A92\u4F53\u7C7B\u578B\u6807\u5FD7\uFF09\u8868\u793A\uFF0C\u5982\u679C Request-URI \u672A\u6307\u5411\u73B0\u6709\u8D44\u6E90\uFF0C\u670D\u52A1\u5668\u53EF\u80FD\u6839\u636E
+\u8865\u4E01\u6587\u6863\u7684\u7C7B\u578B\uFF08\u662F\u5426\u53EF\u4EE5\u5728\u903B\u8F91\u4E0A\u4FEE\u6539\u7A7A\u8D44\u6E90\uFF09\u548C\u6743\u9650\u7B49\u6765\u521B\u5EFA\u4E00\u4E2A\u65B0\u8D44\u6E90\u3002
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u5E42\u7B49\u6027\uFF1A\u7528\u6237\u5BF9\u4E8E\u540C\u4E00\u64CD\u4F5C\u53D1\u8D77\u7684\u4E00\u6B21\u8BF7\u6C42\u6216\u8005\u591A\u6B21\u8BF7\u6C42\u7684\u7ED3\u679C\u662F\u4E00\u81F4\u7684\uFF0C\u4E0D\u4F1A\u56E0\u4E3A\u591A\u6B21\u70B9\u51FB\u800C\u4EA7\u751F\u4E86\u526F\u4F5C\u7528\u3002<br> \u9664\u4E86 POST\u548C PATCH \uFF0C\u5176\u5B83\u7684\u8BF7\u6C42\u65B9\u6CD5(GET PUT DELETE TRACE OPTIONS \u7B49) \u90FD\u662F\u5E42\u7B49\u7684.</p><p>\u5404\u4E2A\u65B9\u6CD5\u7684\u8BE6\u7EC6\u8BF4\u660E:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>GET
+\u7279\u70B9\uFF1A\u5B89\u5168\u3001\u5E42\u7B49\u3002
+\u8BF4\u660E\uFF1A\u4ECE\u670D\u52A1\u5668\u7AEF\u83B7\u53D6\u6570\u636E\uFF0C\u8BF7\u6C42body\u5728\u5730\u5740\u680F\u4E0A\u3002
+\u4F5C\u7528\uFF1A\u83B7\u53D6\u8D44\u6E90\u3002
+
+HEAD
+\u7279\u70B9\uFF1A\u5B89\u5168\u3001\u5E42\u7B49\u3002
+\u8BF4\u660E\uFF1A\u4E0Eget\u65B9\u6CD5\u7C7B\u4F3C\uFF0C\u4F46\u4E0D\u8FD4\u56DEmessage body\u5185\u5BB9\uFF0C\u4EC5\u4EC5\u662F\u83B7\u5F97\u83B7\u53D6\u8D44\u6E90\u7684\u90E8\u5206\u4FE1\u606F\uFF08content-type\u3001content-length\uFF09\u3002
+\u4F5C\u7528\uFF1Arestful\u6846\u67B6\u4E2D\u8F83\u5C11\u4F7F\u7528\u3002
+
+POST
+\u7279\u70B9\uFF1A\u975E\u5B89\u5168\u3001\u975E\u5E42\u7B49\u3002
+\u8BF4\u660E\uFF1A\u5411\u670D\u52A1\u5668\u7AEF\u63D0\u4EA4\u6570\u636E\uFF0C\u8BF7\u6C42\u6570\u636E\u5728\u62A5\u6587body\u91CC\uFF1B
+\u53D1\u9001\u4E00\u4E2A\u4FEE\u6539\u6570\u636E\u7684\u8BF7\u6C42\uFF0C\u9700\u6C42\u6570\u636E\u8981\u91CD\u65B0\u65B0\u521B\u5EFA\u3002
+\u4F5C\u7528\uFF1A\u7528\u4E8E\u521B\u5EFA\u5B50\u8D44\u6E90\u3002\u521B\u5EFA\u3001\u66F4\u65B0\u3001\u5220\u9664\u3001\u67E5\u8BE2\u8D44\u6E90\u5747\u53EF\u4F7F\u7528\u3002
+
+PUT
+\u7279\u70B9\uFF1A\u975E\u5B89\u5168\u3001\u5E42\u7B49\u3002
+\u8BF4\u660E\uFF1A\u5411\u670D\u52A1\u5668\u7AEF\u63D0\u4EA4\u6570\u636E\uFF0C\u8BF7\u6C42\u6570\u636E\u5728\u62A5\u6587body\u91CC\uFF1B
+\u53D1\u9001\u4E00\u4E2A\u4FEE\u6539\u6570\u636E\u7684\u8BF7\u6C42\uFF0C\u9700\u6C42\u6570\u636E\u66F4\u65B0\uFF08\u5168\u90E8\u66F4\u65B0\uFF09\u3002
+\u4F5C\u7528\uFF1A\u7528\u4E8E\u521B\u5EFA\u3001\u66F4\u65B0\u8D44\u6E90\u3002
+
+DELETE
+\u7279\u70B9\uFF1A\u975E\u5B89\u5168\u3001\u5E42\u7B49\u3002
+\u8BF4\u660E\uFF1A\u5411\u670D\u52A1\u5668\u7AEF\u63D0\u4EA4\u6570\u636E\uFF0C\u8BF7\u6C42\u6570\u636E\u5728\u62A5\u6587body\u91CC\uFF1B
+\u53D1\u9001\u4E00\u4E2A\u5220\u9664\u6570\u636E\u7684\u8BF7\u6C42\u3002
+\u4F5C\u7528\uFF1A\u5220\u9664\u8D44\u6E90\u3002
+
+OPTIONS
+\u7279\u70B9\uFF1A\u5B89\u5168\u3001\u5E42\u7B49\u3002
+\u4F5C\u7528\uFF1A\u7528\u4E8Eurl\u9A8C\u8BC1\uFF0C\u9A8C\u8BC1\u63A5\u53E3\u670D\u52A1\u662F\u5426\u6B63\u5E38\u3002
+
+TRACE
+\u7279\u70B9\uFF1A\u5B89\u5168\u3001\u5E42\u7B49\u3002
+\u8BF4\u660E\uFF1A\u7EF4\u57FA\u767E\u79D1\u201C\u56DE\u663E\u670D\u52A1\u5668\u6536\u5230\u7684\u8BF7\u6C42\uFF0C\u8FD9\u6837\u5BA2\u6237\u7AEF\u53EF\u4EE5\u770B\u5230\uFF08\u5982\u679C\u6709\uFF09\u54EA\u4E00\u4E9B\u6539\u53D8\u6216\u8005\u6DFB\u52A0\u5DF2\u7ECF\u88AB\u4E2D\u95F4\u670D\u52A1\u5668\u5B9E\u73B0\u3002\u201D
+\u4F5C\u7528\uFF1Arestful\u6846\u67B6\u4E2D\u8F83\u5C11\u4F7F\u7528\u3002
+
+PATCH
+\u7279\u70B9\uFF1A\u975E\u5B89\u5168\u3001\u5E42\u7B49\u3002
+\u8BF4\u660E\uFF1A\u5411\u670D\u52A1\u5668\u7AEF\u63D0\u4EA4\u6570\u636E\uFF0C\u8BF7\u6C42\u6570\u636E\u5728\u62A5\u6587body\u91CC\uFF1B
+\u4E0EPUT\u7C7B\u4F3C\uFF0C\u53D1\u9001\u4E00\u4E2A\u4FEE\u6539\u6570\u636E\u7684\u8BF7\u6C42\uFF0C\u533A\u522B\u5728\u4E8EPATCH\u4EE3\u8868\u90E8\u5206\u66F4\u65B0\uFF1B
+\u540E\u6765\u63D0\u51FA\u7684\u63A5\u53E3\u65B9\u6CD5\uFF0C\u4F7F\u7528\u65F6\u53EF\u80FD\u53BB\u8981\u9A8C\u8BC1\u5BA2\u6237\u7AEF\u548C\u670D\u52A1\u7AEF\u662F\u5426\u652F\u6301\uFF1B
+\u4F5C\u7528\uFF1A\u7528\u4E8E\u521B\u5EFA\u3001\u66F4\u65B0\u8D44\u6E90\u3002\u5C40\u90E8\u66F4\u65B0\uFF0C\u6BD4\u5982\uFF1Auser\u5BF9\u8C61\uFF0C\u53EA\u66F4\u6539\u4E86name\u5C5E\u6027\uFF0C\u90A3\u4E48\u4ED6\u7684\u5176\u4ED6\u5C5E\u6027\u503C\u662F\u4E0D\u4F1A\u53D8\u7684\uFF0C\u5982\u679C\u7528post\uFF0C\u90A3\u4E48\u5176\u4ED6\u5C5E\u6027\u503C\u4F1A\u88AB\u8BBE\u7F6E\u4E3Anull\uFF08\u5168\u5C40\u66F4\u65B0\uFF09
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,5),v=[l];function r(a,t){return n(),i("div",null,v)}var u=e(d,[["render",r],["__file","HttP\u4E4BPATCH\u8BF7\u6C42.html.vue"]]);export{u as default};
