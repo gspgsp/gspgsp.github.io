@@ -1,0 +1,1 @@
+import{_ as e,o as _,c as t,d as o}from"./app.dd03cafd.js";const s={},c=o("p",null,"wait...",-1),a=[c];function n(r,l){return _(),t("div",null,a)}var i=e(s,[["render",n],["__file","vue3\u4E0B\u4F7F\u7528videojs\u81EA\u5B9A\u4E49\u64AD\u653E\u5668.html.vue"]]);export{i as default};

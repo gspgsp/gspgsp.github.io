@@ -1,0 +1,3 @@
+import{_ as e,o as t,c as a,g as i}from"./app.dd03cafd.js";const l={},s=i(`<p>vee_validate\u6587\u6863:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>\u73B0\u5728\u7684\u524D\u7AEF\u9879\u76EE\u4F7F\u7528vee-validate\u8FDB\u884C\u8868\u5355\u7684\u9A8C\u8BC1 
+\u53C2\u8003\u6587\u6863: https://vee-validate.logaretm.com/v4/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,2),d=[s];function n(c,r){return t(),a("div",null,d)}var _=e(l,[["render",n],["__file","vee_validate\u6587\u6863.html.vue"]]);export{_ as default};

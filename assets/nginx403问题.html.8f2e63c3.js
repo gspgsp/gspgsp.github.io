@@ -1,0 +1,1 @@
+const n=JSON.parse('{"key":"v-f40e3356","path":"/content/linux/nginx/nginx403%E9%97%AE%E9%A2%98.html","title":"nginx403\u95EE\u9898","lang":"en-US","frontmatter":{"sidebar":false,"title":"nginx403\u95EE\u9898","description":"nginx403\u95EE\u9898"},"excerpt":"","headers":[],"git":{},"filePathRelative":"content/linux/nginx/nginx403\u95EE\u9898.md"}');export{n as data};

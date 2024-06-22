@@ -1,0 +1,3 @@
+import{_ as e,o as t,c as s,g as n}from"./app.dd03cafd.js";const r={},a=n(`<p>phpstorm\u5FEB\u6377\u952E\u5C0F\u6280\u5DE7:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>1.\u9009\u4E2D\u6784\u9020\u51FD\u6570\u7684\u53C2\u6570 \u70B9\u51FB  alt + enter\uFF0C\u53EF\u4EE5\u76F4\u63A5\u521D\u59CB\u5316\u53C2\u6570
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,2),c=[a];function i(_,l){return t(),s("div",null,c)}var d=e(r,[["render",i],["__file","phpstorm\u5FEB\u6377\u952E\u5C0F\u6280\u5DE7.html.vue"]]);export{d as default};

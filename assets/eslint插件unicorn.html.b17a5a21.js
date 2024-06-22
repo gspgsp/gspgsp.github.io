@@ -1,0 +1,3 @@
+import{_ as e,o as n,c as i,g as t}from"./app.dd03cafd.js";const r={},s=t(`<p>eslint\u63D2\u4EF6unicorn:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>eslint-plugin-unicorn \u5B9A\u4E49\u7684\u89C4\u5219:
+https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-logical-operator-over-ternary.md
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,2),c=[s];function l(o,a){return n(),i("div",null,c)}var u=e(r,[["render",l],["__file","eslint\u63D2\u4EF6unicorn.html.vue"]]);export{u as default};

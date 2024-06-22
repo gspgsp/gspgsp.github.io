@@ -1,0 +1,14 @@
+import{_ as n,o as s,c as a,g as e}from"./app.dd03cafd.js";const t={},i=e(`<p>vue3\u4E4BTransition\u7ED9\u5143\u7D20\u6DFB\u52A0\u52A8\u753B\uFF0C\u6709\u65F6\u5019v-show\u7684\u5143\u7D20\u5C55\u793A\u592A\u7A81\u7136\uFF0C\u9700\u8981\u52A0\u4E2A\u8FC7\u5EA6\u6548\u679C\uFF0Cvue\u6709Transition\u53EF\u4EE5\u5B9E\u73B0\u8FD9\u4E00\u70B9</p><div class="language-vue ext-vue line-numbers-mode"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Transition</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>fade<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  //code here...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Transition</span><span class="token punctuation">&gt;</span></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u5BF9\u4E8E\u4E00\u4E2A\u6709\u540D\u5B57\u7684\u8FC7\u6E21\u6548\u679C\uFF0C\u5BF9\u5B83\u8D77\u4F5C\u7528\u7684\u8FC7\u6E21 class \u4F1A\u4EE5\u5176\u540D\u5B57\u800C\u4E0D\u662F v \u4F5C\u4E3A\u524D\u7F00\u3002\u6BD4\u5982\uFF0C\u4E0A\u65B9\u4F8B\u5B50\u4E2D\u88AB\u5E94\u7528\u7684 class \u5C06\u4F1A\u662F fade-enter-active \u800C\u4E0D\u662F v-enter-active\u3002\u8FD9\u4E2A\u201Cfade\u201D\u8FC7\u6E21\u7684 class \u5E94\u8BE5\u662F\u8FD9\u6837\uFF1A</p><div class="language-scss ext-scss line-numbers-mode"><pre class="language-scss"><code>  <span class="token selector">.fade-enter-active,
+  .fade-leave-active </span><span class="token punctuation">{</span>
+      <span class="token property">transition</span><span class="token punctuation">:</span> opacity 0.5s ease<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">.fade-enter-from,
+  .fade-leave-to </span><span class="token punctuation">{</span>
+      <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,4),c=[i];function l(p,o){return s(),a("div",null,c)}var r=n(t,[["render",l],["__file","vue3\u4E4BTransition\u7ED9\u5143\u7D20\u6DFB\u52A0\u52A8\u753B.html.vue"]]);export{r as default};

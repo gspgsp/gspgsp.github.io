@@ -1,0 +1,1 @@
+import{_ as e,o as _,c as t,d as c}from"./app.dd03cafd.js";const n={},o=c("p",null,"wait ...",-1),s=[o];function a(r,l){return _(),t("div",null,s)}var i=e(n,[["render",a],["__file","nuxt3\u5B9E\u73B0\u5012\u8BA1\u65F6.html.vue"]]);export{i as default};

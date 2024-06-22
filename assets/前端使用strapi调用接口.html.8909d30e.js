@@ -1,0 +1,2 @@
+import{_ as t,o as s,c as a,d as e}from"./app.dd03cafd.js";const n={},_=e("p",null,"\u524D\u7AEF\u4F7F\u7528 strapi \u8C03\u7528\u63A5\u53E3:",-1),r=e("div",{class:"language-text ext-text line-numbers-mode"},[e("pre",{class:"language-text"},[e("code",null,`https://strapi.nuxtjs.org/setup
+`)]),e("div",{class:"line-numbers","aria-hidden":"true"},[e("div",{class:"line-number"})])],-1),l=[_,r];function c(i,o){return s(),a("div",null,l)}var u=t(n,[["render",c],["__file","\u524D\u7AEF\u4F7F\u7528strapi\u8C03\u7528\u63A5\u53E3.html.vue"]]);export{u as default};
