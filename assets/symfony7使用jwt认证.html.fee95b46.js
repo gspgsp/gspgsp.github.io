@@ -1,0 +1,3 @@
+import{_ as e,o as t,c as n,g as s}from"./app.6e4bf74b.js";const o={},i=s(`<p>symfony7\u4F7F\u7528jwt\u8BA4\u8BC1:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>https://github.com/lexik/LexikJWTAuthenticationBundle/blob/3.x/Resources/doc/index.rst#important-note-for-apache-users // \u751F\u6210jwt token\u4EE5\u53CArefresh_token
+https://github.com/markitosgv/JWTRefreshTokenBundle // \u5237\u65B0token
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,2),r=[i];function c(a,d){return t(),n("div",null,r)}var _=e(o,[["render",c],["__file","symfony7\u4F7F\u7528jwt\u8BA4\u8BC1.html.vue"]]);export{_ as default};

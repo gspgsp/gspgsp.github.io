@@ -1,0 +1,68 @@
+import{_ as n,o as s,c as a,g as p}from"./app.6e4bf74b.js";const e={},t=p(`<p>__tostring()\u9B54\u672F\u65B9\u6CD5 \u3000\u3000\u5C06\u4E00\u4E2A\u5BF9\u8C61\u5F53\u505A\u4E00\u4E2A\u5B57\u7B26\u4E32\u6765\u4F7F\u7528\u65F6\uFF0C\u4F1A\u81EA\u52A8\u8C03\u7528\u8BE5\u65B9\u6CD5\uFF0C\u5E76\u4E14\u5728\u8BE5\u65B9\u6CD5\u4E2D\uFF0C\u53EF\u4EE5\u8FD4\u56DE\u4E00\u5B9A\u7684\u5B57\u7B26\u4E32\uFF0C\u4EE5\u8868\u660E\u8BE5\u5BF9\u8C61\u8F6C\u6362\u4E3A\u5B57\u7B26\u4E32\u4E4B\u540E\u7684\u7ED3\u679C\u3002\u8BE5\u9B54\u672F\u65B9\u6CD5\u6BD4\u8F83\u5E38\u7528\u3002 \u3000\u3000\u6CE8\u610F\uFF1A\u5982\u679C\u6CA1\u6709\u5B9A\u4E49\u8BE5\u65B9\u6CD5\uFF0C\u5219\u5BF9\u8C61\u65E0\u6CD5\u5F53\u505A\u5B57\u7B26\u4E32\u6765\u4F7F\u7528\uFF01</p><p>\u7C7B\u91CC\u9762\u672A\u5B9A\u4E49__tostring()\u65B9\u6CD5\u7684\u4F8B\u5B50\uFF1A</p><div class="language-php ext-php line-numbers-mode"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token function">ini_set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&#39;display_errors&#39;</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">A</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token variable">$name</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token variable">$age</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token variable">$sex</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token variable">$name</span><span class="token punctuation">,</span> <span class="token variable">$age</span><span class="token punctuation">,</span> <span class="token variable">$sex</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">name</span> <span class="token operator">=</span> <span class="token variable">$name</span><span class="token punctuation">;</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">age</span> <span class="token operator">=</span> <span class="token variable">$age</span><span class="token punctuation">;</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">sex</span> <span class="token operator">=</span> <span class="token variable">$sex</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token variable">$obj1</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">A</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&#39;\u5468\u4F2F\u901A&#39;</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">&#39;\u7537&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$obj1</span><span class="token punctuation">;</span>    <span class="token comment">//echo \u540E\u9762\u4E3A\u5B57\u7B26\u4E32\uFF0C\u800C\u5BF9\u8C61\u4E0D\u662F\u5B57\u7B26\u4E32\uFF0C\u4F1A\u62A5\u9519</span>
+
+<span class="token variable">$v1</span> <span class="token operator">=</span> <span class="token string double-quoted-string">&quot;asd&quot;</span> <span class="token operator">.</span> <span class="token variable">$obj1</span><span class="token punctuation">;</span>  <span class="token comment">//.\u4E3A\u5B57\u7B26\u4E32\u8FDE\u63A5\u7B26\uFF0C\u4F1A\u62A5\u9519</span>
+<span class="token variable">$v2</span> <span class="token operator">=</span> <span class="token string double-quoted-string">&quot;123&quot;</span> <span class="token operator">+</span> <span class="token variable">$obj1</span><span class="token punctuation">;</span>  <span class="token comment">//+\u4E3A\u52A0\u6CD5\u8FD0\u7B97\u7B26\uFF0C\u4F1A\u62A5\u9519</span>
+<span class="token delimiter important">?&gt;</span></span>
+
+\u8FD9\u6837\u4F1A\u62A5\u9519,\u90A3\u4E48\u6211\u4EEC\u52A0\u5165__tostring()\u65B9\u6CD5
+
+<span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token function">ini_set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&#39;display_errors&#39;</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">A</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token variable">$name</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token variable">$age</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token variable">$sex</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token variable">$name</span><span class="token punctuation">,</span> <span class="token variable">$age</span><span class="token punctuation">,</span> <span class="token variable">$sex</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">name</span> <span class="token operator">=</span> <span class="token variable">$name</span><span class="token punctuation">;</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">age</span> <span class="token operator">=</span> <span class="token variable">$age</span><span class="token punctuation">;</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">sex</span> <span class="token operator">=</span> <span class="token variable">$sex</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">function</span> <span class="token function-definition function">__tostring</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$str</span> <span class="token operator">=</span> <span class="token string double-quoted-string">&quot;\u59D3\u540D\uFF1A&quot;</span> <span class="token operator">.</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">name</span><span class="token punctuation">;</span>
+        <span class="token variable">$str</span> <span class="token operator">.=</span> <span class="token string double-quoted-string">&quot;\u5E74\u9F84\uFF1A&quot;</span> <span class="token operator">.</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">age</span><span class="token punctuation">;</span>
+        <span class="token variable">$str</span> <span class="token operator">.=</span> <span class="token string double-quoted-string">&quot;\uFF0C\u6027\u522B\uFF1A&quot;</span> <span class="token operator">.</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">sex</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> <span class="token variable">$str</span><span class="token punctuation">;</span>   <span class="token comment">//\u8FD9\u91CC\u53EF\u4EE5\u8FD4\u56DE\u201C\u4EFB\u4F55\u5B57\u7B26\u4E32\u5185\u5BB9\u201D</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token variable">$obj1</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">A</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&#39;\u5F20\u4E09&#39;</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">&#39;\u7537&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$obj1</span><span class="token punctuation">;</span>    <span class="token comment">//\u8C03\u7528__tostring(),\u4E0D\u4F1A\u62A5\u9519</span>
+
+<span class="token delimiter important">?&gt;</span></span>
+
+\u59D3\u540D\uFF1A\u5F20\u4E09\u5E74\u9F84\uFF1A28\uFF0C\u6027\u522B\uFF1A\u7537
+\u53EF\u4EE5\u770B\u5230__tostring\u81EA\u52A8\u5C06\u5BF9\u8C61\u8F6C\u5B57\u7B26\u4E32\u4E86
+
+__invoke()\u9B54\u672F\u65B9\u6CD5
+\u3000\u3000\u5C06\u5BF9\u8C61\u5F53\u4F5C\u51FD\u6570\u6765\u4F7F\u7528\u65F6\uFF0C\u4F1A\u81EA\u52A8\u8C03\u7528\u8BE5\u65B9\u6CD5\u3002\u901A\u5E38\u4E0D\u63A8\u8350\u8FD9\u4E48\u505A\u3002
+
+<span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">A</span><span class="token punctuation">{</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">__invoke</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;&lt;br /&gt;\u51FD\u6570\u6765\u8C03\u7528\u4F1A\u51FA\u53D1\u8FD9\u91CC\u54E6\uFF01&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token variable">$obj</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">A</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$obj</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">//\u6B64\u65F6\u5C31\u4F1A\u8C03\u7528\u7C7B\u4E2D\u7684\u65B9\u6CD5\uFF1A__invoke()</span>
+
+</span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,3),o=[t];function l(i,c){return s(),a("div",null,o)}var u=n(e,[["render",l],["__file","php\u9B54\u672F\u65B9\u6CD5\u4E4B_invoke\u548C_tostring.html.vue"]]);export{u as default};

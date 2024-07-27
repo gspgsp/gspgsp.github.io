@@ -1,0 +1,58 @@
+import{_ as n,o as s,c as a,g as e}from"./app.6e4bf74b.js";const t={},p=e(`<p>symfony\u6846\u67B6\u4F7F\u7528redis:</p><ul><li>\u5B89\u88C5\u62D3\u5C55</li></ul><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">composer</span> require snc/redis-bundle
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ul><li>client\u9009\u62E9</li></ul><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>\u8FD9\u91CC\u4F7F\u7528predis: composer require predis/predis
+\u9ED8\u8BA4\u4F7F\u7528\u7684\u662Fphpredis(\u9700\u8981 ext-redis \u62D3\u5C55\uFF0C\u76F4\u63A5 use Redis;\u5373\u53EF)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><ul><li>\u4FEE\u6539\u914D\u7F6E config/packages/snc_redis.yaml</li></ul><div class="language-yaml ext-yml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">snc_redis</span><span class="token punctuation">:</span>
+    <span class="token key atrule">clients</span><span class="token punctuation">:</span>
+
+<span class="token comment"># Define your clients here. The example below connects to database 0 of the default Redis server.</span>
+<span class="token comment">#</span>
+<span class="token comment"># See https://github.com/snc/SncRedisBundle/blob/master/docs/README.md for instructions on</span>
+<span class="token comment"># how to configure the bundle.</span>
+<span class="token comment">#</span>
+        <span class="token key atrule">default</span><span class="token punctuation">:</span>
+            <span class="token key atrule">type</span><span class="token punctuation">:</span> predis
+            <span class="token key atrule">alias</span><span class="token punctuation">:</span> default
+            <span class="token key atrule">dsn</span><span class="token punctuation">:</span> <span class="token string">&quot;%env(REDIS_URL)%&quot;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul><li>\u4F7F\u7528<br> \u9996\u5148\u5728services.yaml\u91CC\u6DFB\u52A0\u914D\u7F6E</li></ul><div class="language-yaml ext-yml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">services</span><span class="token punctuation">:</span>
+    <span class="token comment"># default configuration for services in *this* file</span>
+    <span class="token key atrule">_defaults</span><span class="token punctuation">:</span>
+        <span class="token key atrule">autowire</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>      <span class="token comment"># Automatically injects dependencies in your services.</span>
+        <span class="token key atrule">autoconfigure</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># Automatically registers your services as commands, event subscribers, etc.</span>
+    <span class="token comment"># makes classes in src/ available to be used as services</span>
+    <span class="token comment"># this creates a service per class whose id is the fully-qualified class name</span>
+    <span class="token key atrule">App\\</span><span class="token punctuation">:</span>
+        <span class="token key atrule">resource</span><span class="token punctuation">:</span> <span class="token string">&#39;../src/&#39;</span>
+        <span class="token key atrule">exclude</span><span class="token punctuation">:</span>
+            <span class="token punctuation">-</span> <span class="token string">&#39;../src/DependencyInjection/&#39;</span>
+            <span class="token punctuation">-</span> <span class="token string">&#39;../src/Entity/&#39;</span>
+            <span class="token punctuation">-</span> <span class="token string">&#39;../src/Kernel.php&#39;</span>
+
+    <span class="token comment"># add more service definitions when explicit configuration is needed</span>
+    <span class="token comment"># please note that last definitions always *replace* previous ones</span>
+
+	<span class="token comment">#\u4F7F\u7528predis\u7684client\uFF0Cservice\u4E3A snc_redis.default</span>
+    <span class="token key atrule">Predis\\ClientInterface</span><span class="token punctuation">:</span> <span class="token string">&#39;@snc_redis.default&#39;</span> 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul><li>\u63A7\u5236\u5668\u4E2D\u4F7F\u7528:</li></ul><div class="language-php ext-php line-numbers-mode"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">App<span class="token punctuation">\\</span>Controller<span class="token punctuation">\\</span>Admin</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">Symfony<span class="token punctuation">\\</span>Bundle<span class="token punctuation">\\</span>FrameworkBundle<span class="token punctuation">\\</span>Controller<span class="token punctuation">\\</span>AbstractController</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Symfony<span class="token punctuation">\\</span>Component<span class="token punctuation">\\</span>HttpFoundation<span class="token punctuation">\\</span>Request</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Symfony<span class="token punctuation">\\</span>Component<span class="token punctuation">\\</span>HttpFoundation<span class="token punctuation">\\</span>Response</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Symfony<span class="token punctuation">\\</span>Component<span class="token punctuation">\\</span>Routing<span class="token punctuation">\\</span>Annotation<span class="token punctuation">\\</span>Route</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Predis<span class="token punctuation">\\</span>ClientInterface</span><span class="token punctuation">;</span><span class="token comment">//\u4F7F\u7528\u4E0A\u9762\u914D\u7F6E\u7684predis client\uFF0C\u4F1A\u81EA\u52A8\u6CE8\u5165</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">IndexController</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractController</span>
+<span class="token punctuation">{</span>
+    <span class="token attribute"><span class="token delimiter punctuation">#[</span><span class="token attribute-content"><span class="token attribute-class-name class-name">Route</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&#39;/admin&#39;</span><span class="token punctuation">,</span> <span class="token attribute-class-name class-name">name</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">&#39;admin&#39;</span><span class="token punctuation">)</span></span><span class="token delimiter punctuation">]</span></span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">index</span><span class="token punctuation">(</span><span class="token class-name type-declaration">Request</span> <span class="token variable">$request</span><span class="token punctuation">,</span> <span class="token class-name type-declaration">ClientInterface</span> <span class="token variable">$client</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token class-name return-type">Response</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">//\u901A\u8FC7redis \u547D\u4EE4\u8FDB\u884C\u64CD\u4F5C</span>
+        <span class="token variable">$client</span><span class="token operator">-&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$client</span><span class="token operator">-&gt;</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&#39;name&#39;</span><span class="token punctuation">,</span><span class="token string single-quoted-string">&#39;wuhan&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token function">dd</span><span class="token punctuation">(</span><span class="token variable">$client</span><span class="token operator">-&gt;</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&#39;name&#39;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">renderForm</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&#39;admin/index.html.twig&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,11),i=[p];function l(c,o){return s(),a("div",null,i)}var r=n(t,[["render",l],["__file","symfony\u4E4B\u4F7F\u7528redis.html.vue"]]);export{r as default};

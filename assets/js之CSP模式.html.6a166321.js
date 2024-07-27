@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-1243099a","path":"/content/front/js/js%E4%B9%8BCSP%E6%A8%A1%E5%BC%8F.html","title":"js\u4E4BCSP\u6A21\u5F0F","lang":"en-US","frontmatter":{"sidebar":false,"title":"js\u4E4BCSP\u6A21\u5F0F","description":"js\u4E4BCSP\u6A21\u5F0F"},"excerpt":"","headers":[],"git":{},"filePathRelative":"content/front/js/js\u4E4BCSP\u6A21\u5F0F.md"}');export{t as data};

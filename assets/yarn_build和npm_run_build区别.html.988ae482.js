@@ -1,0 +1,2 @@
+import{_ as n,o as l,c as _,d as e}from"./app.6e4bf74b.js";const r={},a=e("p",null,"yarn_build\u548Cnpm_run_build\u533A\u522B:",-1),t=e("div",{class:"language-text ext-text line-numbers-mode"},[e("pre",{class:"language-text"},[e("code",null,`\u6CA1\u533A\u522B\uFF0Cyarn build === yarn run build === npm run build
+`)]),e("div",{class:"line-numbers","aria-hidden":"true"},[e("div",{class:"line-number"})])],-1),u=[a,t];function s(d,i){return l(),_("div",null,u)}var o=n(r,[["render",s],["__file","yarn_build\u548Cnpm_run_build\u533A\u522B.html.vue"]]);export{o as default};

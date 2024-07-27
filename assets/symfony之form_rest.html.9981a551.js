@@ -1,0 +1,11 @@
+import{_ as e,o as r,c as s,g as n}from"./app.6e4bf74b.js";const i={},t=n(`<p>symfony\u4E4Bform_rest\u7684\u4F5C\u7528:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>form_rest(form_view, variables)
+This renders all fields that have not yet been rendered for the given form. It&#39;s a good idea to always have this somewhere inside your form as it&#39;ll render hidden fields for you and make any fields you forgot to render easier to spot (since it&#39;ll render the field for you).
+
+{{ form_rest(form) }}
+
+\u7FFB\u8BD1\u8FC7\u6765\u5C31\u662F:
+\u5B83\u4F1A\u6E32\u67D3\u7ED9\u5B9A\u8868\u5355\u4E2D\u6240\u6709\u5C1A\u672A\u6E32\u67D3\u7684\u5B57\u6BB5\u3002\u5728\u8868\u5355\u4E2D\u7684\u67D0\u4E2A\u5730\u65B9\u8BBE\u7F6E\u8FD9\u4E2A\u5B57\u6BB5\u662F\u4E2A\u597D\u4E3B\u610F\uFF0C\u56E0\u4E3A\u5B83\u4F1A\u4E3A\u4F60\u5448\u73B0\u9690\u85CF\u7684\u5B57\u6BB5\uFF0C\u5E76\u4F7F\u4F60\u5FD8\u8BB0\u5448\u73B0\u7684\u5B57\u6BB5\u66F4\u5BB9\u6613\u88AB\u53D1\u73B0\uFF08\u56E0\u4E3A\u5B83\u4F1A\u4E3A\u4F60\u5448\u73B0\u5B57\u6BB5\uFF09\u3002
+
+\u5C24\u5176\u662F\u4F1A\u6E32\u67D3 csrf_token \u5B57\u6BB5\uFF0C\u5176\u5B9E form_start \u4E5F\u4F1A\u628A\u9690\u85CF\u7684\u5B57\u6BB5\u6E32\u67D3\u51FA\u6765(\u5305\u62EC csrf_token \u8FD9\u4E9B)\uFF0C\u4EE5\u53CA\u628A\u5728 formType \u91CC\u9762\u5B9A\u4E49\u4E86\uFF0C\u4F46\u662F\u6CA1\u6709\u5728\u8868\u5355\u624B\u52A8\u5448\u73B0\u7684\u5B57\u6BB5, \u5305\u62EC\u4E86 form_rest \u7684\u6240\u6709\u529F\u80FD\u3002
+\u4E4B\u524D\u6211\u4EE5\u4E3A form_start \u4E0D\u4F1A\u6E32\u67D3\u6CA1\u6709\u624B\u52A8\u5448\u73B0\u7684\u5B57\u6BB5\uFF0C\u540E\u6765\u5B9E\u9645\u9A8C\u8BC1\u4E86\uFF0C\u4F1A\u5448\u73B0\uFF0C\u6240\u4EE5\u5305\u62EC\u4E86 form_start \u7684\u6240\u6709\u529F\u80FD\u3002
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2),o=[t];function d(a,l){return r(),s("div",null,o)}var c=e(i,[["render",d],["__file","symfony\u4E4Bform_rest.html.vue"]]);export{c as default};

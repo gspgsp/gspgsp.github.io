@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-74dc8614","path":"/content/tool/front/husky%E4%BD%BF%E7%94%A8.html","title":"husky\u4F7F\u7528","lang":"en-US","frontmatter":{"sidebar":false,"title":"husky\u4F7F\u7528","description":"husky\u4F7F\u7528"},"excerpt":"","headers":[],"git":{},"filePathRelative":"content/tool/front/husky\u4F7F\u7528.md"}');export{t as data};

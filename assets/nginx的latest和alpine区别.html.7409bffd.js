@@ -1,0 +1,30 @@
+import{_ as n,o as i,c as e,g as l}from"./app.6e4bf74b.js";const s={},d=l(`<p>nginx \u76F8\u5173\u7684 docker \u955C\u50CF\u6807\u7B7E\uFF1A<code>latest</code> \u548C <code>alpine</code> \u533A\u522B\u548C\u7279\u70B9:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>1. nginx:latest
+
+   - \u8FD9\u662F Nginx \u7684\u5B98\u65B9 Docker \u955C\u50CF\u7684\u9ED8\u8BA4\u7248\u672C\u3002
+   - \u901A\u5E38\u57FA\u4E8E Debian \u64CD\u4F5C\u7CFB\u7EDF\u6784\u5EFA\u3002
+   - \u5305\u542B\u5B8C\u6574\u7684 Nginx \u5B89\u88C5\uFF0C\u4EE5\u53CA\u5E38\u7528\u7684\u5E93\u548C\u5DE5\u5177\u3002
+   - \u955C\u50CF\u5C3A\u5BF8\u8F83\u5927\uFF0C\u901A\u5E38\u5728 100-150MB \u5DE6\u53F3\u3002
+   - \u9002\u5408\u9700\u8981\u5B8C\u6574\u529F\u80FD\u548C\u5DE5\u5177\u96C6\u7684\u573A\u666F\u3002
+  
+2. nginx:alpine
+
+   - \u8FD9\u662F\u57FA\u4E8E Alpine Linux \u6784\u5EFA\u7684 Nginx \u955C\u50CF\u3002
+   - Alpine \u662F\u4E00\u4E2A\u8F7B\u91CF\u7EA7\u7684 Linux \u53D1\u884C\u7248\uFF0C\u4EE5\u5176\u5C0F\u4F53\u79EF\u548C\u5B89\u5168\u6027\u8457\u79F0\u3002
+   - \u955C\u50CF\u5C3A\u5BF8\u663E\u8457\u5C0F\u4E8E \`latest\` \u7248\u672C\uFF0C\u901A\u5E38\u53EA\u6709 20-30MB \u5DE6\u53F3\u3002
+   - \u5305\u542B\u6700\u5C0F\u5316\u7684 Nginx \u5B89\u88C5\uFF0C\u4EC5\u5305\u542B\u8FD0\u884C\u6240\u9700\u7684\u57FA\u672C\u7EC4\u4EF6\u3002
+   - \u9002\u5408\u5BF9\u955C\u50CF\u5927\u5C0F\u654F\u611F\u7684\u573A\u666F\uFF0C\u5982\u5FAE\u670D\u52A1\u67B6\u6784\u6216\u8D44\u6E90\u53D7\u9650\u7684\u73AF\u5883\u3002
+  
+\u4E3B\u8981\u533A\u522B\uFF1A
+  
+1. \u955C\u50CF\u5927\u5C0F\uFF1AAlpine \u7248\u672C\u660E\u663E\u66F4\u5C0F\uFF0C\u6709\u5229\u4E8E\u5FEB\u901F\u90E8\u7F72\u548C\u8282\u7701\u5B58\u50A8\u7A7A\u95F4\u3002
+2. \u57FA\u7840\u7CFB\u7EDF\uFF1A\`latest\` \u57FA\u4E8E Debian\uFF0C\u800C \`alpine\` \u57FA\u4E8E Alpine Linux\u3002
+3. \u5305\u542B\u7684\u5DE5\u5177\uFF1A\`latest\` \u7248\u672C\u5305\u542B\u66F4\u591A\u7684\u5DE5\u5177\u548C\u5E93\uFF0C\u800C \`alpine\` \u7248\u672C\u66F4\u52A0\u7CBE\u7B80\u3002
+4. \u5B89\u5168\u66F4\u65B0\uFF1AAlpine \u7248\u672C\u53EF\u80FD\u5728\u67D0\u4E9B\u60C5\u51B5\u4E0B\u83B7\u5F97\u66F4\u5FEB\u7684\u5B89\u5168\u66F4\u65B0\u3002
+5. \u517C\u5BB9\u6027\uFF1A\u67D0\u4E9B\u4F9D\u8D56\u7279\u5B9A Linux \u53D1\u884C\u7248\u7684\u5E94\u7528\u53EF\u80FD\u5728 Alpine \u7248\u672C\u4E0A\u9047\u5230\u517C\u5BB9\u6027\u95EE\u9898\u3002
+  
+\u9009\u62E9\u5EFA\u8BAE\uFF1A
+- \u5982\u679C\u60A8\u9700\u8981\u6700\u5C0F\u5316\u7684\u955C\u50CF\u4F53\u79EF\u548C\u5FEB\u901F\u90E8\u7F72\uFF0C\u9009\u62E9 \`alpine\` \u7248\u672C\u3002
+- \u5982\u679C\u60A8\u9700\u8981\u66F4\u591A\u7684\u5DE5\u5177\u548C\u5E93\uFF0C\u6216\u8005\u62C5\u5FC3\u517C\u5BB9\u6027\u95EE\u9898\uFF0C\u9009\u62E9 \`latest\` \u7248\u672C\u3002
+  
+\u9700\u8981\u6CE8\u610F\u7684\u662F\uFF0C\u4F7F\u7528 \`latest\` \u6807\u7B7E\u53EF\u80FD\u4F1A\u5BFC\u81F4\u4E0D\u53EF\u9884\u6D4B\u7684\u66F4\u65B0\uFF0C\u56E0\u4E3A\u5B83\u603B\u662F\u6307\u5411\u6700\u65B0\u7248\u672C\u3002\u5728\u751F\u4EA7\u73AF\u5883\u4E2D\uFF0C\u5EFA\u8BAE\u4F7F\u7528\u7279\u5B9A\u7684\u7248\u672C\u6807\u7B7E\u4EE5\u786E\u4FDD\u4E00\u81F4\u6027\u548C\u53EF\u91CD\u590D\u6027\u3002
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2),a=[d];function v(c,r){return i(),e("div",null,a)}var u=n(s,[["render",v],["__file","nginx\u7684latest\u548Calpine\u533A\u522B.html.vue"]]);export{u as default};

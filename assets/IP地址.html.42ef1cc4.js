@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6408cd3b","path":"/content/other/spread/IP%E5%9C%B0%E5%9D%80.html","title":"IP\u5730\u5740","lang":"en-US","frontmatter":{"sidebar":false,"title":"IP\u5730\u5740","description":"IP\u5730\u5740"},"excerpt":"","headers":[],"git":{},"filePathRelative":"content/other/spread/IP\u5730\u5740.md"}');export{e as data};

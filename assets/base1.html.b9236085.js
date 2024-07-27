@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-439227f7","path":"/title/database/postgressql/base1.html","title":"","lang":"en-US","frontmatter":{"sidebar":false,"prev":false,"next":false,"lastUpdated":true},"excerpt":"","headers":[],"git":{},"filePathRelative":"title/database/postgressql/base1.md"}');export{e as data};

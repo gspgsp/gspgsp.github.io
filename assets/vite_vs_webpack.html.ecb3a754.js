@@ -1,0 +1,4 @@
+import{_ as e,o as t,c as s,g as a}from"./app.6e4bf74b.js";const i={},c=a(`<p>vite_vs_webpack:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>\u4E3A\u751A\u8BB0\u5F55\u8FD9\u4E2A\uFF0C\u4E3B\u8981\u662F\u770B\u5230 laravel\u5C06\u6253\u5305\u5DE5\u5177\u4ECE\u4E4B\u524D\u7684 webpack\u6362\u4E3Avite\uFF0C\u5C31\u60F3\u4ED4\u7EC6\u4E86\u89E3\u4E00\u4E0B
+\u539F\u6587: https://www.vuemastery.com/blog/vite-vs-webpack/
+vite\u5B98\u7F51: https://vitejs.dev/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2),n=[c];function v(l,r){return t(),s("div",null,n)}var _=e(i,[["render",v],["__file","vite_vs_webpack.html.vue"]]);export{_ as default};
