@@ -1,0 +1,4 @@
+import{_ as e,o as t,c as s,g as n}from"./app.d66d8774.js";const i={},l=n(`<p>eslint\u89C4\u5219\u5927\u5168:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>https://eslint.org/docs/latest/rules
+\u9488\u5BF9vue\u7684\uFF1Ahttps://eslint.vuejs.org/rules/block-order //eslint-plugin-vue
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>\u5B98\u7F51:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>https://eslint.org/docs/latest/use/getting-started
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,4),a=[l];function r(d,c){return t(),s("div",null,a)}var u=e(i,[["render",r],["__file","eslint\u89C4\u5219\u5927\u5168.html.vue"]]);export{u as default};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-75b9eda0","path":"/content/database/mysql/mysql%E4%B9%8BXProtocol.html","title":"mysql\u4E4BXProtocol","lang":"en-US","frontmatter":{"sidebar":false,"title":"mysql\u4E4BXProtocol","description":"mysql\u4E4BXProtocol"},"excerpt":"","headers":[],"git":{},"filePathRelative":"content/database/mysql/mysql\u4E4BXProtocol.md"}');export{t as data};

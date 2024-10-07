@@ -1,0 +1,26 @@
+import{_ as n,o as s,c as a,g as p}from"./app.d66d8774.js";const t={},e=p(`<p>php\u7684\u533F\u540D\u51FD\u6570\u7684bindTo()\u65B9\u6CD5<br> \u7B80\u5355\u6765\u8BF4\u8FD9\u4E2A\u65B9\u6CD5\u4E3B\u8981\u662F\u4FEE\u6539\u533F\u540D\u51FD\u6570\u7684\u4F5C\u7528\u4E8E\u8303\u56F4\u7684</p><p>\u6BD4\u5982:</p><div class="language-php ext-php line-numbers-mode"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">A</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token variable">$val</span><span class="token punctuation">;</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token variable">$val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">val</span> <span class="token operator">=</span> <span class="token variable">$val</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">function</span> <span class="token function-definition function">getClosure</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//returns closure bound to this object and scope</span>
+        <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">val</span><span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token variable">$ob1</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">A</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$ob2</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">A</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">$cl</span> <span class="token operator">=</span> <span class="token variable">$ob1</span><span class="token operator">-&gt;</span><span class="token function">getClosure</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$cl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">&quot;\\n&quot;</span><span class="token punctuation">;</span>
+<span class="token variable">$cl</span> <span class="token operator">=</span> <span class="token variable">$cl</span><span class="token operator">-&gt;</span><span class="token function">bindTo</span><span class="token punctuation">(</span><span class="token variable">$ob2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$cl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">&quot;\\n&quot;</span><span class="token punctuation">;</span>
+<span class="token delimiter important">?&gt;</span></span>
+
+\u4F1A\u8F93\u51FA:
+1
+2
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,3),o=[e];function c(l,i){return s(),a("div",null,o)}var r=n(t,[["render",c],["__file","php\u4E4BbindTo\u51FD\u6570.html.vue"]]);export{r as default};

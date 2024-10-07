@@ -1,0 +1,3 @@
+import{_ as e,o as l,c as n,g as t}from"./app.d66d8774.js";const s={},a=t(`<p>linux\u4E4Bll\u8BE6\u89E3:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>ll---&gt;ls -l
+\u4E5F\u53EF\u4EE5\u52A0\u4E0A-a: ls -al \u7528\u4E8E\u5217\u51FA\u76EE\u5F55\u4E2D\u7684\u6240\u6709\u6587\u4EF6\u548C\u76EE\u5F55\uFF0C\u5305\u62EC\u9690\u85CF\u6587\u4EF6\u548C\u76EE\u5F55
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,2),i=[a];function c(r,d){return l(),n("div",null,i)}var o=e(s,[["render",c],["__file","linux\u4E4Bll\u8BE6\u89E3.html.vue"]]);export{o as default};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-c92cf8d2","path":"/content/front/html/css%E4%B9%8BwordBreak.html","title":"css\u4E4Bword-break","lang":"en-US","frontmatter":{"sidebar":false,"title":"css\u4E4Bword-break","description":"css\u4E4Bword-break"},"excerpt":"","headers":[],"git":{},"filePathRelative":"content/front/html/css\u4E4BwordBreak.md"}');export{t as data};

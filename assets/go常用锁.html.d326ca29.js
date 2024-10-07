@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-00e45fee","path":"/content/go/base/go%E5%B8%B8%E7%94%A8%E9%94%81.html","title":"go\u5E38\u7528\u9501","lang":"en-US","frontmatter":{"sidebar":false,"title":"go\u5E38\u7528\u9501","description":"go\u5E38\u7528\u9501"},"excerpt":"","headers":[],"git":{},"filePathRelative":"content/go/base/go\u5E38\u7528\u9501.md"}');export{e as data};

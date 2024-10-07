@@ -1,0 +1,4 @@
+import{_ as e,o as t,c as i,g as s}from"./app.d66d8774.js";const l={},n=s(`<p>mysql\u4E4B\u6DFB\u52A0\u5B57\u6BB5\u5230\u6307\u5B9A\u4F4D\u7F6E:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>\u8981\u5C06\u65B0\u7684 title \u5B57\u6BB5\u6DFB\u52A0\u5230 id \u5B57\u6BB5\u4E4B\u540E\uFF0C\u60A8\u53EF\u4EE5\u4F7F\u7528 MySQL \u7684 AFTER \u5B50\u53E5\u3002\u4EE5\u4E0B\u662F\u4FEE\u6539\u540E\u7684 SQL \u8BED\u53E5\uFF1A
+ALTER TABLE books ADD title VARCHAR(255) NOT NULL AFTER id
+\u8FD9\u6761\u8BED\u53E5\u4F1A\u5728 id \u5B57\u6BB5\u4E4B\u540E\u6DFB\u52A0 title \u5B57\u6BB5\u3002
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2),_=[n];function d(a,c){return t(),i("div",null,_)}var o=e(l,[["render",d],["__file","mysql\u4E4B\u6DFB\u52A0\u5B57\u6BB5\u5230\u6307\u5B9A\u4F4D\u7F6E.html.vue"]]);export{o as default};

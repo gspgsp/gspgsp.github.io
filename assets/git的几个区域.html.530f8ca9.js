@@ -1,0 +1,7 @@
+import{_ as i,o as n,c as s,d as t,g as d}from"./app.d66d8774.js";const a={},c=d(`<p>git\u7684\u51E0\u4E2A\u533A\u57DF:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>git\u4E2D\u6587\u4EF6\u6240\u5728\u4F4D\u7F6E\u6709\u56DB\u4E2A\uFF0C\u5728\u5DE5\u4F5C\u533A\u5185\u3001\u5728\u7D22\u5F15\u533A\u5185\u3001\u5728\u672C\u5730\u4ED3\u5E93\u3001\u5728\u8FDC\u7A0B\u4ED3\u5E93\u3002  
+\u5904\u4E8E\u56DB\u4E2A\u4F4D\u7F6E\u4E2D\u6587\u4EF6\u7684\u72B6\u6001\u5206\u522B\u4E3Auntracked\u3001unmodified\u3001modified\u3001staged\u3002  
+\u901A\u8FC7\u4E09\u4E2A\u64CD\u4F5C\u53EF\u4EE5\u628A\u6587\u4EF6\u8FDB\u884C\u72B6\u6001\u8F6C\u79FB\uFF1A  
+git add \u628A\u5DE5\u4F5C\u533A\u6587\u4EF6\u6DFB\u52A0\u5230\u7D22\u5F15\u533A\uFF1B  
+git commit \u628A\u7D22\u5F15\u533A\u6587\u4EF6\u6DFB\u52A0\u5230\u672C\u5730\u4ED3\u5E93\uFF1B  
+git push \u628A\u672C\u5730\u4ED3\u5E93\u6587\u4EF6\u6DFB\u52A0\u5230\u8FDC\u7A0B\u4ED3\u5E93\u3002 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2),l=["src"];function r(e,o){return n(),s("div",null,[c,t("img",{src:e.$withBase("/images/git/git_range.png"),style:{width:"100%"}},null,8,l)])}var _=i(a,[["render",r],["__file","git\u7684\u51E0\u4E2A\u533A\u57DF.html.vue"]]);export{_ as default};

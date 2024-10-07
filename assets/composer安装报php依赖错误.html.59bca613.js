@@ -1,0 +1,5 @@
+import{_ as e,o as s,c as i,g as n}from"./app.d66d8774.js";const t={},r=n(`<p>composer\u5B89\u88C5\u62A5php\u4F9D\u8D56\u9519\u8BEF:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>\u6267\u884C composer install \u62A5:
+Problem 1
+- Root composer.json requires PHP extension ext-redis * but it is missing from your system. Install or enable PHP&#39;s redis extension.
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u89E3\u51B3\uFF0C</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>\u5B89\u88C5redis\u62D3\u5C55: $ sudo apt-get install php8.3-redis
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,4),o=[r];function a(l,d){return s(),i("div",null,o)}var p=e(t,[["render",a],["__file","composer\u5B89\u88C5\u62A5php\u4F9D\u8D56\u9519\u8BEF.html.vue"]]);export{p as default};

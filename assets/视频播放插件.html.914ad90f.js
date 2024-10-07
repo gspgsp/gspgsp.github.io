@@ -1,0 +1,3 @@
+import{_ as e,o as t,c as s,g as a}from"./app.d66d8774.js";const n={},d=a(`<p>\u89C6\u9891\u64AD\u653E\u63D2\u4EF6:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>https://videojs.com/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u89C6\u9891\u683C\u5F0F\u8F6C\u6362\u5DE5\u5177:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>https://handbrake.fr/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,4),i=[d];function c(r,l){return t(),s("div",null,i)}var _=e(n,[["render",c],["__file","\u89C6\u9891\u64AD\u653E\u63D2\u4EF6.html.vue"]]);export{_ as default};

@@ -1,0 +1,2 @@
+import{_ as e,o as s,c as n,g as t}from"./app.d66d8774.js";const a={},c=t(`<p>ubuntu\u4E4B\u67E5\u770B\u6240\u6709\u670D\u52A1:</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code>systemctl list-unit-files -t <span class="token function">service</span> 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,2),i=[c];function _(l,u){return s(),n("div",null,i)}var o=e(a,[["render",_],["__file","ubuntu\u4E4B\u67E5\u770B\u6240\u6709\u670D\u52A1.html.vue"]]);export{o as default};

@@ -1,0 +1,3 @@
+import{_ as e,o as n,c as s,g as t}from"./app.d66d8774.js";const a={},c=t(`<p>ubuntu22\u751F\u6210\u968F\u673A\u5B57\u7B26\u4E32:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>$ openssl rand -base64 32  //\u8FD9\u5C06\u751F\u6210\u4E00\u4E2A\u5305\u542B32\u4E2A\u5B57\u7B26\u7684\u968F\u673A\u5B57\u7B26\u4E32\uFF0C\u5E76\u4EE5Base64\u7F16\u7801\u8F93\u51FA
+envqJ4DI/PRaZMozDQUyvc+sBwYjlgHiiexo2G1OkIQ=
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,2),i=[c];function _(l,r){return n(),s("div",null,i)}var o=e(a,[["render",_],["__file","ubuntu22\u751F\u6210\u968F\u673A\u5B57\u7B26\u4E32.html.vue"]]);export{o as default};

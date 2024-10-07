@@ -1,0 +1,2 @@
+import{_ as t,o as s,c as n,d as e}from"./app.d66d8774.js";const a={},l=e("p",null,"dify\u5DE5\u5177:",-1),c=e("div",{class:"language-text ext-text line-numbers-mode"},[e("pre",{class:"language-text"},[e("code",null,`https://dify.ai/
+`)]),e("div",{class:"line-numbers","aria-hidden":"true"},[e("div",{class:"line-number"})])],-1),i=[l,c];function d(_,o){return s(),n("div",null,i)}var u=t(a,[["render",d],["__file","dify\u5DE5\u5177.html.vue"]]);export{u as default};

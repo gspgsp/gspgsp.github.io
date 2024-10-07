@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-595306a4","path":"/content/front/js/vite_vs_webpack.html","title":"vite_vs_webpack","lang":"en-US","frontmatter":{"sidebar":false,"title":"vite_vs_webpack","description":"vite_vs_webpack"},"excerpt":"","headers":[],"git":{},"filePathRelative":"content/front/js/vite_vs_webpack.md"}');export{e as data};

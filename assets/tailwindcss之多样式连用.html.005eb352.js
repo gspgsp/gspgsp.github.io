@@ -1,0 +1,3 @@
+import{_ as e,o as s,c as t,g as a}from"./app.d66d8774.js";const i={},n=a(`<p>tailwindcss\u4E4B\u591A\u6837\u5F0F\u8FDE\u7528:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>class=&quot;hover:drop-shadow-md hover:z-10&quot;
+\u4E0A\u9762\u7684\u4E24\u4E2A\u6837\u5F0F\u90FD\u662F\u5728 hover \u7684\u65F6\u5019\u624D\u4F1A\u751F\u6548
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,2),c=[n];function d(o,r){return s(),t("div",null,c)}var _=e(i,[["render",d],["__file","tailwindcss\u4E4B\u591A\u6837\u5F0F\u8FDE\u7528.html.vue"]]);export{_ as default};

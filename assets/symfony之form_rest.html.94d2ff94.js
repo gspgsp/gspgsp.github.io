@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-37636a60","path":"/content/php/symfony/symfony%E4%B9%8Bform_rest.html","title":"symfony\u4E4Bform_rest","lang":"en-US","frontmatter":{"sidebar":false,"title":"symfony\u4E4Bform_rest","description":"symfony\u4E4Bform_rest"},"excerpt":"","headers":[],"git":{},"filePathRelative":"content/php/symfony/symfony\u4E4Bform_rest.md"}');export{t as data};

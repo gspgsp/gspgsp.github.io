@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6330e08e","path":"/title/linux/nginx/base1.html","title":"","lang":"en-US","frontmatter":{"sidebar":false,"prev":false,"next":false,"lastUpdated":true},"excerpt":"","headers":[],"git":{},"filePathRelative":"title/linux/nginx/base1.md"}');export{e as data};

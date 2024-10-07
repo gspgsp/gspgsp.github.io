@@ -1,0 +1,1 @@
+import{_ as t,o,c as _,d as s}from"./app.d66d8774.js";const a={name:"title-top",props:["img"],data(){return{top_img:""}},created(){this.top_img=this.img}},r={class:"d-top"},c=["src"];function i(p,n,d,l,e,m){return o(),_("div",r,[s("img",{src:e.top_img,alt:""},null,8,c)])}var f=t(a,[["render",i],["__scopeId","data-v-f10f04e6"],["__file","TitleTop.vue"]]);export{f as default};

@@ -1,0 +1,1 @@
+import{_ as e,o as _,c as t,d as o}from"./app.d66d8774.js";const a={},c=o("p",null,"wait ...",-1),s=[c];function l(n,r){return _(),t("div",null,s)}var i=e(a,[["render",l],["__file","vue3\u81EA\u5B9A\u4E49modal\u7A97\u53E3.html.vue"]]);export{i as default};
