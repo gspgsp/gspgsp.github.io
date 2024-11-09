@@ -1,0 +1,4 @@
+import{_ as e,o as t,c as r,g as n}from"./app.66ae8700.js";const s={},a=n(`<p>\u6267\u884C yarn add nuxt \u53EF\u80FD\u4F1A\u62A5\u5982\u4E0B\u95EE\u9898\uFF1A</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>error An unexpected error occurred: &quot;https://registry.npmmirror.com/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz: read ECONNRESET&quot;.
+\u8FD9\u4E2A\u4E5F\u662Fhttps\u7684\u95EE\u9898\uFF0C\u914D\u7F6E\u4E00\u4E0B\u5C31\u597D\u4E86:
+$ yarn config set &quot;strict-ssl&quot; false -g
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2),c=[a];function o(i,d){return t(),r("div",null,c)}var _=e(s,[["render",o],["__file","yarn\u5B89\u88C5nuxt3\u62A5\u9519\u4E4Bhttps\u95EE\u9898.html.vue"]]);export{_ as default};

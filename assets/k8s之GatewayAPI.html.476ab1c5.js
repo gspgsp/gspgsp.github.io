@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7c7aaed0","path":"/content/service/k8s/k8s%E4%B9%8BGatewayAPI.html","title":"k8s\u4E4BGatewayAPI","lang":"en-US","frontmatter":{"sidebar":false,"title":"k8s\u4E4BGatewayAPI","description":"k8s\u4E4BGatewayAPI"},"excerpt":"","headers":[],"git":{},"filePathRelative":"content/service/k8s/k8s\u4E4BGatewayAPI.md"}');export{e as data};

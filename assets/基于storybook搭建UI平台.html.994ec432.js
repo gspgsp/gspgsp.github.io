@@ -1,0 +1,2 @@
+import{_ as t,o as s,c as o,d as e}from"./app.66ae8700.js";const n={},r=e("p",null,"\u57FA\u4E8Estorybook\u642D\u5EFAUI\u5E73\u53F0:",-1),_=e("div",{class:"language-text ext-text line-numbers-mode"},[e("pre",{class:"language-text"},[e("code",null,`https://www.letswrite.tw/storybook-init/
+`)]),e("div",{class:"line-numbers","aria-hidden":"true"},[e("div",{class:"line-number"})])],-1),l=[r,_];function a(c,i){return s(),o("div",null,l)}var u=t(n,[["render",a],["__file","\u57FA\u4E8Estorybook\u642D\u5EFAUI\u5E73\u53F0.html.vue"]]);export{u as default};

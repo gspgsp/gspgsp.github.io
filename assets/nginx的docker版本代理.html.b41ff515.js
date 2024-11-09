@@ -1,0 +1,5 @@
+import{_ as e,o as n,c as r,g as i}from"./app.66ae8700.js";const c={},d=i(`<p>nginx\u7684docker\u7248\u672C\u4EE3\u7406: \u6700\u8FD1\u5728\u4F7F\u7528docker\u642D\u5EFAphp\u5F00\u53D1\u73AF\u5883\u7684\u65F6\u5019\uFF0C\u4F7F\u7528\u5230\u4E86jwilder/nginx-proxy \u955C\u50CF\uFF0C\u67E5\u4E86\u770B\u4E86\u76F8\u5173\u7684\u6587\u6863\u4E4B\u540E\uFF0C\u53D1\u73B0\u8FD9\u4E2A\u955C\u50CF\u670D\u52A1\u8FD8\u662F\u5F88\u725B\u903C\u7684</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>\u5B98\u7F51: https://hub.docker.com/r/jwilder/nginx-proxy/
+  
+Docker \u7684\u81EA\u52A8\u5316 Nginx \u53CD\u5411\u4EE3\u7406:
+http://jasonwilder.com/blog/2014/03/25/automated-nginx-reverse-proxy-for-docker/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2),o=[d];function t(s,a){return n(),r("div",null,o)}var _=e(c,[["render",t],["__file","nginx\u7684docker\u7248\u672C\u4EE3\u7406.html.vue"]]);export{_ as default};

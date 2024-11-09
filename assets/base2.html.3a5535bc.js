@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-74d9415d","path":"/title/service/docker/base2.html","title":"","lang":"en-US","frontmatter":{"sidebar":false,"prev":{"text":"\u4E0A\u4E00\u9875","link":"./base1.md"},"next":false,"lastUpdated":true},"excerpt":"","headers":[],"git":{},"filePathRelative":"title/service/docker/base2.md"}');export{e as data};

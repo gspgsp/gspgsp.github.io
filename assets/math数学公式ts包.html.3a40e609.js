@@ -1,0 +1,2 @@
+import{_ as t,o as s,c as a,d as e}from"./app.66ae8700.js";const n={},_=e("p",null,"math\u6570\u5B66\u516C\u5F0Fts\u5305:",-1),l=e("div",{class:"language-text ext-text line-numbers-mode"},[e("pre",{class:"language-text"},[e("code",null,`https://katex.org/
+`)]),e("div",{class:"line-numbers","aria-hidden":"true"},[e("div",{class:"line-number"})])],-1),c=[_,l];function o(r,d){return s(),a("div",null,c)}var m=t(n,[["render",o],["__file","math\u6570\u5B66\u516C\u5F0Fts\u5305.html.vue"]]);export{m as default};

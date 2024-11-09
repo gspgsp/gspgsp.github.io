@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-32944962","path":"/title/search/solr/base1.html","title":"","lang":"en-US","frontmatter":{"sidebar":false,"prev":false,"next":false,"lastUpdated":true},"excerpt":"","headers":[],"git":{},"filePathRelative":"title/search/solr/base1.md"}');export{e as data};

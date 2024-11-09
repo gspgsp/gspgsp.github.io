@@ -1,0 +1,3 @@
+import{_ as e,o as t,c as _,g as s}from"./app.66ae8700.js";const n={},i=s(`<p>\u57FA\u4E8ENode\u5B9E\u73B0\u7684\u8DE8\u5E73\u53F0web\u8C03\u8BD5\u4EE3\u7406\u5DE5\u5177:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>whistle\u4EE3\u7406\u5DE5\u5177:
+https://wproxy.org/whistle/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,2),a=[i];function c(d,o){return t(),_("div",null,a)}var l=e(n,[["render",c],["__file","\u57FA\u4E8ENode\u5B9E\u73B0\u7684\u8DE8\u5E73\u53F0web\u8C03\u8BD5\u4EE3\u7406\u5DE5\u5177.html.vue"]]);export{l as default};

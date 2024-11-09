@@ -1,0 +1,3 @@
+import{_ as e,o as t,c as n,g as s}from"./app.66ae8700.js";const i={},o=s(`<p>Symfony\u4E4Bjwt\u7684\u4F7F\u7528:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>gesdinet/jwt-refresh-token-bundle \u548C lexik/jwt-authentication-bundle \u4E00\u8D77\u4F7F\u7528\u5B9E\u73B0 \u751F\u6210token\u548C refresh_token\u64CD\u4F5C
+\u53C2\u8003\u6587\u6863: https://github.com/markitosgv/JWTRefreshTokenBundle
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,2),r=[o];function a(c,d){return t(),n("div",null,r)}var _=e(i,[["render",a],["__file","Symfony\u4E4Bjwt\u7684\u4F7F\u7528.html.vue"]]);export{_ as default};

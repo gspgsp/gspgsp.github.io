@@ -1,0 +1,1 @@
+import{_ as o,o as n,c as t,a,r as c}from"./app.66ae8700.js";const r={};function _(s,l){const e=c("HomePage");return n(),t("div",null,[a(e)])}var d=o(r,[["render",_],["__file","index.html.vue"]]);export{d as default};

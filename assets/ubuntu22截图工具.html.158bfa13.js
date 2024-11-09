@@ -1,0 +1,2 @@
+import{_ as t,o as n,c as s,d as e}from"./app.66ae8700.js";const a={},l=e("p",null,"ubuntu22\u622A\u56FE\u5DE5\u5177:",-1),u=e("div",{class:"language-text ext-text line-numbers-mode"},[e("pre",{class:"language-text"},[e("code",null,`ksnip
+`)]),e("div",{class:"line-numbers","aria-hidden":"true"},[e("div",{class:"line-number"})])],-1),_=[l,u];function c(o,r){return n(),s("div",null,_)}var d=t(a,[["render",c],["__file","ubuntu22\u622A\u56FE\u5DE5\u5177.html.vue"]]);export{d as default};

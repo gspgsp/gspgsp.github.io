@@ -1,0 +1,3 @@
+import{_ as e,o as t,c as s,g as n}from"./app.66ae8700.js";const i={},l=n(`<p>vue\u4EE3\u7801\u683C\u5F0F\u9A8C\u8BC1\u89C4\u5219:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>https://eslint.vuejs.org/user-guide/  // \u5728nuxt\u4E0B\u597D\u50CF\u76F4\u63A5\u4F7F\u7528 @nuxt/eslint \u4E0D\u7528\u5B89\u88C5 eslint-plugin-vue
+https://eslint.vuejs.org/rules/require-explicit-slots
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,2),r=[l];function u(c,_){return t(),s("div",null,r)}var d=e(i,[["render",u],["__file","vue\u4EE3\u7801\u683C\u5F0F\u9A8C\u8BC1\u89C4\u5219.html.vue"]]);export{d as default};

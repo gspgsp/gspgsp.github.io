@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-50c57937","path":"/content/php/laravel/laravel11%E7%9B%B8%E5%85%B3.html","title":"laravel11\u76F8\u5173","lang":"en-US","frontmatter":{"sidebar":false,"title":"laravel11\u76F8\u5173","description":"laravel11\u76F8\u5173"},"excerpt":"","headers":[],"git":{},"filePathRelative":"content/php/laravel/laravel11\u76F8\u5173.md"}');export{e as data};

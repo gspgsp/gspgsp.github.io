@@ -1,0 +1,3 @@
+import{_ as e,o as n,c as t,g as a}from"./app.66ae8700.js";const s={},_=a(`<p>npm\u67E5\u770B\u5DF2\u5B89\u88C5\u5305\u7684\u4F9D\u8D56\u5173\u7CFB:</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>$ npm info @vee-validate/yup dependencies
+{ &#39;type-fest&#39;: &#39;^4.8.3&#39;, yup: &#39;^1.3.2&#39;, &#39;vee-validate&#39;: &#39;4.14.3&#39; }
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,2),i=[_];function c(d,l){return n(),t("div",null,i)}var o=e(s,[["render",c],["__file","npm\u67E5\u770B\u5DF2\u5B89\u88C5\u5305\u7684\u4F9D\u8D56\u5173\u7CFB.html.vue"]]);export{o as default};
