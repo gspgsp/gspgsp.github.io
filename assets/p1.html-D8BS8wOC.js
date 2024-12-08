@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as c}from"./app-CoqXlDb9.js";const r={};function a(o,n){return c(),t("div")}const s=e(r,[["render",a],["__file","p1.html.vue"]]),_=JSON.parse('{"path":"/project/p1.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"project/p1.md"}');export{s as comp,_ as data};

@@ -1,0 +1,1 @@
+import{_ as e,o,c as s,b as c}from"./app-CoqXlDb9.js";const _={name:"title-top",props:["img"],data(){return{top_img:""}},created(){this.top_img=this.img}},a={class:"d-top"},i=["src"];function r(p,n,d,l,t,m){return o(),s("div",a,[c("img",{src:t.top_img,alt:""},null,8,i)])}const u=e(_,[["render",r],["__scopeId","data-v-bd5c5944"],["__file","TitleTop.vue"]]);export{u as default};
