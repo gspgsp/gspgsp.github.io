@@ -1,0 +1,1 @@
+import{_ as o,c as t,a as n,o as a,r}from"./app-C7j_h9cy.js";const c={};function l(s,_){const e=r("Tool");return a(),t("div",null,[n(e)])}const d=o(c,[["render",l],["__file","index.html.vue"]]),m=JSON.parse('{"path":"/tool/","title":"","lang":"en-US","frontmatter":{"sidebar":false},"headers":[],"git":{},"filePathRelative":"tool/index.md"}');export{d as comp,m as data};
