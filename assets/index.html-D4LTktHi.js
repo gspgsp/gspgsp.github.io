@@ -1,0 +1,1 @@
+import{_ as t,c as n,a,o,r}from"./app-C1QI54RW.js";const c={};function s(i,l){const e=r("HanZi");return o(),n("div",null,[a(e)])}const d=t(c,[["render",s],["__file","index.html.vue"]]),m=JSON.parse('{"path":"/tool/hanzi/","title":"","lang":"en-US","frontmatter":{"sidebar":false},"headers":[],"git":{},"filePathRelative":"tool/hanzi/index.md"}');export{d as comp,m as data};
