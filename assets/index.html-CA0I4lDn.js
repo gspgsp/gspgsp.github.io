@@ -1,0 +1,1 @@
+import{_ as t,c as o,a,o as n,r}from"./app-CgWRetu1.js";const m={};function c(i,s){const e=r("TimeFormat");return n(),o("div",null,[a(e)])}const _=t(m,[["render",c],["__file","index.html.vue"]]),d=JSON.parse('{"path":"/tool/timeformat/","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tool/timeformat/index.md"}');export{_ as comp,d as data};
