@@ -1,0 +1,1 @@
+import{_ as o,c as t,a as n,o as r,r as a}from"./app-BmmNByms.js";const c={};function l(s,_){const e=a("ColorChose");return r(),t("div",null,[n(e)])}const m=o(c,[["render",l],["__file","index.html.vue"]]),d=JSON.parse('{"path":"/tool/color/","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tool/color/index.md"}');export{m as comp,d as data};
