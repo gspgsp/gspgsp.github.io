@@ -1,0 +1,19 @@
+import{_ as s,c as n,f as a,o as l}from"./app-BB_BIQV8.js";const t={};function i(r,e){return l(),n("div",null,e[0]||(e[0]=[a(`<p>经常在项目的根目录会看到一个robots.txt文件，今天就来普及一下它的作用</p><ul><li>介绍</li></ul><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">robots.txt 文件规定了搜索引擎抓取工具可以访问您网站上的哪些网址。 此文件</span>
+<span class="line">主要用于避免您的网站收到过多请求；它并不是一种阻止 Google 抓取某个网页的</span>
+<span class="line">机制。若想阻止 Google 访问某个网页，请使用 noindex 禁止将其编入索引，或</span>
+<span class="line">使用密码保护该网页。</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul><li>用途</li></ul><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">robots.txt 文件主要用于管理流向您网站的抓取工具流量</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div></div></div><ul><li>编写</li></ul><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">robots.txt 文件应位于网站的根目录下。因此，对于网站 www.example.com，robots.txt 文件</span>
+<span class="line">的路径应为 www.example.com/robots.txt</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div></div></div><p>下面是一个包含两条规则的简单 robots.txt 文件：</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">User-agent: Googlebot</span>
+<span class="line">Disallow: /nogooglebot/</span>
+<span class="line"></span>
+<span class="line">User-agent: *</span>
+<span class="line">Allow: /</span>
+<span class="line"></span>
+<span class="line">Sitemap: https://www.example.com/sitemap.xml</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>实际使用:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">User-agent: *</span>
+<span class="line">Allow: /</span>
+<span class="line">Sitemap: https://www.example.com/sitemap.xml</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul><li>更新 robots.txt 文件</li></ul><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">实际使用的时候，站点内容可能会不停的更新，所以可以通过定时任务，定期修改文件内容</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div></div></div><p>参考(https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt?hl=zh-cn)</p>`,14)]))}const o=s(t,[["render",i],["__file","google搜索之robots文件.html.vue"]]),c=JSON.parse('{"path":"/content/other/spread/google%E6%90%9C%E7%B4%A2%E4%B9%8Brobots%E6%96%87%E4%BB%B6.html","title":"google搜索之robots文件","lang":"en-US","frontmatter":{"sidebar":false,"title":"google搜索之robots文件","description":"google搜索之robots文件"},"headers":[],"git":{},"filePathRelative":"content/other/spread/google搜索之robots文件.md"}');export{o as comp,c as data};

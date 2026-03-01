@@ -1,0 +1,42 @@
+import{_ as n,c as a,f as i,o as e}from"./app-BB_BIQV8.js";const l={};function t(p,s){return e(),a("div",null,s[0]||(s[0]=[i(`<p>项目中经常会有短竖线分隔多个元素的设计，下面记录一下实际开发中用的比较多的一种</p><div class="language-html line-numbers-mode" data-highlighter="prismjs" data-ext="html" data-title="html"><pre><code><span class="line"></span>
+<span class="line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>test<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>hello<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span>
+<span class="line"></span>
+<span class="line">.test</span>
+<span class="line">	width 100px</span>
+<span class="line">	height 50px</span>
+<span class="line">	background #eee</span>
+<span class="line">	position: relative;</span>
+<span class="line">.test:after</span>
+<span class="line">	content: &#39;&#39;</span>
+<span class="line">	height: 20px</span>
+<span class="line">	border-right: 2px solid red</span>
+<span class="line">	position: absolute;</span>
+<span class="line">	right: 0;</span>
+<span class="line">	top: 13px;</span>
+<span class="line">	</span>
+<span class="line">实际项目中的用法(去掉最后一个为元素的竖线以及margin值):</span>
+<span class="line">.st-item{</span>
+<span class="line">      width: 4.25rem;</span>
+<span class="line">      height: 1.4rem;</span>
+<span class="line">      font-weight: 400;</span>
+<span class="line">      font-size: 0.875rem;</span>
+<span class="line">      line-height: 1.4rem;</span>
+<span class="line">      position: relative;</span>
+<span class="line">      margin-right: 1.25rem;</span>
+<span class="line">      &amp;:after{</span>
+<span class="line">        content: &#39;&#39;;</span>
+<span class="line">        height: 1.25rem;</span>
+<span class="line">        border-right: 0.0625rem solid #000;</span>
+<span class="line">        position: absolute;</span>
+<span class="line">        right: 0;</span>
+<span class="line">        top: 0.0625rem;</span>
+<span class="line">      }</span>
+<span class="line">      &amp;:last-child{</span>
+<span class="line">        margin-right: 0;</span>
+<span class="line">      }</span>
+<span class="line">      &amp;:last-child:after{</span>
+<span class="line">        display: none;</span>
+<span class="line">      }</span>
+<span class="line">    }	</span>
+<span class="line">	</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const d=n(l,[["render",t],["__file","css伪元素实现短竖线.html.vue"]]),r=JSON.parse('{"path":"/content/front/html/css%E4%BC%AA%E5%85%83%E7%B4%A0%E5%AE%9E%E7%8E%B0%E7%9F%AD%E7%AB%96%E7%BA%BF.html","title":"css伪元素实现短竖线","lang":"en-US","frontmatter":{"sidebar":false,"title":"css伪元素实现短竖线","description":"css伪元素实现短竖线"},"headers":[],"git":{},"filePathRelative":"content/front/html/css伪元素实现短竖线.md"}');export{d as comp,r as data};

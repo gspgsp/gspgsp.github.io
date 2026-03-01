@@ -1,0 +1,1 @@
+import{_ as o,c as t,a as n,o as a,r as c}from"./app-BB_BIQV8.js";const r={};function l(s,_){const e=c("ToolHome");return a(),t("div",null,[n(e)])}const i=o(r,[["render",l],["__file","index.html.vue"]]),d=JSON.parse('{"path":"/tool/","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tool/index.md"}');export{i as comp,d as data};

@@ -1,0 +1,35 @@
+import{_ as n,c as l,f as a,o as i}from"./app-BB_BIQV8.js";const e={};function c(p,s){return i(),l("div",null,s[0]||(s[0]=[a(`<p>mysql8容器服务暴露端口介绍:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">33060/tcp, 0.0.0.0:3307-&gt;3306/tcp, :::3307-&gt;3306/tcp</span>
+<span class="line">包含了三个部分：</span>
+<span class="line">1.33060/tcp:</span>
+<span class="line">这是MySQL的X Protocol端口。X Protocol是MySQL 5.7.12及更高版本引入的一个新的协议，用于支持MySQL文档存储等新特性。这个端口默认是暴露的，但没有被映射到主机上。</span>
+<span class="line">  </span>
+<span class="line">2.0.0.0.0:3307-&gt;3306/tcp:</span>
+<span class="line">这是您设置的端口映射。它表示容器内的3306端口（MySQL的默认端口）被映射到主机的3307端口上。0.0.0.0意味着它在主机的所有网络接口上都可以访问。</span>
+<span class="line">  </span>
+<span class="line">3.:::3307-&gt;3306/tcp:</span>
+<span class="line">这与第二项本质上是相同的，但是针对IPv6。:::是IPv6的简写形式，表示所有IPv6接口。</span>
+<span class="line">  </span>
+<span class="line">X Protocol端口（33060）主要用于MySQL的新特性和高级功能。以下是X Protocol的一些主要用途：</span>
+<span class="line">文档存储：</span>
+<span class="line">支持JSON文档的存储和操作，使MySQL能够作为一个文档数据库使用。</span>
+<span class="line">CRUD操作：</span>
+<span class="line">提供了一种更有效的方式来执行创建、读取、更新和删除操作，尤其是对于复杂的数据结构。</span>
+<span class="line">支持多种编程语言：</span>
+<span class="line">X Protocol设计用于支持多种编程语言的连接器，如Python、JavaScript、Java等。</span>
+<span class="line">异步操作：</span>
+<span class="line">支持异步编程模型，可以提高应用程序的性能和可伸缩性。</span>
+<span class="line">改进的安全性：</span>
+<span class="line">包含了一些安全增强功能，如更好的身份验证机制。</span>
+<span class="line">压缩通信：</span>
+<span class="line">支持客户端和服务器之间的通信压缩，可以减少网络带宽使用。</span>
+<span class="line">会话复用：</span>
+<span class="line">允许多个逻辑会话共享同一个网络连接，potentially提高性能。</span>
+<span class="line">新的API：</span>
+<span class="line">提供了一组新的API，使开发人员能够更灵活地与MySQL交互。</span>
+<span class="line">  </span>
+<span class="line">虽然X Protocol提供了这些高级功能，但对于传统的关系型数据库操作，使用标准的MySQL协议（端口3306）通常就足够了。X Protocol主要面向需要利用MySQL新特性或追求更高性能的高级用户和开发者。</span>
+<span class="line">  </span>
+<span class="line">关于 mysql x plugin：</span>
+<span class="line">https://www.percona.com/blog/understanding-mysql-x-all-flavors/</span>
+<span class="line">http://mysql.taobao.org/monthly/2021/02/07/  //很早以前关注过taobao的数据库月报</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const v=n(e,[["render",c],["__file","mysql8容器服务暴露端口介绍.html.vue"]]),t=JSON.parse('{"path":"/content/service/docker/mysql8%E5%AE%B9%E5%99%A8%E6%9C%8D%E5%8A%A1%E6%9A%B4%E9%9C%B2%E7%AB%AF%E5%8F%A3%E4%BB%8B%E7%BB%8D.html","title":"mysql8容器服务暴露端口介绍","lang":"en-US","frontmatter":{"sidebar":false,"title":"mysql8容器服务暴露端口介绍","description":"mysql8容器服务暴露端口介绍"},"headers":[],"git":{},"filePathRelative":"content/service/docker/mysql8容器服务暴露端口介绍.md"}');export{v as comp,t as data};

@@ -1,0 +1,71 @@
+import{_ as n,c as e,f as i,o as a}from"./app-BB_BIQV8.js";const l={};function c(d,s){return a(),e("div",null,s[0]||(s[0]=[i(`<p>浏览器cookie和session:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">关于cookie的设置问题:</span>
+<span class="line">1&gt;后端symfony7</span>
+<span class="line"></span>
+<span class="line">// 创建 Cookie 对象</span>
+<span class="line">        $cookie = Cookie::create(&#39;user_tt_token&#39;)</span>
+<span class="line">            -&gt;withValue(&#39;fdsfssdfsdfsdfsdfsdf&#39;)</span>
+<span class="line">            -&gt;withExpires(strtotime(&#39;tomorrow&#39;))</span>
+<span class="line">            -&gt;withPath(&#39;/&#39;)</span>
+<span class="line">            -&gt;withDomain(&#39;localhost&#39;)  // 设置域名</span>
+<span class="line">            -&gt;withSecure(false)            // 是否仅在 HTTPS 下传输</span>
+<span class="line">            -&gt;withHttpOnly(false)       // 是否禁止 JavaScript 访问</span>
+<span class="line">            -&gt;withSameSite(&#39;lax&#39;);</span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line">// $response 为一个jsonResponse对象</span>
+<span class="line">        $response-&gt;headers-&gt;setCookie($cookie);</span>
+<span class="line"></span>
+<span class="line">2&gt;前端是一个 nuxt3的SSR的 get 请求</span>
+<span class="line">  try {</span>
+<span class="line">    let res = await $fetch&lt;SessionTermDetailResponse&gt;.raw(</span>
+<span class="line">      \`/api/admin/events/\${id}/event-session/term\`,</span>
+<span class="line">      {</span>
+<span class="line">        headers: {</span>
+<span class="line">          &quot;X-SCIFORUM-API-TOKEN&quot;: config.sciforum.apiToken,</span>
+<span class="line">          &quot;X-Switch-User&quot;: event.headers.get(&quot;X-Switch-User&quot;) ?? &quot;&quot;,</span>
+<span class="line">          authorization: event.headers.get(&quot;authorization&quot;) ?? &quot;&quot;,</span>
+<span class="line">        },</span>
+<span class="line">        baseURL: config.sciforum.apiBaseUrl,</span>
+<span class="line">      }</span>
+<span class="line">    );</span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line">    let cc =  getCookie(event, &quot;user_tt_token&quot;)</span>
+<span class="line">    console.log(&quot;cc is:&quot;, cc)</span>
+<span class="line">    return res;</span>
+<span class="line">  } catch (error: any) {</span>
+<span class="line">    return errorHandler(error);</span>
+<span class="line">  }</span>
+<span class="line"></span>
+<span class="line">经测试，当 sameSite为lax,同时请求为 get 的时候，可以成功将cookie设置到浏览器， 但是实际上需要跨域设置cookie的时候，这种方式是不行的，需要如下修改</span>
+<span class="line"></span>
+<span class="line">// 创建 Cookie 对象</span>
+<span class="line">        $cookie = Cookie::create(&#39;user_tt_token&#39;)</span>
+<span class="line">            -&gt;withValue(&#39;fdsfssdfsdfsdfsdfsdf&#39;)</span>
+<span class="line">            -&gt;withExpires(strtotime(&#39;tomorrow&#39;))</span>
+<span class="line">            -&gt;withPath(&#39;/&#39;)</span>
+<span class="line">            -&gt;withDomain(&#39;localhost&#39;)  // 设置域名</span>
+<span class="line">            -&gt;withSecure(true)            // 是否仅在 HTTPS 下传输</span>
+<span class="line">            -&gt;withHttpOnly(false)       // 是否禁止 JavaScript 访问</span>
+<span class="line">            -&gt;withSameSite(&#39;none&#39;);</span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line">// $response 为一个jsonResponse对象</span>
+<span class="line">        $response-&gt;headers-&gt;setCookie($cookie);</span>
+<span class="line"></span>
+<span class="line">即 SameSite 为 none, 同时 Secure 为 true，但是这个需要 https 环境，目前还没有测试. 看了其它的网站，都是这么处理的，这也可以叫允许三方网站cookie。</span>
+<span class="line"></span>
+<span class="line">还有需要注意的是</span>
+<span class="line">1&gt; $fetch 请求，需要 raw 请求，这样才能有 cookie 相关的response。</span>
+<span class="line">2&gt;如果在不指定 expires 或 maxAge 时，浏览器会自动将其视为一个 Session Cookie。这类 Cookie 的生命周期仅限于当前的浏览器会话。当用户关闭浏览器后，Session Cookie 会被移除。也就是说cookie按照过期时间可以分为两类:</span>
+<span class="line">Session Cookie：如果未设置 expires 或 maxAge 属性，浏览器会将该 Cookie 当作 Session Cookie。这类 Cookie 的生命周期仅限于当前的浏览器会话。当用户关闭浏览器后，Session Cookie 会被移除。</span>
+<span class="line">持久性 Cookie：如果设置了 expires（指定过期日期）或 maxAge（指定从当前时间起的秒数），则 Cookie 会在指定的时间之后过期，无论浏览器会话是否仍在进行。</span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line">何时使用 Session Cookie</span>
+<span class="line">Session Cookie 常用于敏感信息（如登录会话），因为当用户关闭浏览器时，数据会被自动清除，从而提供额外的安全性。</span>
+<span class="line"></span>
+<span class="line">何时使用持久性 Cookie</span>
+<span class="line">如果您希望用户在关闭浏览器后保持登录状态，或希望保存某些偏好设置，您可以使用持久性 Cookie，并为其设置具体的过期时间。</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const p=n(l,[["render",c],["__file","浏览器cookie和session.html.vue"]]),t=JSON.parse('{"path":"/content/front/js/%E6%B5%8F%E8%A7%88%E5%99%A8cookie%E5%92%8Csession.html","title":"浏览器cookie和session","lang":"en-US","frontmatter":{"sidebar":false,"title":"浏览器cookie和session","description":"浏览器cookie和session"},"headers":[],"git":{},"filePathRelative":"content/front/js/浏览器cookie和session.md"}');export{p as comp,t as data};

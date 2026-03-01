@@ -1,0 +1,1 @@
+import{_ as t,c as n,a as o,o as a,r as c}from"./app-BB_BIQV8.js";const r={};function i(s,l){const e=c("HanZi");return a(),n("div",null,[o(e)])}const m=t(r,[["render",i],["__file","index.html.vue"]]),d=JSON.parse('{"path":"/tool/hanzi/","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tool/hanzi/index.md"}');export{m as comp,d as data};

@@ -1,0 +1,36 @@
+import{_ as a,c as e,a as l,f as i,o as c,r as p}from"./app-BB_BIQV8.js";const d={};function v(r,n){const s=p("CustomerComponent");return c(),e("div",null,[l(s),n[0]||(n[0]=i(`<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">一、一万个美丽的未来，抵不上一个温暖的现在;每一个真实的现在，都是我们曾经幻想的未来，愿你爱上现在，梦见未来。</span>
+<span class="line"></span>
+<span class="line">二、把体重留给爱的美食，把眼睛留给好风光，把等待留给一直寻觅的真心，把欢喜留给一次次突破障碍的勇敢，把拥抱留给永远不会离开的自己。</span>
+<span class="line"></span>
+<span class="line">三、一件事你犹豫去不去做，那就是该立即动身做的。一个东西你犹豫买不买，那就是该买的。喜欢是非常难得的，尽管去争取你喜欢的，而不是费心找廉价点的替代品。对事物，对人都该如此。</span>
+<span class="line">四、对别人要求松一点，就不会总失望；对自己要求严一点，就不会总沮丧。</span>
+<span class="line"></span>
+<span class="line">五、小时候的要求：吃好睡好学习好；长大了的期盼：吃饱睡饱卡里饱；小时候遇见困难，总希望超人出现；长大了遇见困难，却只靠自己摆平。人生坎坷，需坚强面对！</span>
+<span class="line"></span>
+<span class="line">六、当你珍惜自己的过去，满意自己的现在，乐观自己的未来时，你就站在了生活的最高处；当你明了成功不会造就你，失败不会击垮你，平淡不会淹没你时，你就站在了生命的最高处。</span>
+<span class="line">七、20岁那年买得起10岁那年买不起的玩具，又有什么意义呢？人生就是这样，错过了就再也回不来了。有些事，现在不做，以后再也不会做了。</span>
+<span class="line"></span>
+<span class="line">八、人与人之间，多一份理解就会少一些误会；心与心之间，多一份包容就会少一些纷争。有些事，需忍，勿怒；有些人，需让，勿究。嘴上吃些亏又何妨，让他三分又如何。</span>
+<span class="line"></span>
+<span class="line">九、真实的生活是，认真做好每一天你分内的事情。不索取目前与你无关的爱与远景。不纠缠于多余情绪和评断。不妄想，不在其中自我沉醉。不伤害，不与自己和他人为敌。不表演，也不相信他人的表演。</span>
+<span class="line">十、没必要让所有人知道真实的你，或者是你没有必要不停地向人说其实我是一个什么样的人。因为这是无效的，人们还是只会愿意看到他们希望看到的。</span>
+<span class="line"></span>
+<span class="line">十一、人生有两条路，一条需要用心走，叫做梦想；一条需要用脚走，叫做现实。心走得太快，脚会迷路；脚走得太快，人会摔倒；心走得太慢，会苍白了现实；脚走得太慢，梦不会高飞。</span>
+<span class="line"></span>
+<span class="line">十二、不要去听别人的忽悠，你人生的每一步都必须靠自己的能力完成。自己肚子里没有料，手上没本事，认识再多人也没用。人脉只会给你机会，但抓住机会还是要靠真本事。所以啊，修炼自己，比到处逢迎别人重要的多。</span>
+<span class="line">十三、人生苦短，不要把时间浪费在犹豫不决上，喜欢的东西就去买，喜欢的人就去追，不然你怎么知道你买不起又追不到。</span>
+<span class="line"></span>
+<span class="line">十四、人有两只眼睛，全是平行的，所以应当平等看人；人的两只耳朵是分在两边的，所以不可偏听一面之词；人虽只有一颗心，然而有左右两个心房，所以做事不但要为自己想，也要为别人想。</span>
+<span class="line"></span>
+<span class="line">十五、人人有副好面相，不一定有好心肠，有时眼睛一红，心就黑了，心一横，就把坏事做尽了；眼前得罪人不可怕，不知不觉中得罪人才最要命。所以，看人不能只看表面的微笑，要看背后才知全貌！</span>
+<span class="line">十六、无论你活成什么样子，背地里都会有人对你说三道四。不申辩、不计较、一笑了之，其实就是最好的蔑视。</span>
+<span class="line"></span>
+<span class="line">十七、别试图去给年轻人讲经验，讲一万句不如你自己摔一跤，或许，眼泪教你做人，后悔帮你成长，疼痛才是最好的老师，人生该走的弯路，其实一米都少不了。</span>
+<span class="line"></span>
+<span class="line">十八、这个世界没有那么多将心比心。你善良，他便得寸进尺，你软弱，他便狠心欺骗，你正直，他便道德压榨。把深情交付与错误的人，就别责怪这个社会不温暖。因为都是你的愚蠢才收获了伤害，所以你只需要变聪明就好了，而不是痴心妄想改变这个世界。</span>
+<span class="line">十九、得意时要看淡，失意时要看开。人生有许多东西是可以放下的。只有放得下，才能拿得起。多一些宽容，多一些大度，挥挥手，笑一笑，一切的不愉快都会成为过去。</span>
+<span class="line"></span>
+<span class="line">二十、总有起风的清晨，总有暖和的午后，总有绚烂的黄昏，总有流星的夜晚。所以，保持顺其自然的心境，把握每一个瞬间，试着去做，去面对每一个昨天，今天和明天。</span>
+<span class="line"></span>
+<span class="line">二一、在这个世界上，没有一劳永逸、完美无缺的选择。你不可能同时拥有春花和秋月，不可能同时拥有硕果和繁花。不可能所有的好处都是你的。你要学会权衡利弊，学会放弃一些什么，然后才可能得到些什么。你要学会接受命的残缺和悲哀，然后，心平气和。因为，这就是人生。</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,1))])}const m=a(d,[["render",v],["__file","part1.html.vue"]]),u=JSON.parse('{"path":"/project/laravel/part1.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"project/laravel/part1.md"}');export{m as comp,u as data};

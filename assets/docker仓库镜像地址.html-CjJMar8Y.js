@@ -1,0 +1,33 @@
+import{_ as n,c as e,f as i,o as a}from"./app-BB_BIQV8.js";const l={};function c(d,s){return a(),e("div",null,s[0]||(s[0]=[i(`<p>docker仓库镜像地址:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">使用aliyun镜像工具:</span>
+<span class="line">sudo mkdir -p /etc/docker</span>
+<span class="line">sudo tee /etc/docker/daemon.json &lt;&lt;-&#39;EOF&#39;</span>
+<span class="line">{</span>
+<span class="line">&quot;registry-mirrors&quot;: [&quot;https://ohvr36te.mirror.aliyuncs.com&quot;] //这个现在也不能用了，所以 aliyun 的路子走不通了</span>
+<span class="line">}</span>
+<span class="line">EOF</span>
+<span class="line">  </span>
+<span class="line">下面这个可以，但是还是需要开VPN:</span>
+<span class="line">{</span>
+<span class="line">  &quot;registry-mirrors&quot;: [</span>
+<span class="line">        &quot;https://dockerhub.icu&quot;,</span>
+<span class="line">        &quot;https://docker.awsl9527.cn&quot;</span>
+<span class="line">    ]</span>
+<span class="line">}</span>
+<span class="line">上面(处理后)的直接访问只有：</span>
+<span class="line">&quot;https://dockerhub.icu&quot;,</span>
+<span class="line">&quot;https://docker.awsl9527.cn&quot; // 有网站：https://docker.awsl9527.cn/  博客：https://songxwn.com/ (值得借鉴)</span>
+<span class="line">  </span>
+<span class="line">下面这个也可以：  </span>
+<span class="line">{</span>
+<span class="line">    &quot;registry-mirrors&quot;: [</span>
+<span class="line">        &quot;https://docker.m.daocloud.io&quot;,</span>
+<span class="line">    ]</span>
+<span class="line">}</span>
+<span class="line">  </span>
+<span class="line">配置好以后执行:</span>
+<span class="line">sudo systemctl daemon-reload</span>
+<span class="line">sudo systemctl restart docker</span>
+<span class="line">  </span>
+<span class="line">相关链接:</span>
+<span class="line">https://blog.csdn.net/weixin_50160384/article/details/139861337 //docker源请求超时, 写的比较多</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const t=n(l,[["render",c],["__file","docker仓库镜像地址.html.vue"]]),p=JSON.parse('{"path":"/content/service/docker/docker%E4%BB%93%E5%BA%93%E9%95%9C%E5%83%8F%E5%9C%B0%E5%9D%80.html","title":"docker仓库镜像地址","lang":"en-US","frontmatter":{"sidebar":false,"title":"docker仓库镜像地址","description":"docker仓库镜像地址"},"headers":[],"git":{},"filePathRelative":"content/service/docker/docker仓库镜像地址.md"}');export{t as comp,p as data};

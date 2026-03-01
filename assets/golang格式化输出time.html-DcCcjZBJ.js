@@ -1,0 +1,27 @@
+import{_ as s,c as a,f as t,o as e}from"./app-BB_BIQV8.js";const p={};function i(l,n){return e(),a("div",null,n[0]||(n[0]=[t(`<p>在实际项目中，我们经常需要输出时间，由于一般在Model类里会定义如下的字段： CreatedAt time.Time <code>gorm:&quot;type:timestamp;default:NULL;comment:创建时间&quot;</code> UpdatedAt time.Time <code>gorm:&quot;type:timestamp;default:NULL;comment:更新时间&quot;</code></p><p>这在输出以后基本上都是如下格式： &quot;created_at&quot;: &quot;2022-09-08T09:29:42+08:00&quot;</p><p>那么怎么解决这个问题，就需要通过自定义类型解决，代码如下：</p><div class="language-go line-numbers-mode" data-highlighter="prismjs" data-ext="go" data-title="go"><pre><code><span class="line"></span>
+<span class="line"><span class="token comment">//自定义时间类型</span></span>
+<span class="line"><span class="token keyword">type</span> JsonTime time<span class="token punctuation">.</span>Time</span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">func</span> <span class="token punctuation">(</span>j JsonTime<span class="token punctuation">)</span> <span class="token function">MarshalJSON</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">byte</span><span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">	<span class="token keyword">var</span> stamp <span class="token operator">=</span> fmt<span class="token punctuation">.</span><span class="token function">Sprintf</span><span class="token punctuation">(</span>\`<span class="token string">&quot;%s&quot;</span><span class="token string">\`, time.Time(j).Format(&quot;2006-01-02 15:04:05&quot;))</span>
+<span class="line">	return []byte(stamp), nil</span>
+<span class="line">}</span>
+<span class="line"></span>
+<span class="line">//</span>
+<span class="line">type i struct {</span>
+<span class="line">	Id          uint              \`</span>json<span class="token punctuation">:</span><span class="token string">&quot;id&quot;</span><span class="token string">\`</span>
+<span class="line">	Name        string            \`</span>json<span class="token punctuation">:</span><span class="token string">&quot;name&quot;</span><span class="token string">\`</span>
+<span class="line">	CreatedAt   response.JsonTime \`</span>json<span class="token punctuation">:</span><span class="token string">&quot;created_at&quot;</span><span class="token string">\`</span>
+<span class="line">}</span>
+<span class="line"></span>
+<span class="line">type val struct {</span>
+<span class="line">	ID          uint                    \`</span>gorm<span class="token punctuation">:</span><span class="token string">&quot;primarykey;column:id;&quot;</span><span class="token string">\`</span>
+<span class="line">	Name        string                  \`</span>gorm<span class="token punctuation">:</span><span class="token string">&quot;type:varchar(15);default:NULL;comment:名称&quot;</span><span class="token string">\`</span>
+<span class="line">	CreatedAt   time.Time               \`</span>gorm<span class="token punctuation">:</span><span class="token string">&quot;type:timestamp;default:NULL;comment:创建时间&quot;</span><span class="token string">\`</span>
+<span class="line">	UpdatedAt   time.Time               \`</span>gorm<span class="token punctuation">:</span><span class="token string">&quot;type:timestamp;default:NULL;comment:更新时间&quot;</span>\`</span>
+<span class="line"><span class="token punctuation">}</span></span>
+<span class="line"></span>
+<span class="line">i<span class="token punctuation">.</span>CreatedAt <span class="token operator">=</span> response<span class="token punctuation">.</span><span class="token function">JsonTime</span><span class="token punctuation">(</span>val<span class="token punctuation">.</span>CreatedAt<span class="token punctuation">)</span> <span class="token comment">//这里需要类型强转</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment">//再通过json返回数据 i 的时候，就会格式化为 &quot;2006-01-02 15:04:05&quot; 格式</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,4)]))}const c=s(p,[["render",i],["__file","golang格式化输出time.html.vue"]]),u=JSON.parse('{"path":"/content/go/base/golang%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%BE%93%E5%87%BAtime.html","title":"golang格式化输出time","lang":"en-US","frontmatter":{"sidebar":false,"title":"golang格式化输出time","description":"golang格式化输出time"},"headers":[],"git":{},"filePathRelative":"content/go/base/golang格式化输出time.md"}');export{c as comp,u as data};

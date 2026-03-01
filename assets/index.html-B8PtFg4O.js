@@ -1,0 +1,1 @@
+import{_ as o,c as t,a as n,o as c,r}from"./app-BB_BIQV8.js";const a={};function s(l,d){const e=r("Qrcode");return c(),t("div",null,[n(e)])}const i=o(a,[["render",s],["__file","index.html.vue"]]),m=JSON.parse('{"path":"/tool/qrcode/","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tool/qrcode/index.md"}');export{i as comp,m as data};

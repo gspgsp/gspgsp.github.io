@@ -1,0 +1,8 @@
+import{_ as n,c as s,f as i,o as t}from"./app-BB_BIQV8.js";const a={};function l(d,e){return t(),s("div",null,e[0]||(e[0]=[i(`<p>flex子元素可以直接设置z-index:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">Flex items paint exactly the same as inline blocks [CSS2], except that order-modified document order is </span>
+<span class="line">used in place of raw document order, and z-index values other than auto create a stacking context even </span>
+<span class="line">if position is static (behaving exactly as if position were relative).</span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line">https://drafts.csswg.org/css-flexbox-1/#painting</span>
+<span class="line">https://www.sitepoint.com/quick-tip-how-z-index-and-auto-margins-work-in-flexbox/  //解析</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const c=n(a,[["render",l],["__file","flex子元素可以直接设置z-index.html.vue"]]),o=JSON.parse('{"path":"/content/front/html/flex%E5%AD%90%E5%85%83%E7%B4%A0%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E8%AE%BE%E7%BD%AEz-index.html","title":"flex子元素可以直接设置z-index","lang":"en-US","frontmatter":{"sidebar":false,"title":"flex子元素可以直接设置z-index","description":"flex子元素可以直接设置z-index"},"headers":[],"git":{},"filePathRelative":"content/front/html/flex子元素可以直接设置z-index.md"}');export{c as comp,o as data};

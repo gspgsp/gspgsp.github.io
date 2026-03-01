@@ -1,0 +1,29 @@
+import{_ as l,c,f as d,a as n,o as r,r as e}from"./app-BB_BIQV8.js";const t={};function p(v,s){const i=e("BackBtn"),a=e("CommentService");return r(),c("div",null,[s[0]||(s[0]=d(`<p>通过 info server命令即可:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">[root@VM-0-12-centos local]# redis-cli</span>
+<span class="line">127.0.0.1:6379&gt; info server</span>
+<span class="line"># Server</span>
+<span class="line">redis_version:7.0.0</span>
+<span class="line">redis_git_sha1:00000000</span>
+<span class="line">redis_git_dirty:0</span>
+<span class="line">redis_build_id:be628bea27b47068</span>
+<span class="line">redis_mode:standalone</span>
+<span class="line">os:Linux 3.10.0-1160.62.1.el7.x86_64 x86_64</span>
+<span class="line">arch_bits:64</span>
+<span class="line">monotonic_clock:POSIX clock_gettime</span>
+<span class="line">multiplexing_api:epoll</span>
+<span class="line">atomicvar_api:atomic-builtin</span>
+<span class="line">gcc_version:4.8.5</span>
+<span class="line">process_id:15227</span>
+<span class="line">process_supervised:no</span>
+<span class="line">run_id:bd9f26195b882b46fe51054f5fb88da8798d2459</span>
+<span class="line">tcp_port:6379</span>
+<span class="line">server_time_usec:1661233427282861</span>
+<span class="line">uptime_in_seconds:8475918</span>
+<span class="line">uptime_in_days:98</span>
+<span class="line">hz:10</span>
+<span class="line">configured_hz:10</span>
+<span class="line">lru_clock:289043</span>
+<span class="line">executable:/usr/local/redis-7.0.0/./src/redis-server</span>
+<span class="line">config_file:/usr/local/redis-7.0.0/./redis.conf</span>
+<span class="line">io_threads_active:0</span>
+<span class="line">127.0.0.1:6379&gt;</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)),n(i),n(a)])}const m=l(t,[["render",p],["__file","redis版本信息查看.html.vue"]]),u=JSON.parse('{"path":"/content/database/redis/redis%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF%E6%9F%A5%E7%9C%8B.html","title":"redis版本信息查看","lang":"en-US","frontmatter":{"sidebar":false,"title":"redis版本信息查看","description":"redis版本信息查看"},"headers":[],"git":{},"filePathRelative":"content/database/redis/redis版本信息查看.md"}');export{m as comp,u as data};

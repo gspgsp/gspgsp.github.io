@@ -1,0 +1,6 @@
+import{_ as t,c as n,f as i,o as s}from"./app-BB_BIQV8.js";const a={};function r(l,e){return s(),n("div",null,e[0]||(e[0]=[i(`<p>有时候执行 git merge branch_name，但是执行以后 又想取消，可以按下面的命令执行</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">①$ git reflog</span>
+<span class="line"></span>
+<span class="line">②git reset --hard commit-before-the-merge</span>
+<span class="line">$ git reset --hard f615238</span>
+<span class="line"></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const d=t(a,[["render",r],["__file","git之取消merge后的数据.html.vue"]]),m=JSON.parse('{"path":"/content/other/git/git%E4%B9%8B%E5%8F%96%E6%B6%88merge%E5%90%8E%E7%9A%84%E6%95%B0%E6%8D%AE.html","title":"git之取消merge后的数据","lang":"en-US","frontmatter":{"sidebar":false,"title":"git之取消merge后的数据","description":"git之取消merge后的数据"},"headers":[],"git":{},"filePathRelative":"content/other/git/git之取消merge后的数据.md"}');export{d as comp,m as data};

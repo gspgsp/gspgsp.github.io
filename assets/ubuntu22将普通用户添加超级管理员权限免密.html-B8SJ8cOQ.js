@@ -1,0 +1,16 @@
+import{_ as s,c as a,f as e,o as l}from"./app-BB_BIQV8.js";const i={};function t(p,n){return l(),a("div",null,n[0]||(n[0]=[e(`<p>ubuntu22将普通用户添加超级管理员权限免密:</p><div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre><code><span class="line">官方推荐使用 <span class="token function">sudo</span> visudo /etc/sudoers， 然后修改  ctrl +o  回车 ctrl+x 即可</span>
+<span class="line">  </span>
+<span class="line"><span class="token comment"># User privilege specification</span></span>
+<span class="line">root    <span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL:ALL<span class="token punctuation">)</span> ALL</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># Members of the admin group may gain root privileges</span></span>
+<span class="line">%admin <span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL<span class="token punctuation">)</span> ALL</span>
+<span class="line"></span>
+<span class="line"><span class="token comment"># Allow members of group sudo to execute any command</span></span>
+<span class="line">%sudo   <span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL:ALL<span class="token punctuation">)</span> ALL</span>
+<span class="line">qinhong    <span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL:ALL<span class="token punctuation">)</span> NOPASSWD: ALL  //可以使用 <span class="token function">sudo</span> 不用输密码，但是还是要sudo操作</span>
+<span class="line"></span>
+<span class="line">  </span>
+<span class="line">使用:</span>
+<span class="line"><span class="token function">tee</span> /etc/sudoers.d/qinhong <span class="token operator">&lt;&lt;&lt;</span> <span class="token string">&#39;qinhong ALL=(ALL) NOPASSWD: ALL&#39;</span> //另一种方式</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const o=s(i,[["render",t],["__file","ubuntu22将普通用户添加超级管理员权限免密.html.vue"]]),u=JSON.parse('{"path":"/content/linux/command/ubuntu22%E5%B0%86%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%B7%BB%E5%8A%A0%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E6%9D%83%E9%99%90%E5%85%8D%E5%AF%86.html","title":"ubuntu22将普通用户添加超级管理员权限免密","lang":"en-US","frontmatter":{"sidebar":false,"title":"ubuntu22将普通用户添加超级管理员权限免密","description":"ubuntu22将普通用户添加超级管理员权限免密"},"headers":[],"git":{},"filePathRelative":"content/linux/command/ubuntu22将普通用户添加超级管理员权限免密.md"}');export{o as comp,u as data};

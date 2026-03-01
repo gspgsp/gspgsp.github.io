@@ -1,0 +1,32 @@
+import{_ as s,c as e,f as a,o as l}from"./app-BB_BIQV8.js";const i={};function v(c,n){return l(),e("div",null,n[0]||(n[0]=[a(`<p>laravel11中使用vite进行资源管理:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">@vite(&#39;resources/css/welcome.css&#39;)</span>
+<span class="line">对于不同的打包方式， npm run dev 和 npm run build, 那么资源访问是不一样的:</span>
+<span class="line">  </span>
+<span class="line">1. 开发环境 (\`npm run dev\`):</span>
+<span class="line">   当你运行\`npm run dev\`时，Vite启动一个开发服务器。这个服务器会:</span>
+<span class="line">   - 监听你的源文件变化</span>
+<span class="line">   - 提供热模块替换(HMR)</span>
+<span class="line">   - 按需编译文件</span>
+<span class="line">  </span>
+<span class="line">   在这种模式下，\`@vite()\`指令会:</span>
+<span class="line">  </span>
+<span class="line">   - 注入Vite的客户端脚本</span>
+<span class="line">   - 创建一个\`&lt;script&gt;\`标签，指向Vite开发服务器上的入口文件</span>
+<span class="line">   - 创建一个\`&lt;link&gt;\`标签，指向CSS文件(如果是独立的CSS文件)</span>
+<span class="line"></span>
+<span class="line">   这样，浏览器可以从Vite开发服务器请求并加载资源，实现快速的开发体验。</span>
+<span class="line">  </span>
+<span class="line">2. 生产环境 (\`npm run build\`):</span>
+<span class="line">   当你运行\`npm run build\`时，Vite会:</span>
+<span class="line"></span>
+<span class="line">   - 编译、压缩、优化所有资源</span>
+<span class="line">   - 生成带有哈希的文件名，用于缓存破坏</span>
+<span class="line">   - 创建一个manifest.json文件，映射原始文件名到编译后的文件名</span>
+<span class="line">  </span>
+<span class="line">   在这种模式下，\`@vite()\`指令会:</span>
+<span class="line">   </span>
+<span class="line">   - 读取manifest.json文件</span>
+<span class="line">   - 根据manifest中的映射，输出正确的\`&lt;script&gt;\`和\`&lt;link&gt;\`标签，指向编译后的文件</span>
+<span class="line">  </span>
+<span class="line">这种方法允许Laravel在开发和生产环境中都能正确地引用和加载资源，而不需要更改你的代码。</span>
+<span class="line">值得注意的是，Laravel的\`vite.php\`配置文件和\`Vite\`facade处理了大部分复杂性，使得开发者可以轻松地在Laravel项目中集成和使用Vite。</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const d=s(i,[["render",v],["__file","laravel11中使用vite进行资源管理.html.vue"]]),r=JSON.parse('{"path":"/content/php/laravel/laravel11%E4%B8%AD%E4%BD%BF%E7%94%A8vite%E8%BF%9B%E8%A1%8C%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86.html","title":"laravel11中使用vite进行资源管理","lang":"en-US","frontmatter":{"sidebar":false,"title":"laravel11中使用vite进行资源管理","description":"laravel11中使用vite进行资源管理"},"headers":[],"git":{},"filePathRelative":"content/php/laravel/laravel11中使用vite进行资源管理.md"}');export{d as comp,r as data};

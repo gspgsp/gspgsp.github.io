@@ -1,0 +1,36 @@
+import{_ as s,c as e,f as i,o as a}from"./app-BB_BIQV8.js";const l={};function p(c,n){return a(),e("div",null,n[0]||(n[0]=[i(`<p>nginx配置server：</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">问题：现在执行vagrant up 在/etc/nginx/sites-available 下不会生成配置文件，连default也没有，很奇怪，所以需要手动配置:</span>
+<span class="line"></span>
+<span class="line">server {</span>
+<span class="line"></span>
+<span class="line">listen 80 default_server;</span>
+<span class="line"></span>
+<span class="line">listen [::]:80 default_server;</span>
+<span class="line"></span>
+<span class="line">root /home/www/blog/public; #网站根目录，既index.php入口文件所在目录，结尾不加 /</span>
+<span class="line"></span>
+<span class="line">index index.php index.html;</span>
+<span class="line"></span>
+<span class="line">server_name www.front.test; # 域名或者ip地址</span>
+<span class="line"></span>
+<span class="line">location / {</span>
+<span class="line"></span>
+<span class="line">try_files $uri $uri/ /index.php?$query_string; #larvel优雅连接。请根据实际配置</span>
+<span class="line"></span>
+<span class="line">}</span>
+<span class="line"></span>
+<span class="line">location ~ \\.php$ { # 支持php</span>
+<span class="line"></span>
+<span class="line">include snippets/fastcgi-php.conf;</span>
+<span class="line"></span>
+<span class="line">fastcgi_pass unix:/run/php/php7.0-fpm.sock; # 这里对应着上面安装的php7.0</span>
+<span class="line"></span>
+<span class="line">}</span>
+<span class="line"></span>
+<span class="line">}</span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line">更改sites-available以后在 /etc/nginx/sites-enabled 目录下建立一个软链接:</span>
+<span class="line"></span>
+<span class="line">ln -s /etc/nginx/sites-available/www.front.test.conf /etc/nginx/sites-enabled/www.front.test.conf</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const r=s(l,[["render",p],["__file","nginx配置server.html.vue"]]),v=JSON.parse('{"path":"/content/linux/nginx/nginx%E9%85%8D%E7%BD%AEserver.html","title":"nginx配置server","lang":"en-US","frontmatter":{"sidebar":false,"title":"nginx配置server","description":"nginx配置server"},"headers":[],"git":{},"filePathRelative":"content/linux/nginx/nginx配置server.md"}');export{r as comp,v as data};

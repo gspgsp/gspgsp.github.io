@@ -1,0 +1,9 @@
+import{_ as n,c as s,f as t,o as a}from"./app-BB_BIQV8.js";const i={};function l(r,e){return a(),s("div",null,e[0]||(e[0]=[t(`<p>npm配置taobao镜像:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">D:\\code\\vue-blog&gt;npm config get registry</span>
+<span class="line">https://registry.npmjs.org/ </span>
+<span class="line"></span>
+<span class="line">D:\\code\\vue-blog&gt;npm config set registry=https://registry.npmmirror.com (原来的在2024.1月过期了)</span>
+<span class="line"></span>
+<span class="line">D:\\code\\vue-blog&gt;npm config get registry</span>
+<span class="line">https://registry.npmmirror.com/</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>安装typescript:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">D:\\code\\vue-blog&gt;npm i -g typescript</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div></div></div>`,4)]))}const p=n(i,[["render",l],["__file","npm配置taobao镜像.html.vue"]]),c=JSON.parse('{"path":"/content/front/js/npm%E9%85%8D%E7%BD%AEtaobao%E9%95%9C%E5%83%8F.html","title":"npm配置taobao镜像","lang":"en-US","frontmatter":{"sidebar":false,"title":"npm配置taobao镜像","description":"npm配置taobao镜像"},"headers":[],"git":{},"filePathRelative":"content/front/js/npm配置taobao镜像.md"}');export{p as comp,c as data};

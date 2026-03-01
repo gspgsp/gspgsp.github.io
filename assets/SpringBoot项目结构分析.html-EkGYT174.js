@@ -1,0 +1,32 @@
+import{_ as s,c as a,f as e,o as i}from"./app-BB_BIQV8.js";const l={};function p(r,n){return i(),a("div",null,n[0]||(n[0]=[e(`<p>SpringBoot项目结构分析:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">通过 IntelliJ IDEA 新建了一个名叫 spring-demo 的项目,以下是几个重要的目录文件说明:</span>
+<span class="line"></span>
+<span class="line">.idea：IntelliJ IDEA 生成，用于配置应用信息的文件目录。内部包含了类库，应用字符编码，模块，工作区等信息。</span>
+<span class="line">.mvn：Spring Boot 生成，用于一键通过 Maven 构建、编译、打包和部署的文件目录。内部结构如下：</span>
+<span class="line"></span>
+<span class="line">├── .mvn</span>
+<span class="line">│   └── wrapper</span>
+<span class="line">│       ├── maven-wrapper.jar</span>
+<span class="line">│       └── maven-wrapper.properties</span>
+<span class="line">├── mvnw</span>
+<span class="line">└── mvnw.cmd</span>
+<span class="line"></span>
+<span class="line">可以看到，该文件目录包含了 maven-wrapper.jar、maven-wrapper.properties 两个个文件。另外和 .mvn 同层级的 mvnw 和 mvnw.cmd 两个文件，是执行 maven-wrapper.jar 的入口，mvnw 用于 Linux 或 macOS，mvnw.cmd 用于 Windows。</span>
+<span class="line"></span>
+<span class="line">wrapper 和 原生的 maven 的区别:</span>
+<span class="line">和传统 maven 的使用方式相比， maven-wrapper 每次更换版本要少操作一步(图中标红箭头)，只需要更新配置文件(maven-wrapper.properties )中的 distributionUrl 为目标版本即可。不过也有代价，就是首次下载 maven 包的时候，要单独下载 wrapper(图中蓝色区块)，但这是一劳永逸的事情。</span>
+<span class="line"></span>
+<span class="line">src：Spring Boot 生成，存放应用源代码的文件目录。</span>
+<span class="line"></span>
+<span class="line">二级目录 main存放程序实际执行相关代码， test 存放程序测试相关代码。</span>
+<span class="line">三级目录 java 存放后缀为 .java 的代码文件，resources 存放静态文件，模板文件，应用配置文件等资源或配置类文件。java 目录里边就是一个个代码包和代码文件，CourseApplication 是整个应用程序的启动入口。</span>
+<span class="line"></span>
+<span class="line">target：应用构建时生成，主要存放了源代码编译后的 class 文件，相关的配置文件以及打好的包文件等用于实际执行的文件。</span>
+<span class="line"></span>
+<span class="line">.gitignore：Spring Boot 生成，版本控制系统 Git 的配置文件，表示忽略提交。该文件中，只要遵循相应的语法，每一行可以指定一个忽略规则。</span>
+<span class="line"></span>
+<span class="line">spring-demo.iml：IntelliJ IDEA 生成，IntelliJ IDEA 的工程配置文件。包含了当前工程的一些配置信息，比如模块信息，Java 组件，Maven 组件等等以及一些模块的路径信息和依赖信息。</span>
+<span class="line"></span>
+<span class="line">HELP.md：Spring Boot 生成，帮助文档，提供了 Spring Boot相关文档和教程。</span>
+<span class="line"></span>
+<span class="line">pom.xml：Spring Boot 生成的项目对象模型文档，主要描述了项目的 Maven 坐标和依赖关系等信息，是项目级别的配置文件。</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const c=s(l,[["render",p],["__file","SpringBoot项目结构分析.html.vue"]]),d=JSON.parse('{"path":"/content/java/spring/SpringBoot%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90.html","title":"SpringBoot项目结构分析","lang":"en-US","frontmatter":{"sidebar":false,"title":"SpringBoot项目结构分析","description":"SpringBoot项目结构分析"},"headers":[],"git":{},"filePathRelative":"content/java/spring/SpringBoot项目结构分析.md"}');export{c as comp,d as data};

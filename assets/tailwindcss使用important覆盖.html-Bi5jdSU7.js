@@ -1,0 +1,6 @@
+import{_ as t,c as n,f as i,o as a}from"./app-BB_BIQV8.js";const e={};function l(r,s){return a(),n("div",null,s[0]||(s[0]=[i(`<p>tailwindcss使用important覆盖:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">.alert {</span>
+<span class="line">  @apply bg-red-500 #{!important};</span>
+<span class="line">}</span>
+<span class="line">  </span>
+<span class="line">参考：https://tailwindcss.com/docs/using-with-preprocessors#sass</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const d=t(e,[["render",l],["__file","tailwindcss使用important覆盖.html.vue"]]),p=JSON.parse('{"path":"/content/front/html/tailwindcss%E4%BD%BF%E7%94%A8important%E8%A6%86%E7%9B%96.html","title":"tailwindcss使用important覆盖","lang":"en-US","frontmatter":{"sidebar":false,"title":"tailwindcss使用important覆盖","description":"tailwindcss使用important覆盖"},"headers":[],"git":{},"filePathRelative":"content/front/html/tailwindcss使用important覆盖.md"}');export{d as comp,p as data};

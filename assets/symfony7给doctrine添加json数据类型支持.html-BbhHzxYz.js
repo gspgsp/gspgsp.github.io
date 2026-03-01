@@ -1,0 +1,31 @@
+import{_ as s,c as e,f as i,o as l}from"./app-BB_BIQV8.js";const a={};function c(d,n){return l(),e("div",null,n[0]||(n[0]=[i(`<p>symfony7给doctrine添加json数据类型支持:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">symfony7 doctrine 支持json数据类型的拓展:</span>
+<span class="line">composer install dunglas/doctrine-json-odm</span>
+<span class="line">  </span>
+<span class="line">json和jsonb(目前只有psql支持jsonb,而mysql不支持)：</span>
+<span class="line">https://www.cnblogs.com/chenyablog/p/14647273.html</span>
+<span class="line">配置:</span>
+<span class="line">doctrine:</span>
+<span class="line">    dbal:</span>
+<span class="line">        connections:</span>
+<span class="line">            default:</span>
+<span class="line">                server_version: &#39;8.0&#39;</span>
+<span class="line">                url: &#39;%env(resolve:DATABASE_PRIMARY_URL)%&#39;</span>
+<span class="line">                driver: pdo_mysql //使用mysql，需要安装对相应的php拓展</span>
+<span class="line">                charset: utf8mb4</span>
+<span class="line">                default_table_options:</span>
+<span class="line">                    collate: utf8mb4_unicode_ci</span>
+<span class="line">                mapping_types:</span>
+<span class="line">                    enum: string</span>
+<span class="line">                schema_filter: ~^(?!(messenger_messages|migration_versions)$)~</span>
+<span class="line">                replicas:</span>
+<span class="line">                    secondary:</span>
+<span class="line">                        url: &#39;%env(resolve:DATABASE_SECONDARY_URL)%&#39;</span>
+<span class="line">            secondary:</span>
+<span class="line">                url: &#39;%env(resolve:DATABASE_SECONDARY_URL)%&#39;</span>
+<span class="line">        default_connection: default</span>
+<span class="line">        types:</span>
+<span class="line">            json_document: &#39;Dunglas\\DoctrineJsonOdm\\Type\\JsonDocumentType&#39; //需要在dbal下定义这个配置</span>
+<span class="line">案例:</span>
+<span class="line">#[ORM\\Column(type: &#39;json_document&#39;, nullable: true)]</span>
+<span class="line">    private string $options;</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const r=s(a,[["render",c],["__file","symfony7给doctrine添加json数据类型支持.html.vue"]]),t=JSON.parse('{"path":"/content/php/symfony/symfony7%E7%BB%99doctrine%E6%B7%BB%E5%8A%A0json%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%94%AF%E6%8C%81.html","title":"symfony7给doctrine添加json数据类型支持","lang":"en-US","frontmatter":{"sidebar":false,"title":"symfony7给doctrine添加json数据类型支持","description":"symfony7给doctrine添加json数据类型支持"},"headers":[],"git":{},"filePathRelative":"content/php/symfony/symfony7给doctrine添加json数据类型支持.md"}');export{r as comp,t as data};

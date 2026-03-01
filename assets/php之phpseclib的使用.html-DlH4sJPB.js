@@ -1,0 +1,8 @@
+import{_ as p,c as s,f as n,o as a}from"./app-BB_BIQV8.js";const i={};function t(l,e){return a(),s("div",null,e[0]||(e[0]=[n(`<h5 id="php之phpseclib的使用" tabindex="-1"><a class="header-anchor" href="#php之phpseclib的使用"><span>php之phpseclib的使用</span></a></h5><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">在php项目开发过程中，有时候我们需要deploy某些项目，但是需要SSH登陆远程服务器，我发现这个包特别好用</span>
+<span class="line"></span>
+<span class="line">composer require phpseclib/phpseclib:~3.0</span>
+<span class="line"></span>
+<span class="line">官网： http://phpseclib.com/</span>
+<span class="line"></span>
+<span class="line">当然这个包不仅可以使用SSH 还有 SFTP 等，非常好用</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const h=p(i,[["render",t],["__file","php之phpseclib的使用.html.vue"]]),r=JSON.parse('{"path":"/content/php/base/php%E4%B9%8Bphpseclib%E7%9A%84%E4%BD%BF%E7%94%A8.html","title":"php之phpseclib的使用","lang":"en-US","frontmatter":{"sidebar":false,"title":"php之phpseclib的使用","head":[["meta",{"name":"title","content":"php之phpseclib的使用"}],["meta",{"name":"description","content":"php之phpseclib的使用"}],["meta",{"name":"keywords","content":"phpseclib,php"}],["meta",{"property":"og:title","content":"php之phpseclib的使用"}],["meta",{"property":"og:description","content":"php之phpseclib的使用"}]]},"headers":[],"git":{},"filePathRelative":"content/php/base/php之phpseclib的使用.md"}');export{h as comp,r as data};

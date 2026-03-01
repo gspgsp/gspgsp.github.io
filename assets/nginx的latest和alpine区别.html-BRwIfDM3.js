@@ -1,0 +1,30 @@
+import{_ as s,c as i,f as e,o as a}from"./app-BB_BIQV8.js";const l={};function p(c,n){return a(),i("div",null,n[0]||(n[0]=[e(`<p>nginx 相关的 docker 镜像标签：<code>latest</code> 和 <code>alpine</code> 区别和特点:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">1. nginx:latest</span>
+<span class="line"></span>
+<span class="line">   - 这是 Nginx 的官方 Docker 镜像的默认版本。</span>
+<span class="line">   - 通常基于 Debian 操作系统构建。</span>
+<span class="line">   - 包含完整的 Nginx 安装，以及常用的库和工具。</span>
+<span class="line">   - 镜像尺寸较大，通常在 100-150MB 左右。</span>
+<span class="line">   - 适合需要完整功能和工具集的场景。</span>
+<span class="line">  </span>
+<span class="line">2. nginx:alpine</span>
+<span class="line"></span>
+<span class="line">   - 这是基于 Alpine Linux 构建的 Nginx 镜像。</span>
+<span class="line">   - Alpine 是一个轻量级的 Linux 发行版，以其小体积和安全性著称。</span>
+<span class="line">   - 镜像尺寸显著小于 \`latest\` 版本，通常只有 20-30MB 左右。</span>
+<span class="line">   - 包含最小化的 Nginx 安装，仅包含运行所需的基本组件。</span>
+<span class="line">   - 适合对镜像大小敏感的场景，如微服务架构或资源受限的环境。</span>
+<span class="line">  </span>
+<span class="line">主要区别：</span>
+<span class="line">  </span>
+<span class="line">1. 镜像大小：Alpine 版本明显更小，有利于快速部署和节省存储空间。</span>
+<span class="line">2. 基础系统：\`latest\` 基于 Debian，而 \`alpine\` 基于 Alpine Linux。</span>
+<span class="line">3. 包含的工具：\`latest\` 版本包含更多的工具和库，而 \`alpine\` 版本更加精简。</span>
+<span class="line">4. 安全更新：Alpine 版本可能在某些情况下获得更快的安全更新。</span>
+<span class="line">5. 兼容性：某些依赖特定 Linux 发行版的应用可能在 Alpine 版本上遇到兼容性问题。</span>
+<span class="line">  </span>
+<span class="line">选择建议：</span>
+<span class="line">- 如果您需要最小化的镜像体积和快速部署，选择 \`alpine\` 版本。</span>
+<span class="line">- 如果您需要更多的工具和库，或者担心兼容性问题，选择 \`latest\` 版本。</span>
+<span class="line">  </span>
+<span class="line">需要注意的是，使用 \`latest\` 标签可能会导致不可预测的更新，因为它总是指向最新版本。在生产环境中，建议使用特定的版本标签以确保一致性和可重复性。</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const t=s(l,[["render",p],["__file","nginx的latest和alpine区别.html.vue"]]),v=JSON.parse('{"path":"/content/linux/nginx/nginx%E7%9A%84latest%E5%92%8Calpine%E5%8C%BA%E5%88%AB.html","title":"nginx的latest和alpine区别","lang":"en-US","frontmatter":{"sidebar":false,"title":"nginx的latest和alpine区别","description":"nginx的latest和alpine区别"},"headers":[],"git":{},"filePathRelative":"content/linux/nginx/nginx的latest和alpine区别.md"}');export{t as comp,v as data};

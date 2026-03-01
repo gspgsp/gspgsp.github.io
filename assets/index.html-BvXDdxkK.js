@@ -1,0 +1,1 @@
+import{_ as o,c as t,a as n,o as c,r}from"./app-BB_BIQV8.js";const a={};function d(s,l){const e=r("Qrdecode");return c(),t("div",null,[n(e)])}const i=o(a,[["render",d],["__file","index.html.vue"]]),m=JSON.parse('{"path":"/tool/qrdecode/","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tool/qrdecode/index.md"}');export{i as comp,m as data};

@@ -1,0 +1,6 @@
+import{_ as n,c as s,f as t,o as a}from"./app-BB_BIQV8.js";const d={};function i(l,e){return a(),s("div",null,e[0]||(e[0]=[t(`<p>记录一下.deb文件的安装以及卸载命令:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">ubuntu下deb文件的安装:</span>
+<span class="line">sudo dpkg -i 软件包名.deb</span>
+<span class="line">卸载.deb文件：</span>
+<span class="line">先执行 dpkg --list 查看安装后的包名称</span>
+<span class="line">sudo dpkg -r 软件包名  [比如卸载 有到云笔记 ，sudo dpkg -r ynote-desktop]</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const r=n(d,[["render",i],["__file","ubuntu下deb文件的安装.html.vue"]]),c=JSON.parse('{"path":"/content/linux/command/ubuntu%E4%B8%8Bdeb%E6%96%87%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85.html","title":"ubuntu下deb文件的安装","lang":"en-US","frontmatter":{"sidebar":false,"title":"ubuntu下deb文件的安装","description":"ubuntu下deb文件的安装"},"headers":[],"git":{},"filePathRelative":"content/linux/command/ubuntu下deb文件的安装.md"}');export{r as comp,c as data};

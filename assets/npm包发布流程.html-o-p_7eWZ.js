@@ -1,0 +1,8 @@
+import{_ as e,c as s,f as t,o as a}from"./app-BB_BIQV8.js";const i={};function l(p,n){return a(),s("div",null,n[0]||(n[0]=[t(`<h3 id="npm包发布流程" tabindex="-1"><a class="header-anchor" href="#npm包发布流程"><span>npm包发布流程</span></a></h3><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">$ npm login</span>
+<span class="line"></span>
+<span class="line">$ npm run build</span>
+<span class="line"></span>
+<span class="line">$ npm publish</span>
+<span class="line"></span>
+<span class="line">注意每次发布都需要修改 &quot;version&quot;: &quot;1.0.3&quot;, 下的版本，否则会失败</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const m=e(i,[["render",l],["__file","npm包发布流程.html.vue"]]),c=JSON.parse('{"path":"/content/other/spread/npm%E5%8C%85%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B.html","title":"npm包发布流程","lang":"en-US","frontmatter":{"sidebar":false,"title":"npm包发布流程","head":[["meta",{"name":"title","content":"npm包发布流程"}],["meta",{"name":"description","content":"npm包发布流程"}],["meta",{"name":"keywords","content":"npm"}],["meta",{"property":"og:title","content":"npm包发布流程"}],["meta",{"property":"og:description","content":"npm包发布流程"}]]},"headers":[{"level":3,"title":"npm包发布流程","slug":"npm包发布流程","link":"#npm包发布流程","children":[]}],"git":{},"filePathRelative":"content/other/spread/npm包发布流程.md"}');export{m as comp,c as data};

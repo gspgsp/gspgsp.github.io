@@ -1,0 +1,1 @@
+import{_ as t,c as o,a,o as n,r}from"./app-BB_BIQV8.js";const l={};function m(c,s){const e=r("YamlFormat");return n(),o("div",null,[a(e)])}const i=t(l,[["render",m],["__file","index.html.vue"]]),d=JSON.parse('{"path":"/tool/yamlformat/","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tool/yamlformat/index.md"}');export{i as comp,d as data};

@@ -1,0 +1,36 @@
+import{_ as n,c as a,f as i,o as l}from"./app-BB_BIQV8.js";const e={};function v(d,s){return l(),a("div",null,s[0]||(s[0]=[i(`<p>css之vm_vh_lvm_lvh的差别:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">大部分前端都知道，在 CSS 世界中，有 vw、vh、vmax、vmin 这几个与视口 Viewport 相关的单位。</span>
+<span class="line">正常而言：</span>
+<span class="line">  </span>
+<span class="line">1vw 等于1/100的视口宽度 （Viewport Width）</span>
+<span class="line">1vh 等于1/100的视口高度 （Viewport Height）</span>
+<span class="line">vmin — vmin 的值是当前 vw 和 vh 中较小的值</span>
+<span class="line">vmax — vw 和 vh 中较大的值</span>
+<span class="line">  </span>
+<span class="line">但是，在移动端，情况就不太一样了。100vh 不总是等于一屏幕的高度。有的时候，100vh 高度会出现滚动条。</span>
+<span class="line">根因在于：</span>
+<span class="line">很多浏览器，在计算 100vh 的高度的时候，会把地址栏等相关控件的高度计算在内2</span>
+<span class="line">同时，很多时候，由于会弹出软键盘等操作，在弹出的过程中，100vh 的计算值并不会实时发生变化！</span>
+<span class="line">  </span>
+<span class="line">新视口相关单位之 lvh、svh、dvh</span>
+<span class="line">为了解决上述的问题，规范新推出了三类单位，分别是：</span>
+<span class="line"></span>
+<span class="line">The large viewport units（大视口单位）：lvw,lvh, lvi, lvb, lvmin, and lvmax</span>
+<span class="line">The small viewport units（小视口单位）：svw, svh, svi, svb, svmin, and svmax</span>
+<span class="line">The dynamic viewport units（动态视口单位）：dvw, dvh, dvi, dvb, dvmin, and dvmax</span>
+<span class="line">别看看上去很多，其实很好记忆，vw/vw/vmax/vmin 的前缀是 v，而：</span>
+<span class="line">  </span>
+<span class="line">大视口单位的前缀是 lv，意为 large viewport</span>
+<span class="line">小视口单位的前缀是 sv，意为 small viewport</span>
+<span class="line">动态视口单位的前缀是 dv，意为 dynamic viewport</span>
+<span class="line">这里我们着重关注 lvh、svh、dvh。它们三者与 vh 有什么异同呢？</span>
+<span class="line">  </span>
+<span class="line">先来看大视口与小视口，规范对它们的定义是：</span>
+<span class="line">Large Viewport: The viewport sized assuming any UA interfaces that are dynamically expanded and retracted to be retracted.</span>
+<span class="line">Small Viewport: The viewport sized assuming any UA interfaces that are dynamically expanded and retracted to be expanded.</span>
+<span class="line">翻译一下：</span>
+<span class="line">  </span>
+<span class="line">大视口（Large Viewport）：视口大小假设任何动态扩展和缩回的 UA 界面都没有展开</span>
+<span class="line">小视口（Small Viewport）：视口大小假设任何动态扩展和缩回的 UA 界面都展开了</span>
+<span class="line">  </span>
+<span class="line">参考链接:https://www.cnblogs.com/coco1s/p/17078218.html</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const p=n(e,[["render",v],["__file","css之vm_vh_lvm_lvh的差别.html.vue"]]),r=JSON.parse('{"path":"/content/front/html/css%E4%B9%8Bvm_vh_lvm_lvh%E7%9A%84%E5%B7%AE%E5%88%AB.html","title":"css之vm_vh_lvm_lvh的差别-origin","lang":"en-US","frontmatter":{"sidebar":false,"title":"css之vm_vh_lvm_lvh的差别-origin","description":"css之vm_vh_lvm_lvh的差别-origin"},"headers":[],"git":{},"filePathRelative":"content/front/html/css之vm_vh_lvm_lvh的差别.md"}');export{p as comp,r as data};

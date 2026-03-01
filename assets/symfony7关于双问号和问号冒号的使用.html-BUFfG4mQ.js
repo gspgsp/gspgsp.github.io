@@ -1,0 +1,10 @@
+import{_ as n,c as s,f as t,o as a}from"./app-BB_BIQV8.js";const i={};function l(m,e){return a(),s("div",null,e[0]||(e[0]=[t(`<h5 id="symfony7关于-和-的使用" tabindex="-1"><a class="header-anchor" href="#symfony7关于-和-的使用"><span>symfony7关于??和?:的使用</span></a></h5><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">??</span>
+<span class="line">只判断「是不是 null」</span>
+<span class="line">例子: 如果需求是只有 null 才用右边，而允许空字符串 &#39;&#39;，那应该用 PHP7+ 的 null 合并运算符 ??，比如：</span>
+<span class="line">$cityName = $event-&gt;getCityName() ?? $event-&gt;getCity()?-&gt;getName();</span>
+<span class="line"></span>
+<span class="line">?:</span>
+<span class="line">判断「假值」（null、false、空字符串、0 都算）</span>
+<span class="line">例子: 如果 $event-&gt;getCityName() 是空字符串 &#39;&#39; 也会走到右边。</span>
+<span class="line">$cityName = $event-&gt;getCityName() ?: $event-&gt;getCity()?-&gt;getName();</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const o=n(i,[["render",l],["__file","symfony7关于双问号和问号冒号的使用.html.vue"]]),r=JSON.parse('{"path":"/content/php/symfony/symfony7%E5%85%B3%E4%BA%8E%E5%8F%8C%E9%97%AE%E5%8F%B7%E5%92%8C%E9%97%AE%E5%8F%B7%E5%86%92%E5%8F%B7%E7%9A%84%E4%BD%BF%E7%94%A8.html","title":"symfony7关于双问号和问号冒号的使用","lang":"en-US","frontmatter":{"sidebar":false,"title":"symfony7关于双问号和问号冒号的使用","head":[["meta",{"name":"title","content":"symfony7关于双问号和问号冒号的使用"}],["meta",{"name":"description","content":"symfony7关于双问号和问号冒号的使用"}],["meta",{"name":"keywords","content":"php"}],["meta",{"property":"og:title","content":"symfony7关于双问号和问号冒号的使用"}],["meta",{"property":"og:description","content":"symfony7关于双问号和问号冒号的使用"}]]},"headers":[],"git":{},"filePathRelative":"content/php/symfony/symfony7关于双问号和问号冒号的使用.md"}');export{o as comp,r as data};

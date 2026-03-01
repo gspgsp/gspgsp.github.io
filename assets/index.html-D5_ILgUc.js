@@ -1,0 +1,1 @@
+import{_ as t,c as o,a as n,o as a,r}from"./app-BB_BIQV8.js";const c={};function s(l,_){const e=r("SvgGenerator");return a(),o("div",null,[n(e)])}const m=t(c,[["render",s],["__file","index.html.vue"]]),d=JSON.parse('{"path":"/tool/svg/","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tool/svg/index.md"}');export{m as comp,d as data};

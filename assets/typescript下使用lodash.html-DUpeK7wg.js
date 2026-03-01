@@ -1,0 +1,6 @@
+import{_ as e,c as t,f as n,o as a}from"./app-BB_BIQV8.js";const i={};function l(r,s){return a(),t("div",null,s[0]||(s[0]=[n(`<p>typescript下使用lodash:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">import * as _ from &#39;lodash&#39;</span>
+<span class="line">  </span>
+<span class="line">如果想通过下面的方式引用:</span>
+<span class="line">import _ from &#39;lodash&#39;</span>
+<span class="line">需要在  tsconfig.json 添加如下配置 &quot;esModuleInterop&quot;: true</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const p=e(i,[["render",l],["__file","typescript下使用lodash.html.vue"]]),d=JSON.parse('{"path":"/content/front/js/typescript%E4%B8%8B%E4%BD%BF%E7%94%A8lodash.html","title":"typescript下使用lodash","lang":"en-US","frontmatter":{"sidebar":false,"title":"typescript下使用lodash","description":"typescript下使用lodash"},"headers":[],"git":{},"filePathRelative":"content/front/js/typescript下使用lodash.md"}');export{p as comp,d as data};

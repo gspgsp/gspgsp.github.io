@@ -1,0 +1,6 @@
+import{_ as e,c as t,f as s,o as i}from"./app-BB_BIQV8.js";const a={};function l(u,n){return i(),t("div",null,n[0]||(n[0]=[s(`<p>ubuntu下vim方向键变ABCD问题：</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">只要依次执行以下两个命令即可解决：</span>
+<span class="line"></span>
+<span class="line">　　第一步： sudo apt-get remove vim-common</span>
+<span class="line"></span>
+<span class="line">　　第二步： sudo apt-get install vim</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const c=e(a,[["render",l],["__file","ubuntu下vim方向键变ABCD问题.html.vue"]]),d=JSON.parse('{"path":"/content/linux/command/ubuntu%E4%B8%8Bvim%E6%96%B9%E5%90%91%E9%94%AE%E5%8F%98ABCD%E9%97%AE%E9%A2%98.html","title":"ubuntu下vim方向键变ABCD问题","lang":"en-US","frontmatter":{"sidebar":false,"title":"ubuntu下vim方向键变ABCD问题","description":"ubuntu下vim方向键变ABCD问题"},"headers":[],"git":{},"filePathRelative":"content/linux/command/ubuntu下vim方向键变ABCD问题.md"}');export{c as comp,d as data};

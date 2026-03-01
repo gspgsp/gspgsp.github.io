@@ -1,0 +1,32 @@
+import{_ as s,c as e,f as i,o as a}from"./app-BB_BIQV8.js";const l={};function p(d,n){return a(),e("div",null,n[0]||(n[0]=[i(`<p>nginx多个80端口占用问题：</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line"></span>
+<span class="line">如下server 配置：</span>
+<span class="line">server {</span>
+<span class="line"></span>
+<span class="line">listen 80 default_server; #这里有个default_server标识</span>
+<span class="line"></span>
+<span class="line">listen [::]:80 default_server; #这里有个default_server标识</span>
+<span class="line"></span>
+<span class="line">root /home/www/blog/public; #网站根目录，既index.php入口文件所在目录，结尾不加 /</span>
+<span class="line"></span>
+<span class="line">index index.php index.html;</span>
+<span class="line"></span>
+<span class="line">server_name www.front.test; # 域名或者ip地址</span>
+<span class="line"></span>
+<span class="line">location / {</span>
+<span class="line"></span>
+<span class="line">try_files $uri $uri/ /index.php?$query_string; #larvel优雅连接。请根据实际配置</span>
+<span class="line"></span>
+<span class="line">}</span>
+<span class="line"></span>
+<span class="line">location ~ \\.php$ { # 支持php</span>
+<span class="line"></span>
+<span class="line">include snippets/fastcgi-php.conf;</span>
+<span class="line"></span>
+<span class="line">fastcgi_pass unix:/run/php/php7.0-fpm.sock; # 这里对应着上面安装的php7.0</span>
+<span class="line"></span>
+<span class="line">}</span>
+<span class="line"></span>
+<span class="line">}</span>
+<span class="line"></span>
+<span class="line">如果还有其它server 需要使用 80 端口，那么需要把 default_server 去掉 即可，否则就会报错</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const r=s(l,[["render",p],["__file","nginx多个80端口占用问题.html.vue"]]),v=JSON.parse('{"path":"/content/linux/nginx/nginx%E5%A4%9A%E4%B8%AA80%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8%E9%97%AE%E9%A2%98.html","title":"nginx多个80端口占用问题","lang":"en-US","frontmatter":{"sidebar":false,"title":"nginx多个80端口占用问题","description":"nginx多个80端口占用问题"},"headers":[],"git":{},"filePathRelative":"content/linux/nginx/nginx多个80端口占用问题.md"}');export{r as comp,v as data};

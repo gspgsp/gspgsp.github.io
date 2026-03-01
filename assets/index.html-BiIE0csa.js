@@ -1,0 +1,1 @@
+import{_ as o,c as t,a as n,o as a,r as c}from"./app-BB_BIQV8.js";const r={};function s(l,_){const e=c("MoHu");return a(),t("div",null,[n(e)])}const i=o(r,[["render",s],["__file","index.html.vue"]]),d=JSON.parse('{"path":"/tool/mohu/","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tool/mohu/index.md"}');export{i as comp,d as data};

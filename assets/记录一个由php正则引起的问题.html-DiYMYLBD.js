@@ -1,0 +1,55 @@
+import{_ as n,c as e,f as l,o as i}from"./app-BB_BIQV8.js";const a={};function t(p,s){return i(),e("div",null,s[0]||(s[0]=[l(`<h3 id="记录一个由php正则引起的问题" tabindex="-1"><a class="header-anchor" href="#记录一个由php正则引起的问题"><span>记录一个由php正则引起的问题:</span></a></h3><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">//有如下内容，需要正则匹配 Reviewer comments 后的内容，但是开始没有考虑到回车的问题，所以导致匹配内容为空的问题</span>
+<span class="line">$comments = &#39;&lt;strong&gt;Reviewer recommendation:&lt;/strong&gt; Revision&lt;br/&gt;&lt;strong&gt;Reviewer comments:&lt;/strong&gt; s revisions - there is some merit in this submission, but it fails to meet all the requirements for presenting it in this eve</span>
+<span class="line">55355345&#39;;</span>
+<span class="line"></span>
+<span class="line">if (strpos($comments, &#39;Reviewer comments&#39;)) {</span>
+<span class="line">//            preg_match(&#39;/&lt;strong&gt;Reviewer comments:&lt;\\/strong&gt;\\s*(.*?)$/&#39;, $comments, $matches);</span>
+<span class="line">    preg_match(&#39;/&lt;strong&gt;Reviewer comments:&lt;\\/strong&gt;\\s*(.*?)$/s&#39;, $comments, $matches);</span>
+<span class="line"></span>
+<span class="line">    dd($matches);</span>
+<span class="line">}</span>
+<span class="line">  </span>
+<span class="line">(.*?)解释:</span>
+<span class="line">  </span>
+<span class="line">(.*?) 是一个非贪婪匹配组合，用于匹配任意字符，不包括换行符，但以最短的方式匹配。让我来解释一下它的各个部分：</span>
+<span class="line">( 和 )：这是捕获组，用于将匹配的内容捕获到一个单独的组中，以便稍后可以通过变量或数组引用。</span>
+<span class="line">  </span>
+<span class="line">.*?：这是一个非贪婪匹配的表达式，其中：</span>
+<span class="line">. 匹配任意字符（除了换行符）。</span>
+<span class="line">* 表示匹配前面的字符零次或多次。</span>
+<span class="line">? 表示非贪婪匹配，即以最短的方式匹配。</span>
+<span class="line">  </span>
+<span class="line">最短的方式:</span>
+<span class="line">意味着正则表达式引擎会尽可能地匹配最短的字符串</span>
+<span class="line">假如有这样的字符串:  &lt;p&gt;Hello&lt;/p&gt;&lt;p&gt;World&lt;/p&gt; </span>
+<span class="line">现在，我们使用正则表达式 /&lt;p&gt;.*?&lt;\\/p&gt;/ 来匹配两个 &lt;p&gt; 标签之间的内容。</span>
+<span class="line"></span>
+<span class="line">在这个正则表达式中，.*? 是一个非贪婪匹配，它将匹配任意字符（包括换行符），但以最短的方式匹配。所以，整个表达式将匹配两个 &lt;p&gt; 标签之间的最短内容，即：</span>
+<span class="line"></span>
+<span class="line">&lt;p&gt;Hello&lt;/p&gt;</span>
+<span class="line">&lt;p&gt;World&lt;/p&gt;</span>
+<span class="line"></span>
+<span class="line">如果我们使用贪婪匹配，即 /&lt;p&gt;.*&lt;\\/p&gt;/，那么整个表达式将匹配两个 &lt;p&gt; 标签之间的最长内容，即：</span>
+<span class="line">&lt;p&gt;Hello&lt;/p&gt;&lt;p&gt;World&lt;/p&gt;</span>
+<span class="line"></span>
+<span class="line">  </span>
+<span class="line">注意表达式里的两个 s 的意义不同:</span>
+<span class="line">  </span>
+<span class="line">\\s 是用来匹配空白字符的元字符。具体来说，\\s 匹配空格、制表符、换行符等空白字符。</span>
+<span class="line">  </span>
+<span class="line">使用 /s 修饰符会改变 . 的行为，结尾的 /s 修饰符表示单行模式（single-line mode），使其匹配包括空白字符（whitespace）在内的任意字符。空白字符包括空格、制表符、换行符等。</span>
+<span class="line">具体来说，/s 修饰符会使得 . 匹配以下字符：</span>
+<span class="line">  </span>
+<span class="line">空格（space）</span>
+<span class="line">制表符（tab）</span>
+<span class="line">换行符（newline）</span>
+<span class="line">回车符（carriage return）</span>
+<span class="line">垂直制表符（vertical tab）</span>
+<span class="line">换页符（form feed）</span>
+<span class="line">所以，当你使用 /s 修饰符时，. 将匹配包括 &lt;br&gt; 标签中的换行符 \\n 在内的任意字符。</span>
+<span class="line">  </span>
+<span class="line">同时，由于 $ 锚点匹配行尾，不包括换行符在内。如果不使用 /s 修饰符，$ 将匹配行尾而不是整个字符串的末尾，因此不会包括换行符，以及换行符之后的内容。</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><hr><h3 id="null-对于-0-和-0-意义是不一样的-0-会通过下面的if-而-0-不会通过-所以开了-strict-模式" tabindex="-1"><a class="header-anchor" href="#null-对于-0-和-0-意义是不一样的-0-会通过下面的if-而-0-不会通过-所以开了-strict-模式"><span>null 对于 0 和 &#39;0&#39;意义是不一样的, 0 会通过下面的if， 而 &#39;0&#39; 不会通过，所以开了 strict 模式</span></a></h3><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">if (in_array(null, $columns, true)) {</span>
+<span class="line">    throw new \\Exception(&#39;upload failed.&#39;);</span>
+<span class="line">}</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,5)]))}const d=n(a,[["render",t],["__file","记录一个由php正则引起的问题.html.vue"]]),r=JSON.parse(`{"path":"/content/php/base/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%AA%E7%94%B1php%E6%AD%A3%E5%88%99%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98.html","title":"记录一个由php正则引起的问题","lang":"en-US","frontmatter":{"sidebar":false,"title":"记录一个由php正则引起的问题","description":"记录一个由php正则引起的问题"},"headers":[{"level":3,"title":"记录一个由php正则引起的问题:","slug":"记录一个由php正则引起的问题","link":"#记录一个由php正则引起的问题","children":[]},{"level":3,"title":"null 对于 0 和 '0'意义是不一样的, 0 会通过下面的if，  而 '0' 不会通过，所以开了 strict 模式","slug":"null-对于-0-和-0-意义是不一样的-0-会通过下面的if-而-0-不会通过-所以开了-strict-模式","link":"#null-对于-0-和-0-意义是不一样的-0-会通过下面的if-而-0-不会通过-所以开了-strict-模式","children":[]}],"git":{},"filePathRelative":"content/php/base/记录一个由php正则引起的问题.md"}`);export{d as comp,r as data};

@@ -1,0 +1,74 @@
+import{_ as s,c as e,f as a,o as i}from"./app-BB_BIQV8.js";const l={};function t(d,n){return i(),e("div",null,n[0]||(n[0]=[a(`<p>关于 text/event-stream:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">text/event-stream 是一种特殊的 MIME 类型,用于服务器向客户端发送事件流。这种技术主要用于实现服务器发送事件(Server-Sent Events, SSE)。以下是对 text/event-stream 的几个关键理解点:</span>
+<span class="line"></span>
+<span class="line">1. 单向通信：与 WebSocket 不同,SSE 是单向的,只能从服务器向客户端发送数据。</span>
+<span class="line"></span>
+<span class="line">2. 基于 HTTP：它使用标准的 HTTP 协议,不需要特殊的协议支持。</span>
+<span class="line"></span>
+<span class="line">3. 自动重连：客户端会自动尝试重新连接,如果连接断开。</span>
+<span class="line"></span>
+<span class="line">4. 数据格式：事件流的数据格式简单,由文本行组成,每个事件之间用空行分隔。</span>
+<span class="line"></span>
+<span class="line">5. 事件类型：可以指定不同的事件类型,允许客户端针对不同类型的事件进行不同的处理。</span>
+<span class="line"></span>
+<span class="line">6. 实时更新：适用于需要服务器主动推送数据的场景,如实时通知、股票行情更新等。</span>
+<span class="line"></span>
+<span class="line">7. 浏览器支持：大多数现代浏览器都支持 SSE。</span>
+<span class="line"></span>
+<span class="line">8. 轻量级：相比 WebSocket,SSE 更加轻量,适用于单向数据流的场景。</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>以下是一个使用 Go 实现的简单服务器,它每秒向客户端发送一次当前时间:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">package main</span>
+<span class="line"></span>
+<span class="line">import (</span>
+<span class="line">    &quot;fmt&quot;</span>
+<span class="line">    &quot;log&quot;</span>
+<span class="line">    &quot;net/http&quot;</span>
+<span class="line">    &quot;time&quot;</span>
+<span class="line">)</span>
+<span class="line"></span>
+<span class="line">func main() {</span>
+<span class="line">    http.HandleFunc(&quot;/events&quot;, eventsHandler)</span>
+<span class="line">    log.Println(&quot;Server is running on http://localhost:8080&quot;)</span>
+<span class="line">    log.Fatal(http.ListenAndServe(&quot;:8080&quot;, nil))</span>
+<span class="line">}</span>
+<span class="line"></span>
+<span class="line">func eventsHandler(w http.ResponseWriter, r *http.Request) {</span>
+<span class="line">    // 设置响应头</span>
+<span class="line">    w.Header().Set(&quot;Content-Type&quot;, &quot;text/event-stream&quot;)</span>
+<span class="line">    w.Header().Set(&quot;Cache-Control&quot;, &quot;no-cache&quot;)</span>
+<span class="line">    w.Header().Set(&quot;Connection&quot;, &quot;keep-alive&quot;)</span>
+<span class="line"></span>
+<span class="line">    // 创建一个通道来发送信号,以便在客户端断开连接时停止发送事件</span>
+<span class="line">    clientClosed := r.Context().Done()</span>
+<span class="line"></span>
+<span class="line">    for {</span>
+<span class="line">        select {</span>
+<span class="line">        case &lt;-clientClosed:</span>
+<span class="line">            return // 客户端断开连接,退出函数</span>
+<span class="line">        default:</span>
+<span class="line">            // 发送事件</span>
+<span class="line">            fmt.Fprintf(w, &quot;data: The server time is: %v\\n\\n&quot;, time.Now().Format(time.RFC3339))</span>
+<span class="line">            w.(http.Flusher).Flush()</span>
+<span class="line">            time.Sleep(time.Second) // 每秒发送一次</span>
+<span class="line">        }</span>
+<span class="line">    }</span>
+<span class="line">}</span>
+<span class="line"></span>
+<span class="line">//</span>
+<span class="line">这个 Go 示例的工作原理如下:</span>
+<span class="line">  </span>
+<span class="line">我们创建了一个 HTTP 服务器,监听在 8080 端口。</span>
+<span class="line">/events 路径被映射到 eventsHandler 函数。</span>
+<span class="line">在 eventsHandler 函数中:</span>
+<span class="line">  </span>
+<span class="line">我们设置了适当的响应头,包括 Content-Type: text/event-stream。</span>
+<span class="line">我们使用一个无限循环来持续发送事件。</span>
+<span class="line">每次循环,我们发送当前时间作为事件数据。</span>
+<span class="line">我们使用 Flush() 来确保数据立即发送给客户端。</span>
+<span class="line">我们使用 time.Sleep() 来控制发送频率。</span>
+<span class="line">  </span>
+<span class="line">我们使用 r.Context().Done() 来检测客户端是否断开连接,如果断开则停止发送事件。</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>要使用这个服务器,客户端(如 Web 浏览器)可以使用 EventSource API 来连接和接收事件:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">const eventSource = new EventSource(&#39;http://localhost:8080/events&#39;);</span>
+<span class="line">  </span>
+<span class="line">eventSource.onmessage = function(event) {</span>
+<span class="line">    console.log(event.data);</span>
+<span class="line">};</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,6)]))}const p=s(l,[["render",t],["__file","event_stream格式.html.vue"]]),v=JSON.parse('{"path":"/content/other/spread/event_stream%E6%A0%BC%E5%BC%8F.html","title":"关于 text/event-stream","lang":"en-US","frontmatter":{"sidebar":false,"title":"关于 text/event-stream","description":"关于 text/event-stream"},"headers":[],"git":{},"filePathRelative":"content/other/spread/event_stream格式.md"}');export{p as comp,v as data};

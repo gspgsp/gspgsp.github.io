@@ -1,0 +1,9 @@
+import{_ as s,c as a,f as n,o as l}from"./app-BB_BIQV8.js";const i={};function t(d,e){return l(),a("div",null,e[0]||(e[0]=[n(`<ul><li>修改字段类型<br> 语法:</li></ul><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">ALTER TABLE 表名 MODIFY [COLUMN] 字段名 新数据类型 新类型长度 新默认值 新注释;  --- COLUMN 关键字可以忽略不屑</span>
+<span class="line"></span>
+<span class="line">例如:</span>
+<span class="line">alter table d_slides modify column created_at TIMESTAMP DEFAULT NULL</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul><li>修改字段名称<br> 语法:</li></ul><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">ALTER TABLE 表名 CHANGE [COLUMN] 旧字段名 新字段名 新数据类型;</span>
+<span class="line"></span>
+<span class="line">例如:</span>
+<span class="line">alter table d_users change nickname nick_name varchar(100) DEFAULT NULL</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,4)]))}const c=s(i,[["render",t],["__file","mysql之修改字段信息.html.vue"]]),m=JSON.parse('{"path":"/content/database/mysql/mysql%E4%B9%8B%E4%BF%AE%E6%94%B9%E5%AD%97%E6%AE%B5%E4%BF%A1%E6%81%AF.html","title":"mysql之修改字段信息","lang":"en-US","frontmatter":{"sidebar":false,"title":"mysql之修改字段信息","description":"mysql之修改字段信息"},"headers":[],"git":{},"filePathRelative":"content/database/mysql/mysql之修改字段信息.md"}');export{c as comp,m as data};

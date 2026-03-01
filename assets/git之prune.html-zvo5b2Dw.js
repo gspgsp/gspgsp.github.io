@@ -1,0 +1,29 @@
+import{_ as s,c as e,f as i,o as a}from"./app-BB_BIQV8.js";const l={};function t(r,n){return a(),e("div",null,n[0]||(n[0]=[i(`<p>git之prune:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">git remote prune 命令用于删除远程追踪的已不存在的远程引用。当你从远程仓库获取数据时,Git会自动为你存储远程分支引用,以便于你可以随时访问它们。但有时,某些远程分支可能已经被删除,此时,本地的远程分支引用就变成了悬空引用。</span>
+<span class="line">执行 git remote prune 可以清理掉这些已经被删除的远程分支引用。具体作用如下:</span>
+<span class="line"></span>
+<span class="line">1&gt;查询远程仓库,获取远程分支的更新信息。</span>
+<span class="line">2&gt;将本地已不存在于远程的远程分支引用全部删除。</span>
+<span class="line">3&gt;如果使用 git remote prune &lt;远程名&gt;的形式,则只针对指定的远程进行 prune 操作。</span>
+<span class="line"></span>
+<span class="line">通常在获取远程更新前执行 git remote prune 是一个好习惯,可以确保本地仓库的远程分支引用保持最新、有效的状态。不过,这并不会影响已经拉取到本地的远程分支代码。</span>
+<span class="line">需要注意的是,git remote prune 只会删除远程分支引用,不会删除本地分支。如果你想删除本地分支,需要使用 git branch -D &lt;分支名&gt;。</span>
+<span class="line"></span>
+<span class="line">实操:</span>
+<span class="line">$ git remote prune</span>
+<span class="line">usage: git remote prune [&lt;options&gt;] &lt;name&gt;</span>
+<span class="line"></span>
+<span class="line">    -n, --dry-run         dry run</span>
+<span class="line"></span>
+<span class="line">这个报错是因为你执行 git remote prune 命令时没有指定远程仓库名称。</span>
+<span class="line">正确的用法是:</span>
+<span class="line">git remote prune &lt;远程仓库名称&gt;</span>
+<span class="line">例如，如果你的远程仓库名称是 origin，那么命令应该是:</span>
+<span class="line">git remote prune origin</span>
+<span class="line">这个命令会删除本地存储的已不存在于远程 origin 仓库的远程分支引用。</span>
+<span class="line">如果你想查看哪些分支将被删除而不实际执行删除操作,可以使用 --dry-run 选项:</span>
+<span class="line">git remote prune --dry-run origin</span>
+<span class="line">它会显示将要被删除的远程分支引用列表,但不会真的删除它们。</span>
+<span class="line">所以总结一下,正确的用法是:</span>
+<span class="line"></span>
+<span class="line">1&gt;git remote prune &lt;远程仓库名称&gt; - 删除指定远程仓库不存在的远程分支引用</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const d=s(l,[["render",t],["__file","git之prune.html.vue"]]),c=JSON.parse('{"path":"/content/other/git/git%E4%B9%8Bprune.html","title":"git之prune","lang":"en-US","frontmatter":{"sidebar":false,"title":"git之prune","description":"git之prune"},"headers":[],"git":{},"filePathRelative":"content/other/git/git之prune.md"}');export{d as comp,c as data};

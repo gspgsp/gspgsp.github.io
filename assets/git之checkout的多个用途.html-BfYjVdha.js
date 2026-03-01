@@ -1,0 +1,7 @@
+import{_ as t,c as n,f as i,o as s}from"./app-BB_BIQV8.js";const a={};function c(l,e){return s(),n("div",null,e[0]||(e[0]=[i(`<p>使用git checkout除了可以切换分支外，还可以迁出(恢复)指定文件</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">git checkout 恢复文件</span>
+<span class="line">www@HPDEV-31:~/code/www/frontend$ git checkout pages/index.vue  //以前常用方式,最简单的方式</span>
+<span class="line">Updated 1 path from the index</span>
+<span class="line"></span>
+<span class="line">www@HPDEV-31:~/code/www/frontend$ git checkout -- pages/index.vue //使用 --  方式, 不指定分支，默认是当前分支</span>
+<span class="line">www@HPDEV-31:~/code/www/frontend$ git checkout guoshipeng -- pages/index.vue //使用 --  方式, 指定分支</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const o=t(a,[["render",c],["__file","git之checkout的多个用途.html.vue"]]),r=JSON.parse('{"path":"/content/other/git/git%E4%B9%8Bcheckout%E7%9A%84%E5%A4%9A%E4%B8%AA%E7%94%A8%E9%80%94.html","title":"git之checkout的多个用途","lang":"en-US","frontmatter":{"sidebar":false,"title":"git之checkout的多个用途","description":"git之checkout的多个用途"},"headers":[],"git":{},"filePathRelative":"content/other/git/git之checkout的多个用途.md"}');export{o as comp,r as data};

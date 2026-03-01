@@ -1,0 +1,1 @@
+import{_ as e,o,c as s,b as c}from"./app-BB_BIQV8.js";const a={name:"title-top",props:["img"],data(){return{top_img:""}},created(){this.top_img=this.img}},_={class:"d-top"},i=["src"];function r(p,n,d,l,t,m){return o(),s("div",_,[c("img",{src:t.top_img,alt:""},null,8,i)])}const u=e(a,[["render",r],["__scopeId","data-v-ef1c1a16"],["__file","TitleTop.vue"]]);export{u as default};

@@ -1,0 +1,7 @@
+import{_ as s,c as t,f as n,b as a,o as l}from"./app-BB_BIQV8.js";const d={},r=["src"];function c(i,e){return l(),t("div",null,[e[0]||(e[0]=n(`<p>git的几个区域:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">git中文件所在位置有四个，在工作区内、在索引区内、在本地仓库、在远程仓库。  </span>
+<span class="line">处于四个位置中文件的状态分别为untracked、unmodified、modified、staged。  </span>
+<span class="line">通过三个操作可以把文件进行状态转移：  </span>
+<span class="line">git add 把工作区文件添加到索引区；  </span>
+<span class="line">git commit 把索引区文件添加到本地仓库；  </span>
+<span class="line">git push 把本地仓库文件添加到远程仓库。 </span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)),a("img",{src:i.$withBase("/images/git/git_range.png"),style:{width:"100%"}},null,8,r)])}const p=s(d,[["render",c],["__file","git的几个区域.html.vue"]]),g=JSON.parse('{"path":"/content/other/git/git%E7%9A%84%E5%87%A0%E4%B8%AA%E5%8C%BA%E5%9F%9F.html","title":"git的几个区域","lang":"en-US","frontmatter":{"sidebar":false,"title":"git的几个区域","description":"git的几个区域"},"headers":[],"git":{},"filePathRelative":"content/other/git/git的几个区域.md"}');export{p as comp,g as data};

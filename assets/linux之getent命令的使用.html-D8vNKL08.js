@@ -1,0 +1,36 @@
+import{_ as s,c as e,f as a,o as i}from"./app-BB_BIQV8.js";const l={};function t(c,n){return i(),e("div",null,n[0]||(n[0]=[a(`<p>linux之getent命令的使用:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">root@ca4989b3147e:/var/www# getent passwd www-data</span>
+<span class="line">www-data:x:1000:33:www-data:/var/www/:/bin/bash</span>
+<span class="line">  </span>
+<span class="line">分析:</span>
+<span class="line">www-data：用户名</span>
+<span class="line">x：密码字段（现代系统一般用 x 表示密码已加密存储）</span>
+<span class="line">33：用户 ID (UID)</span>
+<span class="line">33：组 ID (GID)</span>
+<span class="line">www-data：用户描述信息</span>
+<span class="line">/var/www：用户的家目录</span>
+<span class="line">/usr/sbin/nologin：用户登录时的 Shell（通常表示该用户不能直接登录）</span>
+<span class="line">  </span>
+<span class="line">root@ca4989b3147e:/var/www# </span>
+<span class="line">root@ca4989b3147e:/var/www# getent group www-data</span>
+<span class="line">www-data:x:33:</span>
+<span class="line">  </span>
+<span class="line">分析:</span>
+<span class="line">www-data：组名</span>
+<span class="line">x：密码字段（组的密码，一般为空）</span>
+<span class="line">33：组 ID (GID)</span>
+<span class="line">空字段表示没有附加的成员信息</span>
+<span class="line">  </span>
+<span class="line">root@ca4989b3147e:/var/www# </span>
+<span class="line">root@ca4989b3147e:/var/www# getent services http</span>
+<span class="line">http                  80/tcp www</span>
+<span class="line">  </span>
+<span class="line">分析：</span>
+<span class="line">使用 getent services 查询指定服务的端口和协议</span>
+<span class="line">  </span>
+<span class="line">root@ca4989b3147e:/var/www# </span>
+<span class="line">root@ca4989b3147e:/var/www# getent protocols tcp</span>
+<span class="line">tcp                   6 TCP</span>
+<span class="line">  </span>
+<span class="line">分析:</span>
+<span class="line">使用 getent protocols 查询协议的相关信息</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const p=s(l,[["render",t],["__file","linux之getent命令的使用.html.vue"]]),r=JSON.parse('{"path":"/content/linux/command/linux%E4%B9%8Bgetent%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8.html","title":"linux之getent命令的使用","lang":"en-US","frontmatter":{"sidebar":false,"title":"linux之getent命令的使用","head":[["meta",{"name":"title","content":"linux之getent命令的使用"}],["meta",{"name":"description","content":"linux之getent命令的使用"}],["meta",{"name":"keywords","content":"getent"}],["meta",{"property":"og:title","content":"linux之getent命令的使用"}],["meta",{"property":"og:description","content":"linux之getent命令的使用"}]]},"headers":[],"git":{},"filePathRelative":"content/linux/command/linux之getent命令的使用.md"}');export{p as comp,r as data};

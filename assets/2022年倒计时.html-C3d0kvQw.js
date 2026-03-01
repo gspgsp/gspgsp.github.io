@@ -1,0 +1,6 @@
+import{_ as n,c as s,f as a,o as t}from"./app-BB_BIQV8.js";const i={};function l(r,e){return t(),s("div",null,e[0]||(e[0]=[a(`<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">现在是2022年的12月30号，离2023年还有两天的时间，遂想对2022年做一个总结。</span>
+<span class="line">之前一直在上海做开发，今年3月10几号从上海回武汉，准备回武汉发展，还好回来的及时，因为3月20几号，上海就开始封城了，想想都可怕。</span>
+<span class="line">回到武汉，投了一些简历，回应并不是特别的好，可能是期望值比较高吧，后来，就降低了一些标准，进了个小公司，负责项目的后台全部开发，</span>
+<span class="line">一直想转go开发，后来就用go做后端开发语言，再后来就来到了现在的公司，感觉2022年过的稀里糊涂，反正就是过了这一年。2023年的工作</span>
+<span class="line">计划是，继续在全栈开发的路上越走越远，继续完善自己的项目，希望可以做起来。</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,1)]))}const c=n(i,[["render",l],["__file","2022年倒计时.html.vue"]]),o=JSON.parse('{"path":"/content/other/spread/2022%E5%B9%B4%E5%80%92%E8%AE%A1%E6%97%B6.html","title":"2022年倒计时","lang":"en-US","frontmatter":{"sidebar":false,"title":"2022年倒计时","description":"2022年倒计时"},"headers":[],"git":{},"filePathRelative":"content/other/spread/2022年倒计时.md"}');export{c as comp,o as data};

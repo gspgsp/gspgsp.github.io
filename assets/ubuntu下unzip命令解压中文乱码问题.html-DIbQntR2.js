@@ -1,0 +1,6 @@
+import{_ as e,c as i,f as s,o as t}from"./app-BB_BIQV8.js";const a={};function u(l,n){return t(),i("div",null,n[0]||(n[0]=[s(`<p>ubuntu下unzip命令解压中文乱码问题：</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">来在windows上的zip文件, 在CentOS上使用unzip直接解压会显示乱码,</span>
+<span class="line">因为windows简体中文版的操作系统一般上用的是GBK编码, 所以会导致这个问题,</span>
+<span class="line">可以使用-O参数来解决, 即:</span>
+<span class="line"></span>
+<span class="line">unzip -O GBK ./测试文件.zip</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const d=e(a,[["render",u],["__file","ubuntu下unzip命令解压中文乱码问题.html.vue"]]),c=JSON.parse('{"path":"/content/linux/command/ubuntu%E4%B8%8Bunzip%E5%91%BD%E4%BB%A4%E8%A7%A3%E5%8E%8B%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98.html","title":"ubuntu下unzip命令解压中文乱码问题","lang":"en-US","frontmatter":{"sidebar":false,"title":"ubuntu下unzip命令解压中文乱码问题","description":"ubuntu下unzip命令解压中文乱码问题"},"headers":[],"git":{},"filePathRelative":"content/linux/command/ubuntu下unzip命令解压中文乱码问题.md"}');export{d as comp,c as data};

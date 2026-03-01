@@ -1,0 +1,30 @@
+import{_ as s,c as i,f as a,o as l}from"./app-BB_BIQV8.js";const e={};function c(d,n){return l(),i("div",null,n[0]||(n[0]=[a(`<p>vim多行注释，取消多行注释，多行复制，多行删除:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">多行注释</span>
+<span class="line">进入命令行模式，按ctrl + v进入 visual block模式（可视快模式），然后按j, 或者k选中多行，把需要注释的行标记起来</span>
+<span class="line"></span>
+<span class="line">按大写字母i，再插入注释符，例如#</span>
+<span class="line"></span>
+<span class="line">按esc键就会全部注释了</span>
+<span class="line">  </span>
+<span class="line">取消多行注释：</span>
+<span class="line">进入命令行模式，按ctrl + v进入 visual block模式（可视快模式），按小写字母L横向选中列的个数，例如 // 需要选中2列</span>
+<span class="line"></span>
+<span class="line">按字母j，或者k选中注释符号</span>
+<span class="line"></span>
+<span class="line">按d键或x键就可全部取消注释</span>
+<span class="line">  </span>
+<span class="line">多行复制</span>
+<span class="line">如果知道需要复制几行</span>
+<span class="line">将光标移至需要复制的内容的第一行，计算需要复制多少行，比如需要复制5行</span>
+<span class="line"></span>
+<span class="line">按下5yy，将光标移至需要复制的地方，按下p粘贴</span>
+<span class="line"></span>
+<span class="line">如果不知道需要复制几行</span>
+<span class="line">有时候不想费劲看多少行或复制大量行时，可以使用标签来替代</span>
+<span class="line">1. 光标移到起始行，输入ma</span>
+<span class="line">2. 光标移到结束行，输入mb</span>
+<span class="line">3. 光标移到粘贴行，输入mc</span>
+<span class="line">4. 然后 :’a,’b co ‘c 把 co 改成 m 就成剪切了</span>
+<span class="line">  </span>
+<span class="line">多行删除</span>
+<span class="line">跟多行复制的情况差不多，第一种方法里5yy改成5dd就行，第二种方法里，或者用:5, 9 de。</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const p=s(e,[["render",c],["__file","vim多行注释_取消多行注释_多行复制_多行删除.html.vue"]]),m=JSON.parse('{"path":"/content/linux/command/vim%E5%A4%9A%E8%A1%8C%E6%B3%A8%E9%87%8A_%E5%8F%96%E6%B6%88%E5%A4%9A%E8%A1%8C%E6%B3%A8%E9%87%8A_%E5%A4%9A%E8%A1%8C%E5%A4%8D%E5%88%B6_%E5%A4%9A%E8%A1%8C%E5%88%A0%E9%99%A4.html","title":"vim多行注释_取消多行注释_多行复制_多行删除","lang":"en-US","frontmatter":{"sidebar":false,"title":"vim多行注释_取消多行注释_多行复制_多行删除","description":"vim多行注释_取消多行注释_多行复制_多行删除"},"headers":[],"git":{},"filePathRelative":"content/linux/command/vim多行注释_取消多行注释_多行复制_多行删除.md"}');export{p as comp,m as data};

@@ -1,0 +1,7 @@
+import{_ as e,c as s,f as a,o as t}from"./app-BB_BIQV8.js";const i={};function l(d,n){return t(),s("div",null,n[0]||(n[0]=[a(`<p>npm audit的作用:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">audit命令向默认注册表提交项目中配置的依赖项的描述，并要求提供已知漏洞的报告。如果发现任何漏洞，将计算影响和适当的补救措施。如果提供了fix参数，则修正将应用于程序包树。</span>
+<span class="line">  </span>
+<span class="line">如果没有发现漏洞，该命令将退出，退出代码为0。</span>
+<span class="line">默认情况下，如果发现任何漏洞，audit命令将以非零代码退出。在CI环境中，包含- audit-level参数来指定导致命令失败的最低漏洞级别可能很有用。此选项不过滤报告输出，它只是更改命令的失败阈值</span>
+<span class="line">  </span>
+<span class="line">官方文档: https://docs.npmjs.com/cli/v10/commands/npm-audit</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const p=e(i,[["render",l],["__file","npm之audit的作用.html.vue"]]),r=JSON.parse('{"path":"/content/front/js/npm%E4%B9%8Baudit%E7%9A%84%E4%BD%9C%E7%94%A8.html","title":"npm audit的作用","lang":"en-US","frontmatter":{"sidebar":false,"title":"npm audit的作用","description":"npm audit的作用"},"headers":[],"git":{},"filePathRelative":"content/front/js/npm之audit的作用.md"}');export{p as comp,r as data};

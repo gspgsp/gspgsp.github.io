@@ -1,0 +1,34 @@
+import{_ as s,c as e,f as i,o as a}from"./app-BB_BIQV8.js";const l={};function c(p,n){return a(),e("div",null,n[0]||(n[0]=[i(`<p>ubuntu查看cup以及内存信息:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">shipengguo@dev_env:~$ cat /proc/cpuinfo </span>
+<span class="line">processor	: 0</span>
+<span class="line">vendor_id	: GenuineIntel</span>
+<span class="line">cpu family	: 6</span>
+<span class="line">model		: 85</span>
+<span class="line">model name	: Intel(R) Xeon(R) Silver 4210R CPU @ 2.40GHz</span>
+<span class="line">stepping	: 7</span>
+<span class="line">microcode	: 0x5003604</span>
+<span class="line">cpu MHz		: 2400.000</span>
+<span class="line">cache size	: 14080 KB</span>
+<span class="line">physical id	: 0</span>
+<span class="line">siblings	: 20</span>
+<span class="line">core id		: 0</span>
+<span class="line">cpu cores	: 10</span>
+<span class="line">apicid		: 0</span>
+<span class="line">initial apicid	: 0</span>
+<span class="line">fpu		: yes</span>
+<span class="line">fpu_exception	: yes</span>
+<span class="line">cpuid level	: 22</span>
+<span class="line">wp		: yes</span>
+<span class="line">...</span>
+<span class="line">...</span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line">shipengguo@dev_env:~$ cat /proc/meminfo</span>
+<span class="line">MemTotal:       247272116 kB</span>
+<span class="line">MemFree:        32688360 kB</span>
+<span class="line">MemAvailable:   113584576 kB</span>
+<span class="line">Buffers:        38315172 kB</span>
+<span class="line">Cached:         30518784 kB</span>
+<span class="line">SwapCached:            0 kB</span>
+<span class="line">...</span>
+<span class="line">...</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const t=s(l,[["render",c],["__file","ubuntu查看cup以及内存信息.html.vue"]]),u=JSON.parse('{"path":"/content/linux/command/ubuntu%E6%9F%A5%E7%9C%8Bcup%E4%BB%A5%E5%8F%8A%E5%86%85%E5%AD%98%E4%BF%A1%E6%81%AF.html","title":"ubuntu查看cup以及内存信息","lang":"en-US","frontmatter":{"sidebar":false,"title":"ubuntu查看cup以及内存信息","description":"ubuntu查看cup以及内存信息"},"headers":[],"git":{},"filePathRelative":"content/linux/command/ubuntu查看cup以及内存信息.md"}');export{t as comp,u as data};

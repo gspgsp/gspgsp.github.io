@@ -1,0 +1,32 @@
+import{_ as n,c as a,f as i,o as e}from"./app-BB_BIQV8.js";const l={};function d(r,s){return e(),a("div",null,s[0]||(s[0]=[i(`<p>mysql之groupby再排序的问题:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">mysql group by + order by 查询，获取money 最高的uid</span>
+<span class="line">  </span>
+<span class="line">//简单方法，但是不能准确获取当前那一行数据</span>
+<span class="line">SELECT id, uid,MAX(money) as cc, datatime FROM d_rewards GROUP BY uid ORDER BY cc DESC;</span>
+<span class="line">  </span>
+<span class="line">//下面这个子查询的结果有了，但是 对于 group by 却没有生效</span>
+<span class="line">SELECT</span>
+<span class="line">	r.id,</span>
+<span class="line">	r.uid,</span>
+<span class="line">	r.money,</span>
+<span class="line">	r.datatime </span>
+<span class="line">FROM</span>
+<span class="line">	( SELECT id, uid, money, datatime FROM d_rewards ORDER BY money DESC) r </span>
+<span class="line">GROUP BY</span>
+<span class="line">	r.uid </span>
+<span class="line">ORDER BY</span>
+<span class="line">	r.money DESC;</span>
+<span class="line"></span>
+<span class="line">  </span>
+<span class="line">//加上 limit 就可以了，原因待定...，但是 limit 的值是一个问题</span>
+<span class="line">SELECT</span>
+<span class="line">	r.id,</span>
+<span class="line">	r.uid,</span>
+<span class="line">	r.money,</span>
+<span class="line">	r.datatime </span>
+<span class="line">FROM</span>
+<span class="line">	( SELECT id, uid, money, datatime FROM d_rewards ORDER BY money DESC limit 8) r </span>
+<span class="line">GROUP BY</span>
+<span class="line">	r.uid </span>
+<span class="line">ORDER BY</span>
+<span class="line">	r.money DESC;</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const p=n(l,[["render",d],["__file","mysql之groupby再排序的问题.html.vue"]]),t=JSON.parse('{"path":"/content/database/mysql/mysql%E4%B9%8Bgroupby%E5%86%8D%E6%8E%92%E5%BA%8F%E7%9A%84%E9%97%AE%E9%A2%98.html","title":"mysql之groupby再排序的问题","lang":"en-US","frontmatter":{"sidebar":false,"title":"mysql之groupby再排序的问题","description":"mysql之groupby再排序的问题"},"headers":[],"git":{},"filePathRelative":"content/database/mysql/mysql之groupby再排序的问题.md"}');export{p as comp,t as data};

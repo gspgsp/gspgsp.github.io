@@ -1,0 +1,8 @@
+import{_ as s,c as n,f as a,o as l}from"./app-BB_BIQV8.js";const t={};function i(o,e){return l(),n("div",null,e[0]||(e[0]=[a(`<p>composer install 报错:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">执行: composer install 报： Your lock file does not contain a compatible set of packages. Please run composer update.</span>
+<span class="line">  </span>
+<span class="line">执行: compsoer update 报： require composer-runtime-api ^2.2 -&gt; found composer-runtime-api[2.0.0] but it does not match the constraint</span>
+<span class="line">执行： composer self-update 即可解决</span>
+<span class="line">参考：https://stackoverflow.com/questions/65495849/laravel-composer-install-giving-error-your-lock-file-does-not-contain-a-compati</span>
+<span class="line">  </span>
+<span class="line">然后再执行 composer install</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const c=s(t,[["render",i],["__file","composer_install报错.html.vue"]]),p=JSON.parse('{"path":"/content/php/base/composer_install%E6%8A%A5%E9%94%99.html","title":"composer install 报错","lang":"en-US","frontmatter":{"sidebar":false,"title":"composer install 报错","description":"composer install 报错"},"headers":[],"git":{},"filePathRelative":"content/php/base/composer_install报错.md"}');export{c as comp,p as data};

@@ -1,0 +1,43 @@
+import{_ as s,c as e,f as l,o as a}from"./app-BB_BIQV8.js";const i={};function d(p,n){return a(),e("div",null,n[0]||(n[0]=[l(`<h5 id="symfony7之uploadedfile上传的原理" tabindex="-1"><a class="header-anchor" href="#symfony7之uploadedfile上传的原理"><span>symfony7之UploadedFile上传的原理</span></a></h5><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">UploadedFile 类是 Symfony\\Component\\HttpFoundation\\File\\UploadedFile，查勘表源码可以看到它的move方法是对 php 原生的 move_uploaded_file 方法的封装.</span>
+<span class="line"></span>
+<span class="line">//UploadedFile中 move 方法的核心部分如下</span>
+<span class="line">$moved = move_uploaded_file($this-&gt;getPathname(), $target); // php内置的这个函数，如果目标文件已经存在，将会被覆盖。</span>
+<span class="line">@chmod($target, 0666 &amp; ~umask()); // 这个是给新路径下的文件赋权限rw-rw-rw-rw, umask()是系统当前的 权限掩码, 这是标准写法，用来根据系统设置自动“减去”被屏蔽的权限。0666 是 八进制, 前面加个0和666十进制区分</span>
+<span class="line"></span>
+<span class="line">在 PHP（和 C、JavaScript 等许多语言）中，前缀 0 表示“八进制”，就像：</span>
+<span class="line">0x 表示十六进制（例如 0xFF 是 255）</span>
+<span class="line">0b 表示二进制（例如 0b1010 是 10）</span>
+<span class="line">0 表示八进制（例如 0666 是权限）</span>
+<span class="line"></span>
+<span class="line">//php 默认前端上传的内容存放到了 /tmp下，格式如 pathname: &quot;/tmp/phpRj5h4q&quot;</span>
+<span class="line">但是请求完了之后，这个/tmp下的文件会被清除，所以我们需要在上传的逻辑里调用 move 方法，存到新的位置，后续继续处理(使用)</span>
+<span class="line"></span>
+<span class="line">而UploadedFile 又继承自 File</span>
+<span class="line">class UploadedFile extends File</span>
+<span class="line">而File又继承自 PHP 内置的 \\SplFileInfo 类</span>
+<span class="line">class File extends \\SplFileInfo</span>
+<span class="line"></span>
+<span class="line">为什么这样设计？</span>
+<span class="line">\\SplFileInfo 是 PHP 标准库（SPL）中的一个类，专门用来处理文件和目录的相关信息，比如文件名、路径、大小、修改时间等等。</span>
+<span class="line">Symfony 利用继承它，复用它提供的丰富文件操作接口，避免重复造轮子。</span>
+<span class="line">File 类在此基础上封装了更多功能（比如文件验证、路径处理等）。</span>
+<span class="line">UploadedFile 又继承 File，专门增加了针对 HTTP 上传文件的逻辑，比如错误码、临时文件路径、移动文件的方法。</span>
+<span class="line"></span>
+<span class="line">\\SplFileInfo 提供的常用方法（被 File 和 UploadedFile 继承）:</span>
+<span class="line">getFilename() — 获取文件名（带扩展名）</span>
+<span class="line">getBasename() — 获取文件名（可去掉扩展名）</span>
+<span class="line">getPath() — 获取文件目录路径</span>
+<span class="line">getPathname() — 获取完整路径（绝对路径）</span>
+<span class="line">getExtension() — 获取扩展名</span>
+<span class="line">getSize() — 获取文件大小</span>
+<span class="line">getMTime() — 获取最后修改时间</span>
+<span class="line">isDir()、isFile() — 判断是否为目录或文件</span>
+<span class="line"></span>
+<span class="line">Symfony 额外扩展的方法:</span>
+<span class="line">File 和 UploadedFile 增加了上传文件相关的：</span>
+<span class="line">getClientOriginalName() — 客户端上传时的原始文件名</span>
+<span class="line">getClientOriginalExtension() — 客户端文件扩展名</span>
+<span class="line">move() — 将临时文件移动到目标目录</span>
+<span class="line">isValid() — 判断文件上传是否成功</span>
+<span class="line">上传错误处理等</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const t=s(i,[["render",d],["__file","symfony7之UploadedFile上传的原理.html.vue"]]),m=JSON.parse('{"path":"/content/php/symfony/symfony7%E4%B9%8BUploadedFile%E4%B8%8A%E4%BC%A0%E7%9A%84%E5%8E%9F%E7%90%86.html","title":"symfony7之UploadedFile上传的原理","lang":"en-US","frontmatter":{"sidebar":false,"title":"symfony7之UploadedFile上传的原理","head":[["meta",{"name":"title","content":"symfony7之UploadedFile上传的原理"}],["meta",{"name":"description","content":"symfony7之UploadedFile上传的原理"}],["meta",{"name":"keywords","content":"php,symfony"}],["meta",{"property":"og:title","content":"symfony7之UploadedFile上传的原理"}],["meta",{"property":"og:description","content":"symfony7之UploadedFile上传的原理"}]]},"headers":[],"git":{},"filePathRelative":"content/php/symfony/symfony7之UploadedFile上传的原理.md"}');export{t as comp,m as data};

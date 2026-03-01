@@ -1,0 +1,8 @@
+import{_ as s,c as n,f as a,o as l}from"./app-BB_BIQV8.js";const r={};function i(t,e){return l(),n("div",null,e[0]||(e[0]=[a(`<p>mysql指groupby和orderby:</p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">mysql关于 group by 和 order by:</span>
+<span class="line">1.GROUP BY 会将相同的值分为一组，而 ORDER BY 会根据指定的列对查询结果进行排序。</span>
+<span class="line">2.可以在 SELECT 语句中同时使用这两个子句。通常，GROUP BY 在 ORDER BY 之前执行，因为 GROUP BY 会先处理数据并生成分组，然后 ORDER BY 会对分组后的数据进行排序。</span>
+<span class="line">3.GROUP BY 用于对列进行分组，不能直接对聚合函数进行分组。ORDER BY 可以对聚合函数的结果进行排序。因此，在实际使用中，通常会先使用 GROUP BY 来对数据进行分组，然后使用 ORDER BY 来排序聚合函数的结果。</span>
+<span class="line">  </span>
+<span class="line">例子:</span>
+<span class="line">select id, title, event_id, count(*) as num from articles group by event_id order by num desc;</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const o=s(r,[["render",i],["__file","mysql指groupby和orderby.html.vue"]]),c=JSON.parse('{"path":"/content/database/mysql/mysql%E6%8C%87groupby%E5%92%8Corderby.html","title":"mysql指groupby和orderby","lang":"en-US","frontmatter":{"sidebar":false,"title":"mysql指groupby和orderby","description":"mysql指groupby和orderby"},"headers":[],"git":{},"filePathRelative":"content/database/mysql/mysql指groupby和orderby.md"}');export{o as comp,c as data};
