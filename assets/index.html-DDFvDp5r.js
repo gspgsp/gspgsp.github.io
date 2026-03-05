@@ -1,0 +1,1 @@
+import{_ as o,c as t,a as n,o as a,r as s}from"./app-B1ovLvDn.js";const r={};function c(l,_){const e=s("Books");return a(),t("div",null,[n(e)])}const d=o(r,[["render",c],["__file","index.html.vue"]]),m=JSON.parse('{"path":"/books/","title":"","lang":"en-US","frontmatter":{"sidebar":false},"headers":[],"git":{},"filePathRelative":"books/index.md"}');export{d as comp,m as data};
