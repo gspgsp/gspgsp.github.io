@@ -1,0 +1,57 @@
+import{_ as s,c as e,f as a,o as i}from"./app-WR18URC5.js";const l={};function p(d,n){return i(),e("div",null,n[0]||(n[0]=[a(`<h3 id="symfony7下swagger文档注释路由参数的两种写法" tabindex="-1"><a class="header-anchor" href="#symfony7下swagger文档注释路由参数的两种写法"><span>Symfony7下Swagger文档注释路由参数的两种写法</span></a></h3><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre><code><span class="line">&lt;?php</span>
+<span class="line"></span>
+<span class="line">namespace App\\Controller\\Api\\External;</span>
+<span class="line"></span>
+<span class="line">use App\\Controller\\Api\\BaseController;</span>
+<span class="line">use App\\Service\\Submission\\PublishedSubmissionService;</span>
+<span class="line">use OpenApi\\Attributes as OA;</span>
+<span class="line">use Symfony\\Component\\HttpFoundation\\JsonResponse;</span>
+<span class="line">use Symfony\\Component\\Routing\\Attribute\\Route;</span>
+<span class="line"></span>
+<span class="line">#[Route(&#39;/api&#39;, name: &#39;user_&#39;)]</span>
+<span class="line">class UserController extends BaseController</span>
+<span class="line">{</span>
+<span class="line"></span>
+<span class="line">//    #[OA\\Tag(name: &#39;Paper DOI update&#39;)]</span>
+<span class="line">//    #[OA\\Parameter(name: &#39;publication_date&#39;, description: &#39;Publication date of paper&#39;, in: &#39;path&#39;, required: true)]</span>
+<span class="line">//    #[OA\\Parameter(name: &#39;id_doi&#39;, description: &#39;DOI id&#39;, in: &#39;path&#39;, required: true)]</span>
+<span class="line">//    #[OA\\Response(response: 200, description: &#39;Returned when successful&#39;)]</span>
+<span class="line">//    #[OA\\Response(response: 500, description: &#39;Returned when not authorized access&#39;)]</span>
+<span class="line">//    #[Route(path: &#39;/update-paper-doi/{publicationDate}/{idDoi}&#39;, name: &#39;update_paper_doi&#39;, requirements: [&#39;id_doi&#39; =&gt; &#39;.*?&#39;], methods: [&#39;PUT&#39;])]</span>
+<span class="line"></span>
+<span class="line">    #[OA\\Tag(name: &#39;Paper DOI update&#39;)]</span>
+<span class="line">    #[OA\\Put(</span>
+<span class="line">        parameters: [</span>
+<span class="line">            new OA\\Parameter(</span>
+<span class="line">                name: &#39;publicationDate&#39;,</span>
+<span class="line">                in: &#39;path&#39;,</span>
+<span class="line">                required: true,</span>
+<span class="line">                description: &#39;Publication date of paper&#39;</span>
+<span class="line">            ),</span>
+<span class="line">            new OA\\Parameter(</span>
+<span class="line">                name: &#39;idDoi&#39;,</span>
+<span class="line">                in: &#39;path&#39;,</span>
+<span class="line">                required: true,</span>
+<span class="line">                description: &#39;DOI id&#39;</span>
+<span class="line">            ),</span>
+<span class="line">        ],</span>
+<span class="line">        responses: [</span>
+<span class="line">            new OA\\Response(response: 200, description: &#39;Returned when successful&#39;),</span>
+<span class="line">            new OA\\Response(response: 500, description: &#39;Returned when not authorized access&#39;),</span>
+<span class="line">        ]</span>
+<span class="line">    )]</span>
+<span class="line">    #[Route(</span>
+<span class="line">        path: &#39;/update-paper-doi/{publicationDate}/{idDoi}&#39;,</span>
+<span class="line">        name: &#39;update_paper_doi&#39;,</span>
+<span class="line">        requirements: [&#39;idDoi&#39; =&gt; &#39;.+&#39;],</span>
+<span class="line">        methods: [&#39;PUT&#39;]</span>
+<span class="line">    )]</span>
+<span class="line">    public function updatePaperDoiAction(</span>
+<span class="line">        PublishedSubmissionService $publishedSubmissionService,</span>
+<span class="line">        string $publicationDate,</span>
+<span class="line">        string $idDoi,</span>
+<span class="line">    ): JsonResponse {</span>
+<span class="line">        return new JsonResponse($publishedSubmissionService-&gt;updatePaperWithDoi($publicationDate, $idDoi));</span>
+<span class="line">    }</span>
+<span class="line">}</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)]))}const c=s(l,[["render",p],["__file","Symfony7下Swagger文档注释路由参数的两种写法.html.vue"]]),t=JSON.parse('{"path":"/content/php/symfony/Symfony7%E4%B8%8BSwagger%E6%96%87%E6%A1%A3%E6%B3%A8%E9%87%8A%E8%B7%AF%E7%94%B1%E5%8F%82%E6%95%B0%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%86%99%E6%B3%95.html","title":"Symfony7下Swagger文档注释路由参数的两种写法","lang":"en-US","frontmatter":{"sidebar":false,"title":"Symfony7下Swagger文档注释路由参数的两种写法","head":[["meta",{"name":"title","content":"Symfony7下Swagger文档注释路由参数的两种写法"}],["meta",{"name":"description","content":"Symfony7下Swagger文档注释路由参数的两种写法"}],["meta",{"name":"keywords","content":"Symfony7,Swagger"}],["meta",{"property":"og:title","content":"Symfony7下Swagger文档注释路由参数的两种写法"}],["meta",{"property":"og:description","content":"Symfony7下Swagger文档注释路由参数的两种写法"}]]},"headers":[{"level":3,"title":"Symfony7下Swagger文档注释路由参数的两种写法","slug":"symfony7下swagger文档注释路由参数的两种写法","link":"#symfony7下swagger文档注释路由参数的两种写法","children":[]}],"git":{},"filePathRelative":"content/php/symfony/Symfony7下Swagger文档注释路由参数的两种写法.md"}');export{c as comp,t as data};
