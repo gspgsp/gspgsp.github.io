@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /404.html
+Sitemap: https://gspgsp.github.io/sitemap.xml
+LLMS: https://gspgsp.github.io/llms.txt
