@@ -1,0 +1,56 @@
+<svg width="680" height="640" viewBox="0 0 680 640" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>进程地址空间中栈与堆的布局与生长方向</title>
+<desc>地址值从图的顶部到底部单调递增,顶部是低地址,底部是高地址。堆在上方向下(往高地址)生长,栈在下方向上(往低地址)生长,两者相向而行,中间是空闲区。</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+
+<rect x="0" y="0" width="680" height="640" fill="#ffffff"/>
+
+<line x1="60" y1="44" x2="60" y2="600" stroke="#73726c" stroke-width="1" opacity="0.4" marker-end="url(#arrow)"/>
+<text x="60" y="30" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#3d3d3a">低地址</text>
+<text x="60" y="616" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#3d3d3a">高地址</text>
+<text x="30" y="330" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#3d3d3a" transform="rotate(-90 30 330)">地址值增大 →</text>
+
+<g>
+<rect x="120" y="46" width="440" height="40" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="340" y="60" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">代码段 .text</text>
+<text x="340" y="76" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#444441">程序指令,只读</text>
+</g>
+
+<g>
+<rect x="120" y="94" width="440" height="40" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="340" y="108" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">数据段 .data / .bss</text>
+<text x="340" y="124" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#444441">全局变量,静态变量</text>
+</g>
+
+<g>
+<rect x="120" y="150" width="440" height="160" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="140" y="172" font-family="sans-serif" font-size="14" font-weight="500" fill="#04342C">堆 Heap</text>
+<text x="140" y="190" font-family="sans-serif" font-size="12" fill="#085041">malloc / new 分配在这里</text>
+<text x="140" y="208" font-family="sans-serif" font-size="12" fill="#085041">生命周期不确定,需手动释放或 GC</text>
+<line x1="500" y1="230" x2="500" y2="290" stroke="#0F6E56" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="490" y="222" text-anchor="end" font-family="sans-serif" font-size="12" fill="#085041">往下 = 往高地址增长</text>
+</g>
+
+<g>
+<rect x="120" y="326" width="440" height="60" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="340" y="346" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">空闲区</text>
+<text x="340" y="364" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#444441">堆栈之间的缓冲地带</text>
+</g>
+
+<g>
+<rect x="120" y="402" width="440" height="160" rx="4" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="140" y="424" font-family="sans-serif" font-size="14" font-weight="500" fill="#4A1B0C">栈 Stack</text>
+<text x="140" y="442" font-family="sans-serif" font-size="12" fill="#712B13">函数调用帧存在这里</text>
+<text x="140" y="460" font-family="sans-serif" font-size="12" fill="#712B13">函数返回时自动回收,速度极快</text>
+<line x1="500" y1="542" x2="500" y2="482" stroke="#993C1D" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="490" y="552" text-anchor="end" font-family="sans-serif" font-size="12" fill="#712B13">往上 = 往低地址增长</text>
+</g>
+
+<g>
+<rect x="120" y="578" width="440" height="40" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="340" y="592" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">内核空间</text>
+<text x="340" y="608" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#444441">用户态不可访问</text>
+</g>
+</svg>
