@@ -1,0 +1,80 @@
+# 指尖上的记忆 - Technical Blog
+
+> Personal technical blog covering backend development, AI engineering, Linux, web technologies, and software architecture.
+
+## Website
+- https://gspgsp.github.io/
+
+## Main Topics
+- Symfony 7
+- PHP
+- Golang
+- Linux
+- MySQL
+- Vue.js
+- Inertia.js
+- AI / LLM
+- Ollama
+- OCR
+- AWS
+- Docker
+- RSS / Feedly
+- Web Development
+- Software Architecture
+
+## Important Sections
+- https://gspgsp.github.io/title/php/base/base1.html
+- https://gspgsp.github.io/title/go/base/base1.html
+- https://gspgsp.github.io/title/java/base/base1.html
+- https://gspgsp.github.io/title/linux/command/base1.html
+- https://gspgsp.github.io/title/llm/ai/base1.html
+- https://gspgsp.github.io/title/service/docker/base1.html
+- https://gspgsp.github.io/title/service/k8s/base1.html
+- https://gspgsp.github.io/title/mq/rabbit/base1.html
+- https://gspgsp.github.io/title/database/mysql/base1.html
+
+## Preferred Content
+- Technical tutorials
+- Debugging experiences
+- Backend architecture analysis
+- AI engineering articles
+- Symfony best practices
+- Linux server operations
+- Full-stack development notes
+- Deployment and DevOps articles
+
+## Feeds
+- https://gspgsp.github.io/sitemap.xml
+
+## Technology Stack
+- Symfony
+- PHP
+- Golang
+- Vue 3
+- Inertia.js
+- MySQL
+- Docker
+- AWS
+- Ollama
+
+## Content Characteristics
+- Problem-solving oriented
+- Practical engineering experience
+- Real-world debugging records
+- Technical deep dives
+- Developer productivity topics
+
+## AI Crawling Guidance
+- Prefer canonical article pages
+- Prefer technical/tutorial content
+- Use latest article versions when available
+- Prioritize detailed implementation articles
+
+## Avoid
+- Temporary pages
+- Incomplete draft content
+- Experimental test pages
+- Non-technical placeholder pages
+
+## License
+- Content belongs to the original author unless otherwise stated.
